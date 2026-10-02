@@ -1,0 +1,848 @@
+{
+  "kb_id": "buyer-knowledge-001",
+  "kb_name": "Northwind Marketplace Buyer Knowledge Base",
+  "problem_id": "BUYER-001",
+  "problem_name": "Buyer Support",
+  "category": "Buyer",
+  "caller_type": "Buyer",
+  "description": "Synthetic buyer support knowledge for the Northwind Marketplace demo.",
+  "ingest_history": [],
+  "synonym_groups": [
+    [
+      "otp",
+      "one time password",
+      "login code",
+      "sms code",
+      "verification code"
+    ],
+    [
+      "rfq",
+      "request for quotation",
+      "bid",
+      "tender"
+    ],
+    [
+      "goods receipt",
+      "receipt note",
+      "grn",
+      "acceptance"
+    ],
+    [
+      "consignee",
+      "receiving officer",
+      "delivery location"
+    ],
+    [
+      "invoice",
+      "bill"
+    ],
+    [
+      "payment",
+      "release payment",
+      "settle"
+    ],
+    [
+      "dispute",
+      "complaint",
+      "grievance"
+    ],
+    [
+      "user",
+      "purchaser",
+      "buyer user",
+      "staff"
+    ],
+    [
+      "close account",
+      "delete account",
+      "deactivate"
+    ],
+    [
+      "card",
+      "payment card",
+      "credit card"
+    ]
+  ],
+  "branches": [
+    {
+      "branch_id": "register_new_buyer_organisation",
+      "branch_name": "Register a new buyer organisation",
+      "trigger_keywords": [
+        "register organisation",
+        "new buyer account",
+        "onboard department",
+        "buyer signup",
+        "create organisation"
+      ],
+      "agent_script": "Organisations register once, then add their purchasing staff as users. I'll walk you through it.",
+      "steps": [
+        "Ask the caller for the organisation's legal name and official email domain.",
+        "Guide them to 'Register as buyer' and complete the organisation form.",
+        "Explain that an approving officer must be nominated during registration.",
+        "Tell them approval takes up to two business days."
+      ],
+      "documents": [
+        "Organisation registration certificate",
+        "Nomination of approving officer"
+      ],
+      "escalation": "Buyer Onboarding Desk",
+      "escalation_person": "Onboarding Specialist (Tier 2)",
+      "tagging": "Buyer → Organisation Onboarding → Register a new buyer organisation",
+      "topic_category": "org_onboarding",
+      "description": "Organisations register once, then add their purchasing staff as users. I'll walk you through it."
+    },
+    {
+      "branch_id": "approving_officer_not_assigned",
+      "branch_name": "Approving officer not assigned",
+      "trigger_keywords": [
+        "approving officer",
+        "approver missing",
+        "no approver",
+        "purchase approval",
+        "approval hierarchy"
+      ],
+      "agent_script": "Purchases above the direct-buy limit need an approving officer. Let's assign one.",
+      "steps": [
+        "Confirm the caller is the organisation admin.",
+        "Guide them to Organisation > Approval hierarchy.",
+        "Have them select an existing user as approving officer or invite a new one.",
+        "Explain that pending purchases resume once the officer accepts."
+      ],
+      "documents": [
+        "Approving officer's work email"
+      ],
+      "escalation": "Buyer Onboarding Desk",
+      "escalation_person": "Onboarding Specialist (Tier 2)",
+      "tagging": "Buyer → Organisation Onboarding → Approving officer not assigned",
+      "topic_category": "org_onboarding",
+      "description": "Purchases above the direct-buy limit need an approving officer. Let's assign one."
+    },
+    {
+      "branch_id": "organisation_details_incorrect",
+      "branch_name": "Organisation details are incorrect",
+      "trigger_keywords": [
+        "wrong organisation name",
+        "update organisation details",
+        "organisation address",
+        "department name wrong",
+        "edit organisation"
+      ],
+      "agent_script": "Organisation details can be corrected by the admin, with a supporting letter for name changes.",
+      "steps": [
+        "Ask which field is incorrect.",
+        "For address or contact changes, guide the admin to Organisation > Details.",
+        "For name changes, collect an official letter on letterhead.",
+        "Explain that name changes are reviewed within two business days."
+      ],
+      "documents": [
+        "Official letter for name changes"
+      ],
+      "escalation": "Buyer Onboarding Desk",
+      "escalation_person": "Onboarding Specialist (Tier 2)",
+      "tagging": "Buyer → Organisation Onboarding → Organisation details are incorrect",
+      "topic_category": "org_onboarding",
+      "description": "Organisation details can be corrected by the admin, with a supporting letter for name changes."
+    },
+    {
+      "branch_id": "buyer_otp_not_received",
+      "branch_name": "Buyer OTP not received",
+      "trigger_keywords": [
+        "otp not received",
+        "login otp",
+        "sms code missing",
+        "verification code",
+        "no otp"
+      ],
+      "agent_script": "Let's get your login code through. Delays usually come from SMS filtering or an outdated number.",
+      "steps": [
+        "Confirm the last four digits of the registered mobile number.",
+        "Ask the caller to wait 60 seconds before pressing 'Resend OTP' once.",
+        "Offer the email OTP option if available.",
+        "If the number is outdated, start the mobile update process with the organisation admin."
+      ],
+      "documents": [
+        "Registered mobile number"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Identity Support Analyst",
+      "tagging": "Buyer → Login & OTP → Buyer OTP not received",
+      "topic_category": "login_otp",
+      "description": "Let's get your login code through. Delays usually come from SMS filtering or an outdated number."
+    },
+    {
+      "branch_id": "buyer_account_locked",
+      "branch_name": "Buyer account locked",
+      "trigger_keywords": [
+        "account locked",
+        "too many attempts",
+        "locked out",
+        "login disabled",
+        "blocked account"
+      ],
+      "agent_script": "Accounts lock for 30 minutes after five failed attempts. I can help you reset safely.",
+      "steps": [
+        "Tell the caller how long remains on the lock.",
+        "Recommend a password reset once the lock lifts.",
+        "If urgent, verify identity with the organisation admin and raise an unlock request."
+      ],
+      "documents": [
+        "Organisation admin confirmation"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Identity Support Analyst",
+      "tagging": "Buyer → Login & OTP → Buyer account locked",
+      "topic_category": "login_otp",
+      "description": "Accounts lock for 30 minutes after five failed attempts. I can help you reset safely."
+    },
+    {
+      "branch_id": "update_registered_mobile_number",
+      "branch_name": "Update registered mobile number",
+      "trigger_keywords": [
+        "change mobile number",
+        "update phone",
+        "new mobile",
+        "old number",
+        "mobile update"
+      ],
+      "agent_script": "Mobile numbers are updated by verifying both the email and the new number.",
+      "steps": [
+        "Ask the caller to open Profile > Contact details.",
+        "Have them verify the change with an email OTP.",
+        "Then verify the new number with an SMS OTP.",
+        "If they can't access the email, the organisation admin must approve the change."
+      ],
+      "documents": [
+        "Access to registered email"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Identity Support Analyst",
+      "tagging": "Buyer → Login & OTP → Update registered mobile number",
+      "topic_category": "login_otp",
+      "description": "Mobile numbers are updated by verifying both the email and the new number."
+    },
+    {
+      "branch_id": "create_buyer_user",
+      "branch_name": "Create a new buyer user",
+      "trigger_keywords": [
+        "add buyer user",
+        "new purchaser",
+        "create user",
+        "add staff",
+        "user creation"
+      ],
+      "agent_script": "Organisation admins can add buyers and assign purchase limits per user.",
+      "steps": [
+        "Confirm the caller is the organisation admin.",
+        "Guide them to Organisation > Users > Add user.",
+        "Have them set the role and the per-order purchase limit.",
+        "Explain that the new user activates from the invitation email."
+      ],
+      "documents": [
+        "New user's work email"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Account Administration Analyst",
+      "tagging": "Buyer → Users & Roles → Create a new buyer user",
+      "topic_category": "buyer_users",
+      "description": "Organisation admins can add buyers and assign purchase limits per user."
+    },
+    {
+      "branch_id": "deactivate_departed_user",
+      "branch_name": "Deactivate a user who left",
+      "trigger_keywords": [
+        "deactivate user",
+        "employee left",
+        "remove user",
+        "disable login",
+        "transferred officer"
+      ],
+      "agent_script": "Deactivating departed users keeps your organisation's purchases secure. Their open orders can be reassigned.",
+      "steps": [
+        "Ask the admin to open Organisation > Users and select the user.",
+        "Choose 'Deactivate' and reassign their open orders to another buyer.",
+        "Explain that order history stays available for audits."
+      ],
+      "documents": [
+        "Name of the user to deactivate"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Account Administration Analyst",
+      "tagging": "Buyer → Users & Roles → Deactivate a user who left",
+      "topic_category": "buyer_users",
+      "description": "Deactivating departed users keeps your organisation's purchases secure. Their open orders can be reassigned."
+    },
+    {
+      "branch_id": "change_buyer_role_permissions",
+      "branch_name": "Change buyer role or permissions",
+      "trigger_keywords": [
+        "change role",
+        "permissions",
+        "purchase limit",
+        "upgrade access",
+        "role update"
+      ],
+      "agent_script": "Roles and purchase limits are set by the organisation admin and take effect on next login.",
+      "steps": [
+        "Ask which permission or limit needs to change.",
+        "Guide the admin to Organisation > Users > Edit role.",
+        "Explain that limits above the organisation cap need approving officer sign-off.",
+        "Ask the user to sign out and back in."
+      ],
+      "documents": [
+        "Approving officer sign-off for higher limits"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Account Administration Analyst",
+      "tagging": "Buyer → Users & Roles → Change buyer role or permissions",
+      "topic_category": "buyer_users",
+      "description": "Roles and purchase limits are set by the organisation admin and take effect on next login."
+    },
+    {
+      "branch_id": "price_changed_in_cart",
+      "branch_name": "Price changed after adding to cart",
+      "trigger_keywords": [
+        "price changed",
+        "cart price",
+        "price increased",
+        "price difference",
+        "updated price"
+      ],
+      "agent_script": "Prices in the cart refresh from the seller's live listing. Let's check what changed.",
+      "steps": [
+        "Ask the caller to open the cart and read the 'price updated' notice.",
+        "Explain that sellers can change prices until checkout.",
+        "Suggest comparing with similar listings before confirming.",
+        "If the price changed after checkout, collect the order number and escalate."
+      ],
+      "documents": [
+        "Order number, if already placed"
+      ],
+      "escalation": "Buyer Success Team",
+      "escalation_person": "Purchasing Advisor",
+      "tagging": "Buyer → Direct Purchase → Price changed after adding to cart",
+      "topic_category": "direct_purchase",
+      "description": "Prices in the cart refresh from the seller's live listing. Let's check what changed."
+    },
+    {
+      "branch_id": "direct_purchase_limit_exceeded",
+      "branch_name": "Direct purchase limit exceeded",
+      "trigger_keywords": [
+        "purchase limit",
+        "limit exceeded",
+        "cannot buy directly",
+        "above limit",
+        "direct buy cap"
+      ],
+      "agent_script": "Direct purchases have a value cap. Above it, you'll need approval or a bid.",
+      "steps": [
+        "Ask for the cart value and the caller's purchase limit.",
+        "If under the organisation cap, request approval from the approving officer.",
+        "If above the organisation cap, explain that a bid or RFQ is required."
+      ],
+      "documents": [
+        "Cart value",
+        "Approving officer details"
+      ],
+      "escalation": "Buyer Success Team",
+      "escalation_person": "Purchasing Advisor",
+      "tagging": "Buyer → Direct Purchase → Direct purchase limit exceeded",
+      "topic_category": "direct_purchase",
+      "description": "Direct purchases have a value cap. Above it, you'll need approval or a bid."
+    },
+    {
+      "branch_id": "compare_products_before_purchase",
+      "branch_name": "Compare products before purchase",
+      "trigger_keywords": [
+        "compare products",
+        "lowest price",
+        "comparison",
+        "best offer",
+        "choose seller"
+      ],
+      "agent_script": "The comparison view shows up to four listings side by side, so you can choose the best value.",
+      "steps": [
+        "Ask the caller to tick 'Compare' on up to four listings.",
+        "Explain the columns: price, delivery time, seller rating and warranty.",
+        "Remind them to record the reason if they don't choose the lowest price."
+      ],
+      "documents": [
+        "Purchase justification note"
+      ],
+      "escalation": "Buyer Success Team",
+      "escalation_person": "Purchasing Advisor",
+      "tagging": "Buyer → Direct Purchase → Compare products before purchase",
+      "topic_category": "direct_purchase",
+      "description": "The comparison view shows up to four listings side by side, so you can choose the best value."
+    },
+    {
+      "branch_id": "create_rfq",
+      "branch_name": "Create a request for quotation",
+      "trigger_keywords": [
+        "create rfq",
+        "request for quotation",
+        "new bid",
+        "publish rfq",
+        "tender creation"
+      ],
+      "agent_script": "An RFQ invites sellers to quote for your requirement. I'll guide you through publishing one.",
+      "steps": [
+        "Guide the caller to Sourcing > Create RFQ.",
+        "Have them enter specifications, quantity and delivery location.",
+        "Ask them to set a bid deadline at least seven days away.",
+        "Explain that the approving officer must approve before publishing."
+      ],
+      "documents": [
+        "Specification document",
+        "Approval from approving officer"
+      ],
+      "escalation": "Sourcing Events Desk",
+      "escalation_person": "Sourcing Event Specialist",
+      "tagging": "Buyer → Bids & RFQs → Create a request for quotation",
+      "topic_category": "bids_rfq",
+      "description": "An RFQ invites sellers to quote for your requirement. I'll guide you through publishing one."
+    },
+    {
+      "branch_id": "extend_bid_deadline",
+      "branch_name": "Extend bid deadline",
+      "trigger_keywords": [
+        "extend deadline",
+        "bid extension",
+        "more time for bids",
+        "deadline change",
+        "corrigendum"
+      ],
+      "agent_script": "You can extend a bid deadline before it closes; sellers are notified automatically.",
+      "steps": [
+        "Ask for the bid number.",
+        "Check that the deadline hasn't passed.",
+        "Guide the caller to Bid > Amend > Extend deadline.",
+        "Explain that a reason is recorded and visible to sellers."
+      ],
+      "documents": [
+        "Bid number",
+        "Reason for extension"
+      ],
+      "escalation": "Sourcing Events Desk",
+      "escalation_person": "Sourcing Event Specialist",
+      "tagging": "Buyer → Bids & RFQs → Extend bid deadline",
+      "topic_category": "bids_rfq",
+      "description": "You can extend a bid deadline before it closes; sellers are notified automatically."
+    },
+    {
+      "branch_id": "technical_evaluation_upload_failed",
+      "branch_name": "Technical evaluation upload failed",
+      "trigger_keywords": [
+        "technical evaluation",
+        "evaluation upload",
+        "evaluation sheet",
+        "cannot upload evaluation",
+        "evaluation error"
+      ],
+      "agent_script": "Evaluation results must be uploaded in the provided template. Let's check the file.",
+      "steps": [
+        "Ask for the bid number and the error message.",
+        "Confirm the file uses the latest evaluation template.",
+        "Check that every participating seller has a qualified or disqualified status with remarks.",
+        "Ask the caller to retry the upload."
+      ],
+      "documents": [
+        "Bid number",
+        "Evaluation sheet"
+      ],
+      "escalation": "Sourcing Events Desk",
+      "escalation_person": "Sourcing Event Specialist",
+      "tagging": "Buyer → Bids & RFQs → Technical evaluation upload failed",
+      "topic_category": "bids_rfq",
+      "description": "Evaluation results must be uploaded in the provided template. Let's check the file."
+    },
+    {
+      "branch_id": "order_status_not_updated",
+      "branch_name": "Order status not updated",
+      "trigger_keywords": [
+        "order status",
+        "status not updating",
+        "order stuck",
+        "tracking not updated",
+        "shipment status"
+      ],
+      "agent_script": "Order status updates when the seller records dispatch. Let's check the latest event.",
+      "steps": [
+        "Ask for the order number.",
+        "Check the last status event and its timestamp.",
+        "If the seller hasn't marked dispatch, send a reminder to the seller.",
+        "If dispatched, share the tracking link with the caller."
+      ],
+      "documents": [
+        "Order number"
+      ],
+      "escalation": "Order Operations Team",
+      "escalation_person": "Fulfilment Coordinator",
+      "tagging": "Buyer → Orders & Delivery → Order status not updated",
+      "topic_category": "orders_delivery",
+      "description": "Order status updates when the seller records dispatch. Let's check the latest event."
+    },
+    {
+      "branch_id": "change_consignee_after_order",
+      "branch_name": "Change consignee after ordering",
+      "trigger_keywords": [
+        "change consignee",
+        "delivery address",
+        "receiving officer",
+        "change delivery location",
+        "consignee update"
+      ],
+      "agent_script": "The consignee can be changed before dispatch, with the seller's agreement.",
+      "steps": [
+        "Ask for the order number and the new consignee details.",
+        "Check that the order hasn't been dispatched.",
+        "Guide the caller to Order > Request consignee change.",
+        "Explain that the seller must accept the change."
+      ],
+      "documents": [
+        "Order number",
+        "New consignee details"
+      ],
+      "escalation": "Order Operations Team",
+      "escalation_person": "Fulfilment Coordinator",
+      "tagging": "Buyer → Orders & Delivery → Change consignee after ordering",
+      "topic_category": "orders_delivery",
+      "description": "The consignee can be changed before dispatch, with the seller's agreement."
+    },
+    {
+      "branch_id": "delivery_overdue",
+      "branch_name": "Delivery overdue",
+      "trigger_keywords": [
+        "delivery late",
+        "overdue delivery",
+        "not delivered",
+        "delayed shipment",
+        "past delivery date"
+      ],
+      "agent_script": "If delivery is overdue, you can follow up with the seller and penalties apply automatically.",
+      "steps": [
+        "Ask for the order number and the promised delivery date.",
+        "Check whether the seller requested an extension.",
+        "If not, send a delivery follow-up to the seller.",
+        "Explain how late delivery penalties are calculated."
+      ],
+      "documents": [
+        "Order number"
+      ],
+      "escalation": "Order Operations Team",
+      "escalation_person": "Fulfilment Coordinator",
+      "tagging": "Buyer → Orders & Delivery → Delivery overdue",
+      "topic_category": "orders_delivery",
+      "description": "If delivery is overdue, you can follow up with the seller and penalties apply automatically."
+    },
+    {
+      "branch_id": "generate_goods_receipt",
+      "branch_name": "Generate goods receipt",
+      "trigger_keywords": [
+        "goods receipt",
+        "receipt note",
+        "confirm delivery",
+        "generate receipt",
+        "acceptance"
+      ],
+      "agent_script": "Generating the goods receipt confirms delivery and starts the seller's payment cycle.",
+      "steps": [
+        "Ask the caller to open the order and choose 'Generate receipt'.",
+        "Have them enter quantity received and inspection result.",
+        "Explain that the receipt must be generated within 10 days of delivery."
+      ],
+      "documents": [
+        "Order number",
+        "Inspection result"
+      ],
+      "escalation": "Order Operations Team",
+      "escalation_person": "Receiving Support Analyst",
+      "tagging": "Buyer → Receiving & Inspection → Generate goods receipt",
+      "topic_category": "receiving_inspection",
+      "description": "Generating the goods receipt confirms delivery and starts the seller's payment cycle."
+    },
+    {
+      "branch_id": "reject_damaged_goods",
+      "branch_name": "Reject damaged goods",
+      "trigger_keywords": [
+        "damaged goods",
+        "reject delivery",
+        "broken items",
+        "quality rejection",
+        "defective items"
+      ],
+      "agent_script": "You can reject damaged items during receipt; the seller is asked to replace them.",
+      "steps": [
+        "Ask the caller to record the damage with photos.",
+        "During receipt, mark the affected quantity as rejected with a reason.",
+        "Explain that the seller has seven days to replace the items."
+      ],
+      "documents": [
+        "Photos of damage",
+        "Order number"
+      ],
+      "escalation": "Order Operations Team",
+      "escalation_person": "Receiving Support Analyst",
+      "tagging": "Buyer → Receiving & Inspection → Reject damaged goods",
+      "topic_category": "receiving_inspection",
+      "description": "You can reject damaged items during receipt; the seller is asked to replace them."
+    },
+    {
+      "branch_id": "partial_delivery_receipt",
+      "branch_name": "Partial delivery receipt",
+      "trigger_keywords": [
+        "partial delivery",
+        "short delivery",
+        "quantity less",
+        "partial receipt",
+        "remaining items"
+      ],
+      "agent_script": "For partial deliveries, receipt the quantity you received; the rest stays open.",
+      "steps": [
+        "Ask how many units were received against the order quantity.",
+        "Guide the caller to receipt only the received quantity.",
+        "Explain that the balance remains open for the seller to deliver."
+      ],
+      "documents": [
+        "Order number",
+        "Delivery challan"
+      ],
+      "escalation": "Order Operations Team",
+      "escalation_person": "Receiving Support Analyst",
+      "tagging": "Buyer → Receiving & Inspection → Partial delivery receipt",
+      "topic_category": "receiving_inspection",
+      "description": "For partial deliveries, receipt the quantity you received; the rest stays open."
+    },
+    {
+      "branch_id": "payment_not_processed_after_receipt",
+      "branch_name": "Payment not processed after receipt",
+      "trigger_keywords": [
+        "payment not processed",
+        "payment pending",
+        "seller not paid",
+        "payment stuck",
+        "release payment"
+      ],
+      "agent_script": "After receipt, the invoice must be approved before payment releases. Let's find which step is pending.",
+      "steps": [
+        "Ask for the order number.",
+        "Check whether the invoice was approved by the finance user.",
+        "If not approved, guide the finance user to Payments > Pending invoices.",
+        "If approved, check the payment batch status and share the reference."
+      ],
+      "documents": [
+        "Order number",
+        "Invoice number"
+      ],
+      "escalation": "Buyer Finance Desk",
+      "escalation_person": "Payments Analyst",
+      "tagging": "Buyer → Payments & Invoices → Payment not processed after receipt",
+      "topic_category": "payments_invoices",
+      "description": "After receipt, the invoice must be approved before payment releases. Let's find which step is pending."
+    },
+    {
+      "branch_id": "invoice_missing_for_order",
+      "branch_name": "Invoice missing for order",
+      "trigger_keywords": [
+        "invoice missing",
+        "no invoice",
+        "cannot find invoice",
+        "bill not uploaded",
+        "invoice not available"
+      ],
+      "agent_script": "Sellers upload the invoice after your goods receipt. If it's missing, we can nudge the seller.",
+      "steps": [
+        "Ask for the order number.",
+        "Confirm the goods receipt was generated.",
+        "If yes, send an invoice reminder to the seller.",
+        "Explain that payment can't start until the invoice is uploaded."
+      ],
+      "documents": [
+        "Order number"
+      ],
+      "escalation": "Buyer Finance Desk",
+      "escalation_person": "Payments Analyst",
+      "tagging": "Buyer → Payments & Invoices → Invoice missing for order",
+      "topic_category": "payments_invoices",
+      "description": "Sellers upload the invoice after your goods receipt. If it's missing, we can nudge the seller."
+    },
+    {
+      "branch_id": "corporate_card_declined_at_checkout",
+      "branch_name": "Corporate card declined at checkout",
+      "trigger_keywords": [
+        "card declined",
+        "payment card",
+        "checkout payment failed",
+        "credit card rejected",
+        "card not accepted"
+      ],
+      "agent_script": "Card payments are declined by the issuing bank, not by us. Let's check the usual causes before trying again.",
+      "steps": [
+        "Ask for the decline message shown at checkout.",
+        "Check whether the order total exceeds the card's per-transaction limit.",
+        "Ask the caller to confirm the card is enabled for online purchases.",
+        "Offer invoice-based payment if the organisation has it enabled."
+      ],
+      "documents": [
+        "Decline message screenshot"
+      ],
+      "escalation": "Buyer Finance Desk",
+      "escalation_person": "Payments Analyst",
+      "tagging": "Buyer → Payments & Invoices → Corporate card declined at checkout",
+      "topic_category": "payments_invoices",
+      "description": "Card payments are declined by the issuing bank, not by us. Let's check the usual causes before trying again."
+    },
+    {
+      "branch_id": "raise_dispute_against_seller",
+      "branch_name": "Raise a dispute against a seller",
+      "trigger_keywords": [
+        "raise dispute",
+        "complaint against seller",
+        "seller issue",
+        "file complaint",
+        "dispute"
+      ],
+      "agent_script": "You can raise a dispute from the order page; the seller gets seven days to respond.",
+      "steps": [
+        "Ask for the order number and the nature of the issue.",
+        "Guide the caller to Order > Raise dispute.",
+        "Have them attach evidence such as photos or reports.",
+        "Explain the seven-day seller response window."
+      ],
+      "documents": [
+        "Order number",
+        "Evidence of the issue"
+      ],
+      "escalation": "Dispute Resolution Cell",
+      "escalation_person": "Dispute Case Manager",
+      "tagging": "Buyer → Disputes & Feedback → Raise a dispute against a seller",
+      "topic_category": "disputes_feedback",
+      "description": "You can raise a dispute from the order page; the seller gets seven days to respond."
+    },
+    {
+      "branch_id": "rate_seller_after_delivery",
+      "branch_name": "Rate a seller after delivery",
+      "trigger_keywords": [
+        "rate seller",
+        "seller rating",
+        "feedback",
+        "review seller",
+        "performance rating"
+      ],
+      "agent_script": "Seller ratings help other buyers. You can rate after the goods receipt.",
+      "steps": [
+        "Ask the caller to open the completed order.",
+        "Guide them to 'Rate seller' and score delivery, quality and communication.",
+        "Explain that ratings can be edited within 30 days."
+      ],
+      "documents": [
+        "Order number"
+      ],
+      "escalation": "Dispute Resolution Cell",
+      "escalation_person": "Dispute Case Manager",
+      "tagging": "Buyer → Disputes & Feedback → Rate a seller after delivery",
+      "topic_category": "disputes_feedback",
+      "description": "Seller ratings help other buyers. You can rate after the goods receipt."
+    },
+    {
+      "branch_id": "escalate_unresolved_complaint",
+      "branch_name": "Escalate an unresolved complaint",
+      "trigger_keywords": [
+        "escalate complaint",
+        "unresolved",
+        "no response",
+        "complaint pending",
+        "escalation"
+      ],
+      "agent_script": "If your complaint hasn't been resolved in time, I can escalate it to the dispute cell.",
+      "steps": [
+        "Ask for the dispute ID.",
+        "Check how long the dispute has been open.",
+        "If past the response window, escalate to the dispute cell.",
+        "Share the escalation reference with the caller."
+      ],
+      "documents": [
+        "Dispute ID"
+      ],
+      "escalation": "Dispute Resolution Cell",
+      "escalation_person": "Dispute Case Manager",
+      "tagging": "Buyer → Disputes & Feedback → Escalate an unresolved complaint",
+      "topic_category": "disputes_feedback",
+      "description": "If your complaint hasn't been resolved in time, I can escalate it to the dispute cell."
+    },
+    {
+      "branch_id": "close_buyer_account",
+      "branch_name": "Close a buyer account",
+      "trigger_keywords": [
+        "close account",
+        "delete account",
+        "deactivate organisation",
+        "account closure",
+        "remove buyer account"
+      ],
+      "agent_script": "Accounts can be closed once there are no open orders, bids or payments.",
+      "steps": [
+        "Check for open orders, active bids and pending payments.",
+        "Ask the organisation admin to submit a closure request with a letter.",
+        "Explain that records are retained for audit after closure."
+      ],
+      "documents": [
+        "Closure request letter"
+      ],
+      "escalation": "Buyer Onboarding Desk",
+      "escalation_person": "Account Lifecycle Analyst",
+      "tagging": "Buyer → Account Closure → Close a buyer account",
+      "topic_category": "account_closure",
+      "description": "Accounts can be closed once there are no open orders, bids or payments."
+    },
+    {
+      "branch_id": "transfer_pending_orders_before_closure",
+      "branch_name": "Transfer pending orders before closure",
+      "trigger_keywords": [
+        "transfer orders",
+        "pending orders",
+        "reassign orders",
+        "handover",
+        "orders before closing"
+      ],
+      "agent_script": "Before closing, open orders must be completed or moved to another active buyer.",
+      "steps": [
+        "List the open orders with the caller.",
+        "Guide the admin to reassign each order to an active buyer.",
+        "Confirm no orders remain before submitting closure."
+      ],
+      "documents": [
+        "List of open orders"
+      ],
+      "escalation": "Buyer Onboarding Desk",
+      "escalation_person": "Account Lifecycle Analyst",
+      "tagging": "Buyer → Account Closure → Transfer pending orders before closure",
+      "topic_category": "account_closure",
+      "description": "Before closing, open orders must be completed or moved to another active buyer."
+    },
+    {
+      "branch_id": "reactivate_closed_account",
+      "branch_name": "Reactivate a closed account",
+      "trigger_keywords": [
+        "reactivate",
+        "reopen account",
+        "closed by mistake",
+        "restore account",
+        "account reactivation"
+      ],
+      "agent_script": "Closed accounts can be reactivated within 90 days with a request from the organisation.",
+      "steps": [
+        "Check when the account was closed.",
+        "If within 90 days, collect a reactivation letter from the organisation.",
+        "If older than 90 days, explain that a fresh registration is required."
+      ],
+      "documents": [
+        "Reactivation request letter"
+      ],
+      "escalation": "Buyer Onboarding Desk",
+      "escalation_person": "Account Lifecycle Analyst",
+      "tagging": "Buyer → Account Closure → Reactivate a closed account",
+      "topic_category": "account_closure",
+      "description": "Closed accounts can be reactivated within 90 days with a request from the organisation."
+    }
+  ]
+}

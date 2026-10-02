@@ -1,0 +1,437 @@
+{
+  "portal": "Northwind Marketplace",
+  "categories": {
+    "seller": [
+      {
+        "id": "registration",
+        "name": "Seller Registration"
+      },
+      {
+        "id": "login_otp",
+        "name": "Login & OTP"
+      },
+      {
+        "id": "profile_kyc",
+        "name": "Profile & KYC"
+      },
+      {
+        "id": "bank_payouts",
+        "name": "Bank Account & Payouts"
+      },
+      {
+        "id": "catalogue",
+        "name": "Catalogue & Listings"
+      },
+      {
+        "id": "brand_authorisation",
+        "name": "Brand Authorisation"
+      },
+      {
+        "id": "bids_auctions",
+        "name": "Bids & Reverse Auctions"
+      },
+      {
+        "id": "orders_delivery",
+        "name": "Orders & Delivery"
+      },
+      {
+        "id": "invoices_payments",
+        "name": "Invoices & Payments"
+      },
+      {
+        "id": "shipping_logistics",
+        "name": "Shipping & Logistics"
+      },
+      {
+        "id": "sub_users",
+        "name": "Sub-users & Roles"
+      },
+      {
+        "id": "disputes_returns",
+        "name": "Disputes & Returns"
+      }
+    ],
+    "buyer": [
+      {
+        "id": "org_onboarding",
+        "name": "Organisation Onboarding"
+      },
+      {
+        "id": "login_otp",
+        "name": "Login & OTP"
+      },
+      {
+        "id": "buyer_users",
+        "name": "Users & Roles"
+      },
+      {
+        "id": "direct_purchase",
+        "name": "Direct Purchase"
+      },
+      {
+        "id": "bids_rfq",
+        "name": "Bids & RFQs"
+      },
+      {
+        "id": "orders_delivery",
+        "name": "Orders & Delivery"
+      },
+      {
+        "id": "receiving_inspection",
+        "name": "Receiving & Inspection"
+      },
+      {
+        "id": "payments_invoices",
+        "name": "Payments & Invoices"
+      },
+      {
+        "id": "disputes_feedback",
+        "name": "Disputes & Feedback"
+      },
+      {
+        "id": "account_closure",
+        "name": "Account Closure"
+      }
+    ]
+  },
+  "inference_rules": {
+    "seller": [
+      [
+        "registration",
+        [
+          "tax id mismatch",
+          "business name mismatch",
+          "registration validation failed",
+          "verification link expired",
+          "activation email",
+          "email link not working",
+          "pending review",
+          "registration not approved",
+          "application under review"
+        ]
+      ],
+      [
+        "login_otp",
+        [
+          "otp not received",
+          "one time password",
+          "sms not coming",
+          "account locked",
+          "too many attempts",
+          "login blocked",
+          "password reset",
+          "forgot password",
+          "reset link invalid"
+        ]
+      ],
+      [
+        "profile_kyc",
+        [
+          "change address",
+          "update address",
+          "business address",
+          "kyc rejected",
+          "document rejected",
+          "verification failed",
+          "authorised signatory",
+          "change signatory",
+          "new director"
+        ]
+      ],
+      [
+        "bank_payouts",
+        [
+          "bank verification failed",
+          "penny drop failed",
+          "account validation",
+          "change bank account",
+          "update bank",
+          "new bank account",
+          "payout on hold",
+          "payment held",
+          "funds blocked"
+        ]
+      ],
+      [
+        "catalogue",
+        [
+          "product not visible",
+          "listing not showing",
+          "catalogue not visible",
+          "listing rejected",
+          "quality check failed",
+          "product rejected",
+          "bulk upload",
+          "excel template",
+          "csv upload failed"
+        ]
+      ],
+      [
+        "brand_authorisation",
+        [
+          "brand approval",
+          "brand pending",
+          "brand not approved",
+          "authorisation letter",
+          "reseller letter",
+          "dealer certificate",
+          "new brand",
+          "add brand",
+          "brand not in list"
+        ]
+      ],
+      [
+        "bids_auctions",
+        [
+          "cannot submit bid",
+          "bid submission failed",
+          "bid deadline",
+          "reverse auction",
+          "auction not visible",
+          "ra not showing",
+          "bid disqualified",
+          "technical evaluation",
+          "rejected bid"
+        ]
+      ],
+      [
+        "orders_delivery",
+        [
+          "order not showing",
+          "missing order",
+          "order dashboard",
+          "delivery extension",
+          "extend delivery",
+          "delay delivery",
+          "order cancelled",
+          "buyer cancelled",
+          "cancellation"
+        ]
+      ],
+      [
+        "invoices_payments",
+        [
+          "invoice failed",
+          "cannot generate invoice",
+          "invoice error",
+          "payment delayed",
+          "payment not received",
+          "pending payment",
+          "tax mismatch",
+          "wrong tax",
+          "tax amount"
+        ]
+      ],
+      [
+        "shipping_logistics",
+        [
+          "pickup missed",
+          "courier did not come",
+          "pickup not done",
+          "shipping label",
+          "label error",
+          "cannot print label",
+          "undeliverable address",
+          "address not found",
+          "delivery failed"
+        ]
+      ],
+      [
+        "sub_users",
+        [
+          "add user",
+          "sub user",
+          "new employee login",
+          "sub user access",
+          "permission denied",
+          "cannot see bids",
+          "transfer admin",
+          "change admin",
+          "admin left company"
+        ]
+      ],
+      [
+        "disputes_returns",
+        [
+          "quality dispute",
+          "buyer complaint",
+          "defective goods",
+          "return pickup",
+          "return not collected",
+          "reverse pickup",
+          "penalty",
+          "late delivery penalty",
+          "deduction"
+        ]
+      ]
+    ],
+    "buyer": [
+      [
+        "org_onboarding",
+        [
+          "register organisation",
+          "new buyer account",
+          "onboard department",
+          "approving officer",
+          "approver missing",
+          "no approver",
+          "wrong organisation name",
+          "update organisation details",
+          "organisation address"
+        ]
+      ],
+      [
+        "login_otp",
+        [
+          "otp not received",
+          "login otp",
+          "sms code missing",
+          "account locked",
+          "too many attempts",
+          "locked out",
+          "change mobile number",
+          "update phone",
+          "new mobile"
+        ]
+      ],
+      [
+        "buyer_users",
+        [
+          "add buyer user",
+          "new purchaser",
+          "create user",
+          "deactivate user",
+          "employee left",
+          "remove user",
+          "change role",
+          "permissions",
+          "purchase limit"
+        ]
+      ],
+      [
+        "direct_purchase",
+        [
+          "price changed",
+          "cart price",
+          "price increased",
+          "purchase limit",
+          "limit exceeded",
+          "cannot buy directly",
+          "compare products",
+          "lowest price",
+          "comparison"
+        ]
+      ],
+      [
+        "bids_rfq",
+        [
+          "create rfq",
+          "request for quotation",
+          "new bid",
+          "extend deadline",
+          "bid extension",
+          "more time for bids",
+          "technical evaluation",
+          "evaluation upload",
+          "evaluation sheet"
+        ]
+      ],
+      [
+        "orders_delivery",
+        [
+          "order status",
+          "status not updating",
+          "order stuck",
+          "change consignee",
+          "delivery address",
+          "receiving officer",
+          "delivery late",
+          "overdue delivery",
+          "not delivered"
+        ]
+      ],
+      [
+        "receiving_inspection",
+        [
+          "goods receipt",
+          "receipt note",
+          "confirm delivery",
+          "damaged goods",
+          "reject delivery",
+          "broken items",
+          "partial delivery",
+          "short delivery",
+          "quantity less"
+        ]
+      ],
+      [
+        "payments_invoices",
+        [
+          "payment not processed",
+          "payment pending",
+          "seller not paid",
+          "invoice missing",
+          "no invoice",
+          "cannot find invoice",
+          "card declined",
+          "payment card",
+          "checkout payment failed"
+        ]
+      ],
+      [
+        "disputes_feedback",
+        [
+          "raise dispute",
+          "complaint against seller",
+          "seller issue",
+          "rate seller",
+          "seller rating",
+          "feedback",
+          "escalate complaint",
+          "unresolved",
+          "no response"
+        ]
+      ],
+      [
+        "account_closure",
+        [
+          "close account",
+          "delete account",
+          "deactivate organisation",
+          "transfer orders",
+          "pending orders",
+          "reassign orders",
+          "reactivate",
+          "reopen account",
+          "closed by mistake"
+        ]
+      ]
+    ]
+  },
+  "category_aliases": {
+    "seller registration": "registration",
+    "login & otp": "login_otp",
+    "profile & kyc": "profile_kyc",
+    "bank account & payouts": "bank_payouts",
+    "catalogue & listings": "catalogue",
+    "brand authorisation": "brand_authorisation",
+    "bids & reverse auctions": "bids_auctions",
+    "orders & delivery": "orders_delivery",
+    "invoices & payments": "invoices_payments",
+    "shipping & logistics": "shipping_logistics",
+    "sub-users & roles": "sub_users",
+    "disputes & returns": "disputes_returns",
+    "organisation onboarding": "org_onboarding",
+    "users & roles": "buyer_users",
+    "direct purchase": "direct_purchase",
+    "bids & rfqs": "bids_rfq",
+    "receiving & inspection": "receiving_inspection",
+    "payments & invoices": "payments_invoices",
+    "disputes & feedback": "disputes_feedback",
+    "account closure": "account_closure"
+  },
+  "fallback_category": {
+    "seller": "profile_kyc",
+    "buyer": "orders_delivery"
+  }
+}

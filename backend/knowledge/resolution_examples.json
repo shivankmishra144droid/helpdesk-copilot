@@ -1,0 +1,1433 @@
+{
+  "metadata": {
+    "name": "Northwind Marketplace resolution examples",
+    "description": "Synthetic few-shot examples used to draft supervisor resolutions.",
+    "sources": [
+      "synthetic"
+    ],
+    "total_entries": 66
+  },
+  "entries": [
+    {
+      "issue_id": "S-001",
+      "issue_name": "Tax ID does not match business name during registration",
+      "category": "registration",
+      "problem_statement": "Seller reports: tax id does not match business name during registration.",
+      "policy": "Northwind Marketplace support guideline for seller registration: I understand the registration form is rejecting your tax ID. This usually happens when the legal business name differs from the name on the tax certificate. Let's check both together.",
+      "resolution_steps": [
+        "Ask the caller to read out the legal business name exactly as printed on the tax certificate.",
+        "Compare it with the name entered on the registration form, including punctuation and suffixes such as 'Pvt' or 'LLC'.",
+        "If they differ, guide the caller to edit the business name field to match the certificate and resubmit.",
+        "If the names already match, ask the caller to clear the browser cache and retry validation once.",
+        "If validation still fails, collect a screenshot of the error and escalate."
+      ],
+      "required_documents": [
+        "Tax registration certificate",
+        "Screenshot of the validation error"
+      ],
+      "l1_team": "Vendor Onboarding Desk",
+      "l1_person": "Onboarding Specialist (Tier 2)",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-002",
+      "issue_name": "Verification email link expired",
+      "category": "registration",
+      "problem_statement": "Seller reports: verification email link expired.",
+      "policy": "Northwind Marketplace support guideline for seller registration: Verification links stay valid for 24 hours. I'll help you request a fresh link so you can finish activating the account.",
+      "resolution_steps": [
+        "Confirm the email address the caller registered with.",
+        "Ask the caller to open the sign-in page and choose 'Resend verification email'.",
+        "Advise them to check spam or quarantine folders and to open the newest email only.",
+        "If no email arrives within 15 minutes, verify the address for typos in the admin view and correct it.",
+        "Escalate if the address is correct and emails are still not delivered."
+      ],
+      "required_documents": [
+        "Registered email address"
+      ],
+      "l1_team": "Vendor Onboarding Desk",
+      "l1_person": "Onboarding Specialist (Tier 2)",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-003",
+      "issue_name": "Registration stuck in pending review",
+      "category": "registration",
+      "problem_statement": "Seller reports: registration stuck in pending review.",
+      "policy": "Northwind Marketplace support guideline for seller registration: New seller applications are reviewed within three business days. Let me check where yours is in the queue.",
+      "resolution_steps": [
+        "Note the registration reference number from the caller.",
+        "Check how many business days have passed since submission.",
+        "If under three business days, explain the review timeline and set expectations.",
+        "If the application is flagged for missing documents, tell the caller which documents to upload.",
+        "If it is older than three business days with no flags, escalate for manual review."
+      ],
+      "required_documents": [
+        "Registration reference number"
+      ],
+      "l1_team": "Vendor Onboarding Desk",
+      "l1_person": "Onboarding Specialist (Tier 2)",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-004",
+      "issue_name": "Login code SMS not arriving",
+      "category": "login_otp",
+      "problem_statement": "Seller reports: login code sms not arriving.",
+      "policy": "Northwind Marketplace support guideline for login & otp: Sorry you're not receiving the login code. Most delays come from network filters or an outdated mobile number, so let's check both.",
+      "resolution_steps": [
+        "Confirm the last four digits of the registered mobile number with the caller.",
+        "Ask the caller to wait 60 seconds and use 'Resend OTP' only once to avoid rate limits.",
+        "Check whether the number has do-not-disturb or promotional SMS blocking enabled.",
+        "Offer the email OTP option if the account has a verified email.",
+        "If the registered number is outdated, start the mobile number update process."
+      ],
+      "required_documents": [
+        "Registered mobile number"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Identity Support Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-005",
+      "issue_name": "Account locked after failed login attempts",
+      "category": "login_otp",
+      "problem_statement": "Seller reports: account locked after failed login attempts.",
+      "policy": "Northwind Marketplace support guideline for login & otp: For security, accounts lock for 30 minutes after five failed attempts. I can help you get back in safely.",
+      "resolution_steps": [
+        "Tell the caller how long remains on the 30-minute lock.",
+        "Recommend resetting the password instead of guessing again once the lock lifts.",
+        "Verify identity using the registered email and the business reference number.",
+        "If the caller needs urgent access, raise an unlock request after identity verification."
+      ],
+      "required_documents": [
+        "Business reference number",
+        "Registered email address"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Identity Support Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-006",
+      "issue_name": "Password reset link not working",
+      "category": "login_otp",
+      "problem_statement": "Seller reports: password reset link not working.",
+      "policy": "Northwind Marketplace support guideline for login & otp: Password reset links expire after one hour and only the newest link works. Let's send a fresh one.",
+      "resolution_steps": [
+        "Ask the caller to request a new reset link from the sign-in page.",
+        "Remind them to use only the most recent email, since earlier links are invalidated.",
+        "Ask them to open the link in a private browser window to avoid stale sessions.",
+        "If the new password is rejected, read out the password rules: 12+ characters with a number and a symbol.",
+        "Escalate if the reset page shows an error code."
+      ],
+      "required_documents": [
+        "Screenshot of the error, if any"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Identity Support Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-007",
+      "issue_name": "Update registered business address",
+      "category": "profile_kyc",
+      "problem_statement": "Seller reports: update registered business address.",
+      "policy": "Northwind Marketplace support guideline for profile & kyc: You can update the registered address from the profile page; the change goes live after a quick document check.",
+      "resolution_steps": [
+        "Ask the caller to open Profile > Business details > Address.",
+        "Have them enter the new address and upload a supporting address proof dated within the last three months.",
+        "Explain that open orders keep their original delivery address.",
+        "Tell the caller the compliance review takes up to two business days."
+      ],
+      "required_documents": [
+        "Address proof dated within three months"
+      ],
+      "l1_team": "Vendor Compliance Desk",
+      "l1_person": "Compliance Reviewer",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-008",
+      "issue_name": "KYC document rejected",
+      "category": "profile_kyc",
+      "problem_statement": "Seller reports: kyc document rejected.",
+      "policy": "Northwind Marketplace support guideline for profile & kyc: I'm sorry your KYC document was rejected. The rejection note usually tells us exactly what to fix.",
+      "resolution_steps": [
+        "Ask the caller to read the rejection reason shown under Profile > Verification.",
+        "If the image was unclear, ask for a colour scan at 300 dpi or higher.",
+        "If the document has expired, ask them to upload a currently valid one.",
+        "If the name differs from the profile, align the profile name or upload a name-change document.",
+        "Escalate if the caller believes the rejection was made in error."
+      ],
+      "required_documents": [
+        "Valid identity or business document",
+        "Name-change document, if applicable"
+      ],
+      "l1_team": "Vendor Compliance Desk",
+      "l1_person": "Compliance Reviewer",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-009",
+      "issue_name": "Change authorised signatory",
+      "category": "profile_kyc",
+      "problem_statement": "Seller reports: change authorised signatory.",
+      "policy": "Northwind Marketplace support guideline for profile & kyc: Changing the authorised signatory needs a board or owner authorisation letter so we can protect your account.",
+      "resolution_steps": [
+        "Confirm the caller is currently an admin on the seller account.",
+        "Ask them to upload an authorisation letter naming the new signatory.",
+        "Have the new signatory complete identity verification from their own login.",
+        "Explain that pending bids remain signed by the previous signatory."
+      ],
+      "required_documents": [
+        "Authorisation letter on company letterhead",
+        "Identity proof of the new signatory"
+      ],
+      "l1_team": "Vendor Compliance Desk",
+      "l1_person": "Compliance Reviewer",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-010",
+      "issue_name": "Payout bank account could not be verified",
+      "category": "bank_payouts",
+      "problem_statement": "Seller reports: payout bank account could not be verified.",
+      "policy": "Northwind Marketplace support guideline for bank account & payouts: Bank verification fails when the account holder name or routing code doesn't match bank records. Let's check them.",
+      "resolution_steps": [
+        "Ask the caller to confirm the account holder name exactly as on the bank statement.",
+        "Verify the bank routing code and account number digit by digit.",
+        "Ask whether the account is a current account in the business's name; personal accounts are not accepted.",
+        "Have the caller re-run verification after correcting the details.",
+        "If it fails again, collect a cancelled cheque or bank letter and escalate."
+      ],
+      "required_documents": [
+        "Cancelled cheque or bank confirmation letter"
+      ],
+      "l1_team": "Seller Finance Desk",
+      "l1_person": "Payout Operations Lead",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-011",
+      "issue_name": "Change payout bank account",
+      "category": "bank_payouts",
+      "problem_statement": "Seller reports: change payout bank account.",
+      "policy": "Northwind Marketplace support guideline for bank account & payouts: You can change the payout account at any time; payouts pause briefly while the new account is verified.",
+      "resolution_steps": [
+        "Confirm the caller is the account admin.",
+        "Ask them to add the new account under Finance > Payout accounts.",
+        "Explain that a small test credit will verify the account within one business day.",
+        "Tell them to set the new account as primary once verified."
+      ],
+      "required_documents": [
+        "Cancelled cheque for the new account"
+      ],
+      "l1_team": "Seller Finance Desk",
+      "l1_person": "Payout Operations Lead",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-012",
+      "issue_name": "Payout on hold",
+      "category": "bank_payouts",
+      "problem_statement": "Seller reports: payout on hold.",
+      "policy": "Northwind Marketplace support guideline for bank account & payouts: Payouts are held when there's an open dispute, missing KYC, or an unverified bank account. Let me find which applies.",
+      "resolution_steps": [
+        "Check the hold reason shown under Finance > Payouts.",
+        "If KYC is incomplete, guide the caller to finish verification.",
+        "If a dispute is open, explain that the related amount is released once the dispute closes.",
+        "If no reason is shown, escalate with the payout reference."
+      ],
+      "required_documents": [
+        "Payout reference number"
+      ],
+      "l1_team": "Seller Finance Desk",
+      "l1_person": "Payout Operations Lead",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-013",
+      "issue_name": "Listing missing from buyer search",
+      "category": "catalogue",
+      "problem_statement": "Seller reports: listing missing from buyer search.",
+      "policy": "Northwind Marketplace support guideline for catalogue & listings: New listings appear in search after quality review, usually within 24 hours. Let's confirm the listing status.",
+      "resolution_steps": [
+        "Ask the caller to open Catalogue > My listings and read the status of the product.",
+        "If the status is 'In review', explain the 24-hour review window.",
+        "If the status is 'Inactive', ask them to check stock quantity and price validity dates.",
+        "If the status is 'Live' but not in search, ask them to search by the exact listing ID.",
+        "Escalate with the listing ID if it is live but still not searchable after 24 hours."
+      ],
+      "required_documents": [
+        "Listing ID"
+      ],
+      "l1_team": "Catalogue Quality Team",
+      "l1_person": "Listing Quality Reviewer",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-014",
+      "issue_name": "Listing rejected in quality check",
+      "category": "catalogue",
+      "problem_statement": "Seller reports: listing rejected in quality check.",
+      "policy": "Northwind Marketplace support guideline for catalogue & listings: Listings are rejected when images, specifications or pricing don't meet catalogue rules. The rejection note lists the reason.",
+      "resolution_steps": [
+        "Ask the caller to read the rejection note on the listing.",
+        "For image issues, ask for a plain white background and at least 800x800 pixels.",
+        "For specification issues, ensure mandatory attributes such as model and warranty are filled.",
+        "For pricing issues, confirm the price is within the allowed range for the category.",
+        "Ask the caller to edit and resubmit the listing."
+      ],
+      "required_documents": [
+        "Corrected product images",
+        "Product specification sheet"
+      ],
+      "l1_team": "Catalogue Quality Team",
+      "l1_person": "Listing Quality Reviewer",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-015",
+      "issue_name": "Bulk upload template errors",
+      "category": "catalogue",
+      "problem_statement": "Seller reports: bulk upload template errors.",
+      "policy": "Northwind Marketplace support guideline for catalogue & listings: Bulk upload errors usually come from an outdated template or a few invalid rows. The error report pinpoints them.",
+      "resolution_steps": [
+        "Ask the caller to download the latest template from Catalogue > Bulk upload.",
+        "Have them open the error report and fix the rows it lists.",
+        "Remind them not to rename columns or change the sheet order.",
+        "Ask them to upload no more than 500 rows per file."
+      ],
+      "required_documents": [
+        "Error report file",
+        "Filled bulk upload template"
+      ],
+      "l1_team": "Catalogue Quality Team",
+      "l1_person": "Listing Quality Reviewer",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-016",
+      "issue_name": "Brand approval pending",
+      "category": "brand_authorisation",
+      "problem_statement": "Seller reports: brand approval pending.",
+      "policy": "Northwind Marketplace support guideline for brand authorisation: Brand approvals take up to five business days because we verify trademark ownership. Let's check the status.",
+      "resolution_steps": [
+        "Note the brand request ID from the caller.",
+        "Check whether the request is waiting on a document from the seller.",
+        "If complete and under five business days, explain the timeline.",
+        "If over five business days, escalate with the brand request ID."
+      ],
+      "required_documents": [
+        "Brand request ID",
+        "Trademark certificate"
+      ],
+      "l1_team": "Brand Programs Team",
+      "l1_person": "Brand Approval Officer",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-017",
+      "issue_name": "Reseller authorisation letter rejected",
+      "category": "brand_authorisation",
+      "problem_statement": "Seller reports: reseller authorisation letter rejected.",
+      "policy": "Northwind Marketplace support guideline for brand authorisation: To sell another company's brand, we need a valid authorisation letter from the brand owner. Let's see why it was rejected.",
+      "resolution_steps": [
+        "Ask the caller to read the rejection reason.",
+        "Confirm the letter is on the brand owner's letterhead and signed.",
+        "Check the letter names the seller's legal business name and has a validity date.",
+        "Ask the caller to upload the corrected letter."
+      ],
+      "required_documents": [
+        "Signed authorisation letter from the brand owner"
+      ],
+      "l1_team": "Brand Programs Team",
+      "l1_person": "Brand Approval Officer",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-018",
+      "issue_name": "Add a new brand to the catalogue",
+      "category": "brand_authorisation",
+      "problem_statement": "Seller reports: add a new brand to the catalogue.",
+      "policy": "Northwind Marketplace support guideline for brand authorisation: If your brand isn't in the dropdown, you can request it. Once approved, it becomes available for your listings.",
+      "resolution_steps": [
+        "Ask the caller to search the brand list once more with alternate spellings.",
+        "Guide them to Catalogue > Brands > Request new brand.",
+        "Have them attach the trademark certificate or brand ownership proof.",
+        "Explain the five-business-day review timeline."
+      ],
+      "required_documents": [
+        "Trademark certificate or brand ownership proof"
+      ],
+      "l1_team": "Brand Programs Team",
+      "l1_person": "Brand Approval Officer",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-019",
+      "issue_name": "Unable to submit bid before deadline",
+      "category": "bids_auctions",
+      "problem_statement": "Seller reports: unable to submit bid before deadline.",
+      "policy": "Northwind Marketplace support guideline for bids & reverse auctions: Bid submission blocks when a mandatory document or declaration is missing. Let's find what's pending before the deadline.",
+      "resolution_steps": [
+        "Note the bid number and the submission deadline.",
+        "Ask the caller to open the bid checklist and read any items marked incomplete.",
+        "Confirm all mandatory documents are PDF files under 10 MB each.",
+        "Ask them to accept the declarations on the final page.",
+        "If the deadline is within one hour and the button is still disabled, escalate immediately."
+      ],
+      "required_documents": [
+        "Bid number",
+        "Screenshot of the checklist"
+      ],
+      "l1_team": "Sourcing Events Desk",
+      "l1_person": "Bid Support Specialist",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-020",
+      "issue_name": "Reverse auction not visible to seller",
+      "category": "bids_auctions",
+      "problem_statement": "Seller reports: reverse auction not visible to seller.",
+      "policy": "Northwind Marketplace support guideline for bids & reverse auctions: Only sellers who qualified in the technical round are invited to the reverse auction. Let me check your status.",
+      "resolution_steps": [
+        "Note the bid number linked to the auction.",
+        "Check whether the seller qualified in the technical evaluation.",
+        "If qualified, ask the caller to check Bids > Auctions and refresh after the start time.",
+        "If not qualified, explain the evaluation result and where to view remarks."
+      ],
+      "required_documents": [
+        "Bid number"
+      ],
+      "l1_team": "Sourcing Events Desk",
+      "l1_person": "Bid Support Specialist",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-021",
+      "issue_name": "Bid disqualified in technical evaluation",
+      "category": "bids_auctions",
+      "problem_statement": "Seller reports: bid disqualified in technical evaluation.",
+      "policy": "Northwind Marketplace support guideline for bids & reverse auctions: I'm sorry your bid was disqualified. The evaluation remarks explain why, and you may be able to raise a representation.",
+      "resolution_steps": [
+        "Ask the caller to open the bid and read the evaluation remarks.",
+        "Explain that representations can be raised within 48 hours of the result.",
+        "Guide them to Bids > Representation and attach supporting documents.",
+        "Set expectations that the buyer reviews representations, not the support team."
+      ],
+      "required_documents": [
+        "Evaluation remarks screenshot",
+        "Supporting documents for representation"
+      ],
+      "l1_team": "Sourcing Events Desk",
+      "l1_person": "Bid Support Specialist",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-022",
+      "issue_name": "Order not appearing in seller dashboard",
+      "category": "orders_delivery",
+      "problem_statement": "Seller reports: order not appearing in seller dashboard.",
+      "policy": "Northwind Marketplace support guideline for orders & delivery: Orders appear in the dashboard within 15 minutes of the buyer confirming. Let's find yours.",
+      "resolution_steps": [
+        "Ask for the order number the buyer shared.",
+        "Ask the caller to search by order number under Orders > All orders.",
+        "Check that the date filter includes the order date.",
+        "If a sub-user is logged in, confirm they have order access.",
+        "Escalate with the order number if it still doesn't appear."
+      ],
+      "required_documents": [
+        "Order number"
+      ],
+      "l1_team": "Order Operations Team",
+      "l1_person": "Fulfilment Coordinator",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-023",
+      "issue_name": "Request delivery date extension",
+      "category": "orders_delivery",
+      "problem_statement": "Seller reports: request delivery date extension.",
+      "policy": "Northwind Marketplace support guideline for orders & delivery: You can request a delivery extension from the order page; the buyer approves or rejects it.",
+      "resolution_steps": [
+        "Ask the caller to open the order and choose 'Request extension'.",
+        "Have them enter a new date and a clear reason.",
+        "Explain that late delivery penalties may apply if the buyer rejects the request.",
+        "Advise them to request the extension before the original date passes."
+      ],
+      "required_documents": [
+        "Order number",
+        "Reason for delay"
+      ],
+      "l1_team": "Order Operations Team",
+      "l1_person": "Fulfilment Coordinator",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-024",
+      "issue_name": "Order cancelled by buyer",
+      "category": "orders_delivery",
+      "problem_statement": "Seller reports: order cancelled by buyer.",
+      "policy": "Northwind Marketplace support guideline for orders & delivery: Buyers can cancel before dispatch. If you had already shipped, we can help you raise a claim.",
+      "resolution_steps": [
+        "Check whether the order was cancelled before or after dispatch.",
+        "If before dispatch, explain no further action is needed.",
+        "If after dispatch, ask for the shipment tracking number.",
+        "Guide the caller to raise a cancellation claim with the tracking proof."
+      ],
+      "required_documents": [
+        "Order number",
+        "Shipment tracking proof"
+      ],
+      "l1_team": "Order Operations Team",
+      "l1_person": "Fulfilment Coordinator",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-025",
+      "issue_name": "Invoice generation failed",
+      "category": "invoices_payments",
+      "problem_statement": "Seller reports: invoice generation failed.",
+      "policy": "Northwind Marketplace support guideline for invoices & payments: Invoices can only be generated after the buyer confirms receipt. Let's check the order status.",
+      "resolution_steps": [
+        "Ask for the order number.",
+        "Check whether the buyer has generated the goods receipt.",
+        "If not, explain that the invoice unlocks after receipt confirmation.",
+        "If receipt is confirmed, ask the caller to retry and note any error code.",
+        "Escalate with the error code if generation still fails."
+      ],
+      "required_documents": [
+        "Order number",
+        "Error code screenshot"
+      ],
+      "l1_team": "Seller Finance Desk",
+      "l1_person": "Accounts Payable Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-026",
+      "issue_name": "Payment delayed after delivery",
+      "category": "invoices_payments",
+      "problem_statement": "Seller reports: payment delayed after delivery.",
+      "policy": "Northwind Marketplace support guideline for invoices & payments: Buyers have 10 days after receipt to pay. Let me check where the payment is in that cycle.",
+      "resolution_steps": [
+        "Ask for the order number and invoice date.",
+        "Check whether the buyer has confirmed receipt and approved the invoice.",
+        "If within 10 days of receipt, explain the payment timeline.",
+        "If overdue, raise a payment follow-up to the buyer organisation.",
+        "Escalate if the follow-up is unanswered after three business days."
+      ],
+      "required_documents": [
+        "Order number",
+        "Invoice copy"
+      ],
+      "l1_team": "Seller Finance Desk",
+      "l1_person": "Accounts Payable Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-027",
+      "issue_name": "Tax amount mismatch on invoice",
+      "category": "invoices_payments",
+      "problem_statement": "Seller reports: tax amount mismatch on invoice.",
+      "policy": "Northwind Marketplace support guideline for invoices & payments: Tax is calculated from the product's tax category at order time. Let's compare that with your invoice.",
+      "resolution_steps": [
+        "Ask for the order number and the tax rate the caller expected.",
+        "Check the tax category saved on the listing at order time.",
+        "If the listing category was wrong, guide the caller to issue a credit note and corrected invoice.",
+        "Remind them to fix the listing so future orders are correct."
+      ],
+      "required_documents": [
+        "Order number",
+        "Invoice copy"
+      ],
+      "l1_team": "Seller Finance Desk",
+      "l1_person": "Accounts Payable Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-028",
+      "issue_name": "Courier missed the scheduled pickup",
+      "category": "shipping_logistics",
+      "problem_statement": "Seller reports: courier missed the scheduled pickup.",
+      "policy": "Northwind Marketplace support guideline for shipping & logistics: Missed pickups happen when the courier slot was full. We can rebook it and protect your dispatch date.",
+      "resolution_steps": [
+        "Ask for the order number and the pickup slot that was booked.",
+        "Check the courier's pickup status and any 'attempted' note.",
+        "Rebook the pickup for the next available slot from the shipment page.",
+        "If the dispatch deadline is today, mark the order 'pickup delayed by courier' so no penalty applies.",
+        "Escalate if the courier misses the rebooked slot."
+      ],
+      "required_documents": [
+        "Order number",
+        "Pickup booking reference"
+      ],
+      "l1_team": "Logistics Partner Desk",
+      "l1_person": "Shipment Exceptions Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-029",
+      "issue_name": "Shipping label will not generate",
+      "category": "shipping_logistics",
+      "problem_statement": "Seller reports: shipping label will not generate.",
+      "policy": "Northwind Marketplace support guideline for shipping & logistics: Labels fail when the package weight or dimensions are missing. Let's check the shipment form.",
+      "resolution_steps": [
+        "Ask the caller to open the shipment form for the order.",
+        "Confirm package weight and all three dimensions are filled in.",
+        "Check that the pickup address has a valid postcode.",
+        "Ask them to regenerate the label and download the PDF."
+      ],
+      "required_documents": [
+        "Order number",
+        "Package weight and dimensions"
+      ],
+      "l1_team": "Logistics Partner Desk",
+      "l1_person": "Shipment Exceptions Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-030",
+      "issue_name": "Courier says delivery address is undeliverable",
+      "category": "shipping_logistics",
+      "problem_statement": "Seller reports: courier says delivery address is undeliverable.",
+      "policy": "Northwind Marketplace support guideline for shipping & logistics: When the courier can't find the address, we confirm it with the buyer before the parcel is sent back.",
+      "resolution_steps": [
+        "Ask for the order number and the courier's failure reason.",
+        "Contact the buyer's consignee through the order messages to confirm the address and a phone number.",
+        "Share the corrected details with the courier from the shipment page.",
+        "If the buyer doesn't reply in 48 hours, let the shipment return and inform the buyer."
+      ],
+      "required_documents": [
+        "Order number",
+        "Courier failure note"
+      ],
+      "l1_team": "Logistics Partner Desk",
+      "l1_person": "Shipment Exceptions Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-031",
+      "issue_name": "Add a sub-user to seller account",
+      "category": "sub_users",
+      "problem_statement": "Seller reports: add a sub-user to seller account.",
+      "policy": "Northwind Marketplace support guideline for sub-users & roles: Admins can add sub-users and give them limited roles, so your team can work without sharing passwords.",
+      "resolution_steps": [
+        "Confirm the caller is the account admin.",
+        "Guide them to Settings > Users > Add user.",
+        "Have them choose a role such as Catalogue, Bids or Finance.",
+        "Explain that the new user receives an activation email."
+      ],
+      "required_documents": [
+        "New user's work email"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Account Administration Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-032",
+      "issue_name": "Sub-user cannot access bids",
+      "category": "sub_users",
+      "problem_statement": "Seller reports: sub-user cannot access bids.",
+      "policy": "Northwind Marketplace support guideline for sub-users & roles: When a sub-user can't see a section, it's almost always their role. The admin can adjust it.",
+      "resolution_steps": [
+        "Ask which section the sub-user cannot open.",
+        "Ask the admin to open Settings > Users and check that user's role.",
+        "Add the Bids permission or change the role.",
+        "Ask the sub-user to sign out and back in."
+      ],
+      "required_documents": [
+        "Sub-user's login email"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Account Administration Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-033",
+      "issue_name": "Transfer admin role to another user",
+      "category": "sub_users",
+      "problem_statement": "Seller reports: transfer admin role to another user.",
+      "policy": "Northwind Marketplace support guideline for sub-users & roles: Transferring admin rights protects your account when people change roles. It needs confirmation from the business.",
+      "resolution_steps": [
+        "If the current admin is available, they can transfer the role from Settings > Users.",
+        "If the admin has left, collect an authorisation letter from the business.",
+        "The new admin must complete identity verification.",
+        "Escalate letter-based transfers for manual approval."
+      ],
+      "required_documents": [
+        "Authorisation letter",
+        "Identity proof of the new admin"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Account Administration Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-034",
+      "issue_name": "Buyer raised a quality dispute",
+      "category": "disputes_returns",
+      "problem_statement": "Seller reports: buyer raised a quality dispute.",
+      "policy": "Northwind Marketplace support guideline for disputes & returns: When a buyer raises a quality dispute, you get seven days to respond with evidence.",
+      "resolution_steps": [
+        "Ask for the dispute ID.",
+        "Explain the seven-day response window.",
+        "Guide the caller to respond with photos, test reports or replacement offers.",
+        "Explain that the dispute cell decides if both sides cannot agree."
+      ],
+      "required_documents": [
+        "Dispute ID",
+        "Inspection photos or test reports"
+      ],
+      "l1_team": "Dispute Resolution Cell",
+      "l1_person": "Dispute Case Manager",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-035",
+      "issue_name": "Return pickup not scheduled",
+      "category": "disputes_returns",
+      "problem_statement": "Seller reports: return pickup not scheduled.",
+      "policy": "Northwind Marketplace support guideline for disputes & returns: Return pickups are scheduled by the seller within three days of the return being approved.",
+      "resolution_steps": [
+        "Ask for the return ID.",
+        "Check whether the return was approved.",
+        "Guide the seller to schedule pickup from the return page.",
+        "If the courier missed the pickup, ask them to reschedule and share the courier reference."
+      ],
+      "required_documents": [
+        "Return ID",
+        "Courier reference"
+      ],
+      "l1_team": "Dispute Resolution Cell",
+      "l1_person": "Dispute Case Manager",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "S-036",
+      "issue_name": "Penalty applied incorrectly",
+      "category": "disputes_returns",
+      "problem_statement": "Seller reports: penalty applied incorrectly.",
+      "policy": "Northwind Marketplace support guideline for disputes & returns: Penalties are applied automatically for late delivery. If the delay wasn't yours, you can request a waiver.",
+      "resolution_steps": [
+        "Ask for the order number and the penalty amount.",
+        "Check whether an extension was approved for the order.",
+        "If an approved extension exists, raise a waiver request with the approval reference.",
+        "If the buyer caused the delay, collect evidence and raise a waiver request."
+      ],
+      "required_documents": [
+        "Order number",
+        "Extension approval or delay evidence"
+      ],
+      "l1_team": "Dispute Resolution Cell",
+      "l1_person": "Dispute Case Manager",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-037",
+      "issue_name": "Register a new buyer organisation",
+      "category": "org_onboarding",
+      "problem_statement": "Buyer reports: register a new buyer organisation.",
+      "policy": "Northwind Marketplace support guideline for organisation onboarding: Organisations register once, then add their purchasing staff as users. I'll walk you through it.",
+      "resolution_steps": [
+        "Ask the caller for the organisation's legal name and official email domain.",
+        "Guide them to 'Register as buyer' and complete the organisation form.",
+        "Explain that an approving officer must be nominated during registration.",
+        "Tell them approval takes up to two business days."
+      ],
+      "required_documents": [
+        "Organisation registration certificate",
+        "Nomination of approving officer"
+      ],
+      "l1_team": "Buyer Onboarding Desk",
+      "l1_person": "Onboarding Specialist (Tier 2)",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-038",
+      "issue_name": "Approving officer not assigned",
+      "category": "org_onboarding",
+      "problem_statement": "Buyer reports: approving officer not assigned.",
+      "policy": "Northwind Marketplace support guideline for organisation onboarding: Purchases above the direct-buy limit need an approving officer. Let's assign one.",
+      "resolution_steps": [
+        "Confirm the caller is the organisation admin.",
+        "Guide them to Organisation > Approval hierarchy.",
+        "Have them select an existing user as approving officer or invite a new one.",
+        "Explain that pending purchases resume once the officer accepts."
+      ],
+      "required_documents": [
+        "Approving officer's work email"
+      ],
+      "l1_team": "Buyer Onboarding Desk",
+      "l1_person": "Onboarding Specialist (Tier 2)",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-039",
+      "issue_name": "Organisation details are incorrect",
+      "category": "org_onboarding",
+      "problem_statement": "Buyer reports: organisation details are incorrect.",
+      "policy": "Northwind Marketplace support guideline for organisation onboarding: Organisation details can be corrected by the admin, with a supporting letter for name changes.",
+      "resolution_steps": [
+        "Ask which field is incorrect.",
+        "For address or contact changes, guide the admin to Organisation > Details.",
+        "For name changes, collect an official letter on letterhead.",
+        "Explain that name changes are reviewed within two business days."
+      ],
+      "required_documents": [
+        "Official letter for name changes"
+      ],
+      "l1_team": "Buyer Onboarding Desk",
+      "l1_person": "Onboarding Specialist (Tier 2)",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-040",
+      "issue_name": "Buyer OTP not received",
+      "category": "login_otp",
+      "problem_statement": "Buyer reports: buyer otp not received.",
+      "policy": "Northwind Marketplace support guideline for login & otp: Let's get your login code through. Delays usually come from SMS filtering or an outdated number.",
+      "resolution_steps": [
+        "Confirm the last four digits of the registered mobile number.",
+        "Ask the caller to wait 60 seconds before pressing 'Resend OTP' once.",
+        "Offer the email OTP option if available.",
+        "If the number is outdated, start the mobile update process with the organisation admin."
+      ],
+      "required_documents": [
+        "Registered mobile number"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Identity Support Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-041",
+      "issue_name": "Buyer account locked",
+      "category": "login_otp",
+      "problem_statement": "Buyer reports: buyer account locked.",
+      "policy": "Northwind Marketplace support guideline for login & otp: Accounts lock for 30 minutes after five failed attempts. I can help you reset safely.",
+      "resolution_steps": [
+        "Tell the caller how long remains on the lock.",
+        "Recommend a password reset once the lock lifts.",
+        "If urgent, verify identity with the organisation admin and raise an unlock request."
+      ],
+      "required_documents": [
+        "Organisation admin confirmation"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Identity Support Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-042",
+      "issue_name": "Update registered mobile number",
+      "category": "login_otp",
+      "problem_statement": "Buyer reports: update registered mobile number.",
+      "policy": "Northwind Marketplace support guideline for login & otp: Mobile numbers are updated by verifying both the email and the new number.",
+      "resolution_steps": [
+        "Ask the caller to open Profile > Contact details.",
+        "Have them verify the change with an email OTP.",
+        "Then verify the new number with an SMS OTP.",
+        "If they can't access the email, the organisation admin must approve the change."
+      ],
+      "required_documents": [
+        "Access to registered email"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Identity Support Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-043",
+      "issue_name": "Create a new buyer user",
+      "category": "buyer_users",
+      "problem_statement": "Buyer reports: create a new buyer user.",
+      "policy": "Northwind Marketplace support guideline for users & roles: Organisation admins can add buyers and assign purchase limits per user.",
+      "resolution_steps": [
+        "Confirm the caller is the organisation admin.",
+        "Guide them to Organisation > Users > Add user.",
+        "Have them set the role and the per-order purchase limit.",
+        "Explain that the new user activates from the invitation email."
+      ],
+      "required_documents": [
+        "New user's work email"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Account Administration Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-044",
+      "issue_name": "Deactivate a user who left",
+      "category": "buyer_users",
+      "problem_statement": "Buyer reports: deactivate a user who left.",
+      "policy": "Northwind Marketplace support guideline for users & roles: Deactivating departed users keeps your organisation's purchases secure. Their open orders can be reassigned.",
+      "resolution_steps": [
+        "Ask the admin to open Organisation > Users and select the user.",
+        "Choose 'Deactivate' and reassign their open orders to another buyer.",
+        "Explain that order history stays available for audits."
+      ],
+      "required_documents": [
+        "Name of the user to deactivate"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Account Administration Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-045",
+      "issue_name": "Change buyer role or permissions",
+      "category": "buyer_users",
+      "problem_statement": "Buyer reports: change buyer role or permissions.",
+      "policy": "Northwind Marketplace support guideline for users & roles: Roles and purchase limits are set by the organisation admin and take effect on next login.",
+      "resolution_steps": [
+        "Ask which permission or limit needs to change.",
+        "Guide the admin to Organisation > Users > Edit role.",
+        "Explain that limits above the organisation cap need approving officer sign-off.",
+        "Ask the user to sign out and back in."
+      ],
+      "required_documents": [
+        "Approving officer sign-off for higher limits"
+      ],
+      "l1_team": "Access Support Team",
+      "l1_person": "Account Administration Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-046",
+      "issue_name": "Price changed after adding to cart",
+      "category": "direct_purchase",
+      "problem_statement": "Buyer reports: price changed after adding to cart.",
+      "policy": "Northwind Marketplace support guideline for direct purchase: Prices in the cart refresh from the seller's live listing. Let's check what changed.",
+      "resolution_steps": [
+        "Ask the caller to open the cart and read the 'price updated' notice.",
+        "Explain that sellers can change prices until checkout.",
+        "Suggest comparing with similar listings before confirming.",
+        "If the price changed after checkout, collect the order number and escalate."
+      ],
+      "required_documents": [
+        "Order number, if already placed"
+      ],
+      "l1_team": "Buyer Success Team",
+      "l1_person": "Purchasing Advisor",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-047",
+      "issue_name": "Direct purchase limit exceeded",
+      "category": "direct_purchase",
+      "problem_statement": "Buyer reports: direct purchase limit exceeded.",
+      "policy": "Northwind Marketplace support guideline for direct purchase: Direct purchases have a value cap. Above it, you'll need approval or a bid.",
+      "resolution_steps": [
+        "Ask for the cart value and the caller's purchase limit.",
+        "If under the organisation cap, request approval from the approving officer.",
+        "If above the organisation cap, explain that a bid or RFQ is required."
+      ],
+      "required_documents": [
+        "Cart value",
+        "Approving officer details"
+      ],
+      "l1_team": "Buyer Success Team",
+      "l1_person": "Purchasing Advisor",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-048",
+      "issue_name": "Compare products before purchase",
+      "category": "direct_purchase",
+      "problem_statement": "Buyer reports: compare products before purchase.",
+      "policy": "Northwind Marketplace support guideline for direct purchase: The comparison view shows up to four listings side by side, so you can choose the best value.",
+      "resolution_steps": [
+        "Ask the caller to tick 'Compare' on up to four listings.",
+        "Explain the columns: price, delivery time, seller rating and warranty.",
+        "Remind them to record the reason if they don't choose the lowest price."
+      ],
+      "required_documents": [
+        "Purchase justification note"
+      ],
+      "l1_team": "Buyer Success Team",
+      "l1_person": "Purchasing Advisor",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-049",
+      "issue_name": "Create a request for quotation",
+      "category": "bids_rfq",
+      "problem_statement": "Buyer reports: create a request for quotation.",
+      "policy": "Northwind Marketplace support guideline for bids & rfqs: An RFQ invites sellers to quote for your requirement. I'll guide you through publishing one.",
+      "resolution_steps": [
+        "Guide the caller to Sourcing > Create RFQ.",
+        "Have them enter specifications, quantity and delivery location.",
+        "Ask them to set a bid deadline at least seven days away.",
+        "Explain that the approving officer must approve before publishing."
+      ],
+      "required_documents": [
+        "Specification document",
+        "Approval from approving officer"
+      ],
+      "l1_team": "Sourcing Events Desk",
+      "l1_person": "Sourcing Event Specialist",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-050",
+      "issue_name": "Extend bid deadline",
+      "category": "bids_rfq",
+      "problem_statement": "Buyer reports: extend bid deadline.",
+      "policy": "Northwind Marketplace support guideline for bids & rfqs: You can extend a bid deadline before it closes; sellers are notified automatically.",
+      "resolution_steps": [
+        "Ask for the bid number.",
+        "Check that the deadline hasn't passed.",
+        "Guide the caller to Bid > Amend > Extend deadline.",
+        "Explain that a reason is recorded and visible to sellers."
+      ],
+      "required_documents": [
+        "Bid number",
+        "Reason for extension"
+      ],
+      "l1_team": "Sourcing Events Desk",
+      "l1_person": "Sourcing Event Specialist",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-051",
+      "issue_name": "Technical evaluation upload failed",
+      "category": "bids_rfq",
+      "problem_statement": "Buyer reports: technical evaluation upload failed.",
+      "policy": "Northwind Marketplace support guideline for bids & rfqs: Evaluation results must be uploaded in the provided template. Let's check the file.",
+      "resolution_steps": [
+        "Ask for the bid number and the error message.",
+        "Confirm the file uses the latest evaluation template.",
+        "Check that every participating seller has a qualified or disqualified status with remarks.",
+        "Ask the caller to retry the upload."
+      ],
+      "required_documents": [
+        "Bid number",
+        "Evaluation sheet"
+      ],
+      "l1_team": "Sourcing Events Desk",
+      "l1_person": "Sourcing Event Specialist",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-052",
+      "issue_name": "Order status not updated",
+      "category": "orders_delivery",
+      "problem_statement": "Buyer reports: order status not updated.",
+      "policy": "Northwind Marketplace support guideline for orders & delivery: Order status updates when the seller records dispatch. Let's check the latest event.",
+      "resolution_steps": [
+        "Ask for the order number.",
+        "Check the last status event and its timestamp.",
+        "If the seller hasn't marked dispatch, send a reminder to the seller.",
+        "If dispatched, share the tracking link with the caller."
+      ],
+      "required_documents": [
+        "Order number"
+      ],
+      "l1_team": "Order Operations Team",
+      "l1_person": "Fulfilment Coordinator",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-053",
+      "issue_name": "Change consignee after ordering",
+      "category": "orders_delivery",
+      "problem_statement": "Buyer reports: change consignee after ordering.",
+      "policy": "Northwind Marketplace support guideline for orders & delivery: The consignee can be changed before dispatch, with the seller's agreement.",
+      "resolution_steps": [
+        "Ask for the order number and the new consignee details.",
+        "Check that the order hasn't been dispatched.",
+        "Guide the caller to Order > Request consignee change.",
+        "Explain that the seller must accept the change."
+      ],
+      "required_documents": [
+        "Order number",
+        "New consignee details"
+      ],
+      "l1_team": "Order Operations Team",
+      "l1_person": "Fulfilment Coordinator",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-054",
+      "issue_name": "Delivery overdue",
+      "category": "orders_delivery",
+      "problem_statement": "Buyer reports: delivery overdue.",
+      "policy": "Northwind Marketplace support guideline for orders & delivery: If delivery is overdue, you can follow up with the seller and penalties apply automatically.",
+      "resolution_steps": [
+        "Ask for the order number and the promised delivery date.",
+        "Check whether the seller requested an extension.",
+        "If not, send a delivery follow-up to the seller.",
+        "Explain how late delivery penalties are calculated."
+      ],
+      "required_documents": [
+        "Order number"
+      ],
+      "l1_team": "Order Operations Team",
+      "l1_person": "Fulfilment Coordinator",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-055",
+      "issue_name": "Generate goods receipt",
+      "category": "receiving_inspection",
+      "problem_statement": "Buyer reports: generate goods receipt.",
+      "policy": "Northwind Marketplace support guideline for receiving & inspection: Generating the goods receipt confirms delivery and starts the seller's payment cycle.",
+      "resolution_steps": [
+        "Ask the caller to open the order and choose 'Generate receipt'.",
+        "Have them enter quantity received and inspection result.",
+        "Explain that the receipt must be generated within 10 days of delivery."
+      ],
+      "required_documents": [
+        "Order number",
+        "Inspection result"
+      ],
+      "l1_team": "Order Operations Team",
+      "l1_person": "Receiving Support Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-056",
+      "issue_name": "Reject damaged goods",
+      "category": "receiving_inspection",
+      "problem_statement": "Buyer reports: reject damaged goods.",
+      "policy": "Northwind Marketplace support guideline for receiving & inspection: You can reject damaged items during receipt; the seller is asked to replace them.",
+      "resolution_steps": [
+        "Ask the caller to record the damage with photos.",
+        "During receipt, mark the affected quantity as rejected with a reason.",
+        "Explain that the seller has seven days to replace the items."
+      ],
+      "required_documents": [
+        "Photos of damage",
+        "Order number"
+      ],
+      "l1_team": "Order Operations Team",
+      "l1_person": "Receiving Support Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-057",
+      "issue_name": "Partial delivery receipt",
+      "category": "receiving_inspection",
+      "problem_statement": "Buyer reports: partial delivery receipt.",
+      "policy": "Northwind Marketplace support guideline for receiving & inspection: For partial deliveries, receipt the quantity you received; the rest stays open.",
+      "resolution_steps": [
+        "Ask how many units were received against the order quantity.",
+        "Guide the caller to receipt only the received quantity.",
+        "Explain that the balance remains open for the seller to deliver."
+      ],
+      "required_documents": [
+        "Order number",
+        "Delivery challan"
+      ],
+      "l1_team": "Order Operations Team",
+      "l1_person": "Receiving Support Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-058",
+      "issue_name": "Payment not processed after receipt",
+      "category": "payments_invoices",
+      "problem_statement": "Buyer reports: payment not processed after receipt.",
+      "policy": "Northwind Marketplace support guideline for payments & invoices: After receipt, the invoice must be approved before payment releases. Let's find which step is pending.",
+      "resolution_steps": [
+        "Ask for the order number.",
+        "Check whether the invoice was approved by the finance user.",
+        "If not approved, guide the finance user to Payments > Pending invoices.",
+        "If approved, check the payment batch status and share the reference."
+      ],
+      "required_documents": [
+        "Order number",
+        "Invoice number"
+      ],
+      "l1_team": "Buyer Finance Desk",
+      "l1_person": "Payments Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-059",
+      "issue_name": "Invoice missing for order",
+      "category": "payments_invoices",
+      "problem_statement": "Buyer reports: invoice missing for order.",
+      "policy": "Northwind Marketplace support guideline for payments & invoices: Sellers upload the invoice after your goods receipt. If it's missing, we can nudge the seller.",
+      "resolution_steps": [
+        "Ask for the order number.",
+        "Confirm the goods receipt was generated.",
+        "If yes, send an invoice reminder to the seller.",
+        "Explain that payment can't start until the invoice is uploaded."
+      ],
+      "required_documents": [
+        "Order number"
+      ],
+      "l1_team": "Buyer Finance Desk",
+      "l1_person": "Payments Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-060",
+      "issue_name": "Corporate card declined at checkout",
+      "category": "payments_invoices",
+      "problem_statement": "Buyer reports: corporate card declined at checkout.",
+      "policy": "Northwind Marketplace support guideline for payments & invoices: Card payments are declined by the issuing bank, not by us. Let's check the usual causes before trying again.",
+      "resolution_steps": [
+        "Ask for the decline message shown at checkout.",
+        "Check whether the order total exceeds the card's per-transaction limit.",
+        "Ask the caller to confirm the card is enabled for online purchases.",
+        "Offer invoice-based payment if the organisation has it enabled."
+      ],
+      "required_documents": [
+        "Decline message screenshot"
+      ],
+      "l1_team": "Buyer Finance Desk",
+      "l1_person": "Payments Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-061",
+      "issue_name": "Raise a dispute against a seller",
+      "category": "disputes_feedback",
+      "problem_statement": "Buyer reports: raise a dispute against a seller.",
+      "policy": "Northwind Marketplace support guideline for disputes & feedback: You can raise a dispute from the order page; the seller gets seven days to respond.",
+      "resolution_steps": [
+        "Ask for the order number and the nature of the issue.",
+        "Guide the caller to Order > Raise dispute.",
+        "Have them attach evidence such as photos or reports.",
+        "Explain the seven-day seller response window."
+      ],
+      "required_documents": [
+        "Order number",
+        "Evidence of the issue"
+      ],
+      "l1_team": "Dispute Resolution Cell",
+      "l1_person": "Dispute Case Manager",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-062",
+      "issue_name": "Rate a seller after delivery",
+      "category": "disputes_feedback",
+      "problem_statement": "Buyer reports: rate a seller after delivery.",
+      "policy": "Northwind Marketplace support guideline for disputes & feedback: Seller ratings help other buyers. You can rate after the goods receipt.",
+      "resolution_steps": [
+        "Ask the caller to open the completed order.",
+        "Guide them to 'Rate seller' and score delivery, quality and communication.",
+        "Explain that ratings can be edited within 30 days."
+      ],
+      "required_documents": [
+        "Order number"
+      ],
+      "l1_team": "Dispute Resolution Cell",
+      "l1_person": "Dispute Case Manager",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-063",
+      "issue_name": "Escalate an unresolved complaint",
+      "category": "disputes_feedback",
+      "problem_statement": "Buyer reports: escalate an unresolved complaint.",
+      "policy": "Northwind Marketplace support guideline for disputes & feedback: If your complaint hasn't been resolved in time, I can escalate it to the dispute cell.",
+      "resolution_steps": [
+        "Ask for the dispute ID.",
+        "Check how long the dispute has been open.",
+        "If past the response window, escalate to the dispute cell.",
+        "Share the escalation reference with the caller."
+      ],
+      "required_documents": [
+        "Dispute ID"
+      ],
+      "l1_team": "Dispute Resolution Cell",
+      "l1_person": "Dispute Case Manager",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-064",
+      "issue_name": "Close a buyer account",
+      "category": "account_closure",
+      "problem_statement": "Buyer reports: close a buyer account.",
+      "policy": "Northwind Marketplace support guideline for account closure: Accounts can be closed once there are no open orders, bids or payments.",
+      "resolution_steps": [
+        "Check for open orders, active bids and pending payments.",
+        "Ask the organisation admin to submit a closure request with a letter.",
+        "Explain that records are retained for audit after closure."
+      ],
+      "required_documents": [
+        "Closure request letter"
+      ],
+      "l1_team": "Buyer Onboarding Desk",
+      "l1_person": "Account Lifecycle Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-065",
+      "issue_name": "Transfer pending orders before closure",
+      "category": "account_closure",
+      "problem_statement": "Buyer reports: transfer pending orders before closure.",
+      "policy": "Northwind Marketplace support guideline for account closure: Before closing, open orders must be completed or moved to another active buyer.",
+      "resolution_steps": [
+        "List the open orders with the caller.",
+        "Guide the admin to reassign each order to an active buyer.",
+        "Confirm no orders remain before submitting closure."
+      ],
+      "required_documents": [
+        "List of open orders"
+      ],
+      "l1_team": "Buyer Onboarding Desk",
+      "l1_person": "Account Lifecycle Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    },
+    {
+      "issue_id": "B-066",
+      "issue_name": "Reactivate a closed account",
+      "category": "account_closure",
+      "problem_statement": "Buyer reports: reactivate a closed account.",
+      "policy": "Northwind Marketplace support guideline for account closure: Closed accounts can be reactivated within 90 days with a request from the organisation.",
+      "resolution_steps": [
+        "Check when the account was closed.",
+        "If within 90 days, collect a reactivation letter from the organisation.",
+        "If older than 90 days, explain that a fresh registration is required."
+      ],
+      "required_documents": [
+        "Reactivation request letter"
+      ],
+      "l1_team": "Buyer Onboarding Desk",
+      "l1_person": "Account Lifecycle Analyst",
+      "sources": [
+        "synthetic"
+      ]
+    }
+  ]
+}

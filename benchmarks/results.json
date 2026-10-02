@@ -1,0 +1,780 @@
+{
+  "generated": "2026-10-01 19:13 UTC",
+  "results": {
+    "hybrid": {
+      "summary": {
+        "cases": 198,
+        "top1": 86.4,
+        "top3": 100.0,
+        "top5": 100.0,
+        "mrr": 0.9251,
+        "median_ms": 38.7,
+        "p95_ms": 56.1,
+        "by_style": {
+          "paraphrase": {
+            "cases": 132,
+            "top1": 87.1,
+            "top3": 100.0
+          },
+          "typo": {
+            "cases": 66,
+            "top1": 84.8,
+            "top3": 100.0
+          }
+        }
+      },
+      "misses": [
+        {
+          "id": "case-023",
+          "query": "verification document was not accepted",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "verification_email_link_expired",
+          "expected": "kyc_document_rejected",
+          "latency_ms": 38.29
+        },
+        {
+          "id": "case-067",
+          "query": "need more days to deliver the order",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "order_not_appearing_in_dashboard",
+          "expected": "request_delivery_extension",
+          "latency_ms": 34.13
+        },
+        {
+          "id": "case-069",
+          "query": "need more days to delievr the order",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "order_not_appearing_in_dashboard",
+          "expected": "request_delivery_extension",
+          "latency_ms": 47.89
+        },
+        {
+          "id": "case-076",
+          "query": "delivered the goods but still not paid",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "courier_pickup_missed",
+          "expected": "payment_delayed_after_delivery",
+          "latency_ms": 35.78
+        },
+        {
+          "id": "case-078",
+          "query": "dleivered the goods but still not paid",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "courier_pickup_missed",
+          "expected": "payment_delayed_after_delivery",
+          "latency_ms": 47.64
+        },
+        {
+          "id": "case-082",
+          "query": "the delivery guy never came to collect the parcel",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "delivery_address_undeliverable",
+          "expected": "courier_pickup_missed",
+          "latency_ms": 34.46
+        },
+        {
+          "id": "case-084",
+          "query": "the dlivery guy never came to collect the parcel",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "delivery_address_undeliverable",
+          "expected": "courier_pickup_missed",
+          "latency_ms": 45.92
+        },
+        {
+          "id": "case-095",
+          "query": "sub user gets access denied",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "add_sub_user",
+          "expected": "sub_user_cannot_access_bids",
+          "latency_ms": 32.99
+        },
+        {
+          "id": "case-098",
+          "query": "how to make someone else the main user",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "add_sub_user",
+          "expected": "transfer_admin_role",
+          "latency_ms": 58.67
+        },
+        {
+          "id": "case-102",
+          "query": "buyer copmlained about product quality",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "listing_missing_from_buyer_search",
+          "expected": "buyer_raised_quality_dispute",
+          "latency_ms": 33.24
+        },
+        {
+          "id": "case-104",
+          "query": "reverse pickup is still pending",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "courier_pickup_missed",
+          "expected": "return_pickup_not_scheduled",
+          "latency_ms": 42.73
+        },
+        {
+          "id": "case-122",
+          "query": "locked out of purchasing account",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "close_buyer_account",
+          "expected": "buyer_account_locked",
+          "latency_ms": 32.34
+        },
+        {
+          "id": "case-127",
+          "query": "how to add another purchaser in our organisation",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "register_new_buyer_organisation",
+          "expected": "create_buyer_user",
+          "latency_ms": 36.33
+        },
+        {
+          "id": "case-129",
+          "query": "how to add another purchaser in our organisatoin",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "register_new_buyer_organisation",
+          "expected": "create_buyer_user",
+          "latency_ms": 58.38
+        },
+        {
+          "id": "case-131",
+          "query": "how to disable an old buyer user",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_buyer_user",
+          "expected": "deactivate_departed_user",
+          "latency_ms": 46.37
+        },
+        {
+          "id": "case-133",
+          "query": "need higher purchase limit for my user",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "create_buyer_user",
+          "expected": "change_buyer_role_permissions",
+          "latency_ms": 42.71
+        },
+        {
+          "id": "case-135",
+          "query": "need higher purcase limit for my user",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "create_buyer_user",
+          "expected": "change_buyer_role_permissions",
+          "latency_ms": 45.64
+        },
+        {
+          "id": "case-148",
+          "query": "need to give sellers more time on my bid",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_rfq",
+          "expected": "extend_bid_deadline",
+          "latency_ms": 41.0
+        },
+        {
+          "id": "case-149",
+          "query": "how to extend rfq closing date",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_rfq",
+          "expected": "extend_bid_deadline",
+          "latency_ms": 46.06
+        },
+        {
+          "id": "case-150",
+          "query": "need to give selelrs more time on my bid",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_rfq",
+          "expected": "extend_bid_deadline",
+          "latency_ms": 49.58
+        },
+        {
+          "id": "case-169",
+          "query": "seller delivered only half the quantity",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "rate_seller_after_delivery",
+          "expected": "partial_delivery_receipt",
+          "latency_ms": 31.69
+        },
+        {
+          "id": "case-171",
+          "query": "seller deliered only half the quantity",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "rate_seller_after_delivery",
+          "expected": "partial_delivery_receipt",
+          "latency_ms": 49.14
+        },
+        {
+          "id": "case-183",
+          "query": "how to ocmplain about a seller",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "rate_seller_after_delivery",
+          "expected": "raise_dispute_against_seller",
+          "latency_ms": 38.6
+        },
+        {
+          "id": "case-187",
+          "query": "my complaint is pending for weeks",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "raise_dispute_against_seller",
+          "expected": "escalate_unresolved_complaint",
+          "latency_ms": 35.31
+        },
+        {
+          "id": "case-188",
+          "query": "nobody is resolving my dispute",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "raise_dispute_against_seller",
+          "expected": "escalate_unresolved_complaint",
+          "latency_ms": 40.16
+        },
+        {
+          "id": "case-189",
+          "query": "my comlaint is pending for weeks",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "raise_dispute_against_seller",
+          "expected": "escalate_unresolved_complaint",
+          "latency_ms": 48.56
+        },
+        {
+          "id": "case-197",
+          "query": "can we reopen the old buyer account",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "close_buyer_account",
+          "expected": "reactivate_closed_account",
+          "latency_ms": 33.86
+        }
+      ]
+    },
+    "xgboost": {
+      "summary": {
+        "cases": 198,
+        "top1": 84.8,
+        "top3": 95.5,
+        "top5": 96.5,
+        "mrr": 0.9015,
+        "median_ms": 66.1,
+        "p95_ms": 78.1,
+        "by_style": {
+          "paraphrase": {
+            "cases": 132,
+            "top1": 85.6,
+            "top3": 95.5
+          },
+          "typo": {
+            "cases": 66,
+            "top1": 83.3,
+            "top3": 95.5
+          }
+        }
+      },
+      "misses": [
+        {
+          "id": "case-023",
+          "query": "verification document was not accepted",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "verification_email_link_expired",
+          "expected": "kyc_document_rejected",
+          "latency_ms": 63.63
+        },
+        {
+          "id": "case-061",
+          "query": "my bid got rejected in technical round",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 4,
+          "top1": "listing_rejected_quality_check",
+          "expected": "bid_disqualified_technical_evaluation",
+          "latency_ms": 63.62
+        },
+        {
+          "id": "case-062",
+          "query": "how to contest bid disqualification",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "reverse_auction_not_visible",
+          "expected": "bid_disqualified_technical_evaluation",
+          "latency_ms": 64.81
+        },
+        {
+          "id": "case-063",
+          "query": "my bid got rejected in techical round",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 4,
+          "top1": "listing_rejected_quality_check",
+          "expected": "bid_disqualified_technical_evaluation",
+          "latency_ms": 62.95
+        },
+        {
+          "id": "case-064",
+          "query": "buyer says they placed an order but I don't see it",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "order_cancelled_by_buyer",
+          "expected": "order_not_appearing_in_dashboard",
+          "latency_ms": 70.85
+        },
+        {
+          "id": "case-066",
+          "query": "buyer says they plcaed an order but I don't see it",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "order_cancelled_by_buyer",
+          "expected": "order_not_appearing_in_dashboard",
+          "latency_ms": 72.62
+        },
+        {
+          "id": "case-082",
+          "query": "the delivery guy never came to collect the parcel",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": null,
+          "top1": "delivery_address_undeliverable",
+          "expected": "courier_pickup_missed",
+          "latency_ms": 65.63
+        },
+        {
+          "id": "case-084",
+          "query": "the dlivery guy never came to collect the parcel",
+          "style": "typo",
+          "status": "search_results",
+          "rank": null,
+          "top1": "delivery_address_undeliverable",
+          "expected": "courier_pickup_missed",
+          "latency_ms": 61.32
+        },
+        {
+          "id": "case-098",
+          "query": "how to make someone else the main user",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": null,
+          "top1": "add_sub_user",
+          "expected": "transfer_admin_role",
+          "latency_ms": 65.98
+        },
+        {
+          "id": "case-102",
+          "query": "buyer copmlained about product quality",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "listing_rejected_quality_check",
+          "expected": "buyer_raised_quality_dispute",
+          "latency_ms": 65.02
+        },
+        {
+          "id": "case-104",
+          "query": "reverse pickup is still pending",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "courier_pickup_missed",
+          "expected": "return_pickup_not_scheduled",
+          "latency_ms": 70.47
+        },
+        {
+          "id": "case-113",
+          "query": "how to set who approves purchases",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": null,
+          "top1": null,
+          "expected": "approving_officer_not_assigned",
+          "latency_ms": 65.14
+        },
+        {
+          "id": "case-118",
+          "query": "buyer login code is not coming",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "buyer_account_locked",
+          "expected": "buyer_otp_not_received",
+          "latency_ms": 67.93
+        },
+        {
+          "id": "case-120",
+          "query": "buyer login code is not ocming",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "buyer_account_locked",
+          "expected": "buyer_otp_not_received",
+          "latency_ms": 67.55
+        },
+        {
+          "id": "case-121",
+          "query": "buyer account says locked",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "close_buyer_account",
+          "expected": "buyer_account_locked",
+          "latency_ms": 67.65
+        },
+        {
+          "id": "case-123",
+          "query": "buyer accont says locked",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "close_buyer_account",
+          "expected": "buyer_account_locked",
+          "latency_ms": 64.53
+        },
+        {
+          "id": "case-131",
+          "query": "how to disable an old buyer user",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_buyer_user",
+          "expected": "deactivate_departed_user",
+          "latency_ms": 71.71
+        },
+        {
+          "id": "case-133",
+          "query": "need higher purchase limit for my user",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_buyer_user",
+          "expected": "change_buyer_role_permissions",
+          "latency_ms": 63.96
+        },
+        {
+          "id": "case-135",
+          "query": "need higher purcase limit for my user",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_buyer_user",
+          "expected": "change_buyer_role_permissions",
+          "latency_ms": 65.9
+        },
+        {
+          "id": "case-138",
+          "query": "the prie went up after I added it to cart",
+          "style": "typo",
+          "status": "search_results",
+          "rank": null,
+          "top1": null,
+          "expected": "price_changed_in_cart",
+          "latency_ms": 66.08
+        },
+        {
+          "id": "case-143",
+          "query": "want to see sellers side by side before buying",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": null,
+          "top1": null,
+          "expected": "compare_products_before_purchase",
+          "latency_ms": 68.95
+        },
+        {
+          "id": "case-148",
+          "query": "need to give sellers more time on my bid",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_rfq",
+          "expected": "extend_bid_deadline",
+          "latency_ms": 70.16
+        },
+        {
+          "id": "case-149",
+          "query": "how to extend rfq closing date",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_rfq",
+          "expected": "extend_bid_deadline",
+          "latency_ms": 68.11
+        },
+        {
+          "id": "case-150",
+          "query": "need to give selelrs more time on my bid",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "create_rfq",
+          "expected": "extend_bid_deadline",
+          "latency_ms": 124.73
+        },
+        {
+          "id": "case-158",
+          "query": "update delivery location after placing order",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "order_status_not_updated",
+          "expected": "change_consignee_after_order",
+          "latency_ms": 70.81
+        },
+        {
+          "id": "case-160",
+          "query": "my delivery is late",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "change_consignee_after_order",
+          "expected": "delivery_overdue",
+          "latency_ms": 59.32
+        },
+        {
+          "id": "case-162",
+          "query": "my dlivery is late",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 3,
+          "top1": "change_consignee_after_order",
+          "expected": "delivery_overdue",
+          "latency_ms": 69.67
+        },
+        {
+          "id": "case-183",
+          "query": "how to ocmplain about a seller",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "rate_seller_after_delivery",
+          "expected": "raise_dispute_against_seller",
+          "latency_ms": 71.16
+        },
+        {
+          "id": "case-188",
+          "query": "nobody is resolving my dispute",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": null,
+          "top1": "raise_dispute_against_seller",
+          "expected": "escalate_unresolved_complaint",
+          "latency_ms": 66.88
+        },
+        {
+          "id": "case-197",
+          "query": "can we reopen the old buyer account",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "close_buyer_account",
+          "expected": "reactivate_closed_account",
+          "latency_ms": 66.03
+        }
+      ]
+    },
+    "cross_encoder": {
+      "summary": {
+        "cases": 198,
+        "top1": 93.4,
+        "top3": 98.5,
+        "top5": 99.5,
+        "mrr": 0.9621,
+        "median_ms": 278.1,
+        "p95_ms": 385.8,
+        "by_style": {
+          "paraphrase": {
+            "cases": 132,
+            "top1": 93.9,
+            "top3": 98.5
+          },
+          "typo": {
+            "cases": 66,
+            "top1": 92.4,
+            "top3": 98.5
+          }
+        }
+      },
+      "misses": [
+        {
+          "id": "case-067",
+          "query": "need more days to deliver the order",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "payment_delayed_after_delivery",
+          "expected": "request_delivery_extension",
+          "latency_ms": 269.62
+        },
+        {
+          "id": "case-069",
+          "query": "need more days to delievr the order",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "payment_delayed_after_delivery",
+          "expected": "request_delivery_extension",
+          "latency_ms": 319.87
+        },
+        {
+          "id": "case-082",
+          "query": "the delivery guy never came to collect the parcel",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "delivery_address_undeliverable",
+          "expected": "courier_pickup_missed",
+          "latency_ms": 275.57
+        },
+        {
+          "id": "case-084",
+          "query": "the dlivery guy never came to collect the parcel",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "delivery_address_undeliverable",
+          "expected": "courier_pickup_missed",
+          "latency_ms": 298.8
+        },
+        {
+          "id": "case-098",
+          "query": "how to make someone else the main user",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": null,
+          "top1": "add_sub_user",
+          "expected": "transfer_admin_role",
+          "latency_ms": 305.88
+        },
+        {
+          "id": "case-121",
+          "query": "buyer account says locked",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "close_buyer_account",
+          "expected": "buyer_account_locked",
+          "latency_ms": 221.9
+        },
+        {
+          "id": "case-123",
+          "query": "buyer accont says locked",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "close_buyer_account",
+          "expected": "buyer_account_locked",
+          "latency_ms": 257.11
+        },
+        {
+          "id": "case-127",
+          "query": "how to add another purchaser in our organisation",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "register_new_buyer_organisation",
+          "expected": "create_buyer_user",
+          "latency_ms": 203.94
+        },
+        {
+          "id": "case-129",
+          "query": "how to add another purchaser in our organisatoin",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "register_new_buyer_organisation",
+          "expected": "create_buyer_user",
+          "latency_ms": 253.88
+        },
+        {
+          "id": "case-133",
+          "query": "need higher purchase limit for my user",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 4,
+          "top1": "create_buyer_user",
+          "expected": "change_buyer_role_permissions",
+          "latency_ms": 212.68
+        },
+        {
+          "id": "case-135",
+          "query": "need higher purcase limit for my user",
+          "style": "typo",
+          "status": "search_results",
+          "rank": 4,
+          "top1": "create_buyer_user",
+          "expected": "change_buyer_role_permissions",
+          "latency_ms": 238.02
+        },
+        {
+          "id": "case-188",
+          "query": "nobody is resolving my dispute",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "raise_dispute_against_seller",
+          "expected": "escalate_unresolved_complaint",
+          "latency_ms": 240.26
+        },
+        {
+          "id": "case-197",
+          "query": "can we reopen the old buyer account",
+          "style": "paraphrase",
+          "status": "search_results",
+          "rank": 2,
+          "top1": "close_buyer_account",
+          "expected": "reactivate_closed_account",
+          "latency_ms": 219.59
+        }
+      ]
+    }
+  }
+}

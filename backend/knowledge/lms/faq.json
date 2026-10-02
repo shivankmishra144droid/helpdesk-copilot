@@ -1,0 +1,971 @@
+{
+  "version": "demo-1",
+  "selection": "synthetic",
+  "entries": [
+    {
+      "id": "faq-001",
+      "sourceId": "faq-001",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "Which documents do I need to register as a seller?",
+      "taxonomy": {
+        "categoryL1": "Seller Registration",
+        "topic": "Which documents do I need to register as a seller?"
+      },
+      "content": {
+        "question": "Which documents do I need to register as a seller?",
+        "shortAnswer": "Keep your tax certificate, business registration proof and a cancelled cheque ready.",
+        "answer": "Keep your tax certificate, business registration proof and a cancelled cheque ready.\n1. Tax registration certificate\n2. Business registration proof\n3. Cancelled cheque for payouts",
+        "steps": [
+          "Tax registration certificate",
+          "Business registration proof",
+          "Cancelled cheque for payouts"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "seller documents",
+          "registration checklist"
+        ]
+      },
+      "tags": [
+        "seller documents",
+        "registration checklist"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-002",
+      "sourceId": "faq-002",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "How long does seller registration take?",
+      "taxonomy": {
+        "categoryL1": "Seller Registration",
+        "topic": "How long does seller registration take?"
+      },
+      "content": {
+        "question": "How long does seller registration take?",
+        "shortAnswer": "Most applications are reviewed within three business days.",
+        "answer": "Most applications are reviewed within three business days.\n1. Submit all documents\n2. Track status on the dashboard\n3. Respond quickly to any document requests",
+        "steps": [
+          "Submit all documents",
+          "Track status on the dashboard",
+          "Respond quickly to any document requests"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "registration time",
+          "approval time"
+        ]
+      },
+      "tags": [
+        "registration time",
+        "approval time"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-003",
+      "sourceId": "faq-003",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "Can I receive my login code by email instead of SMS?",
+      "taxonomy": {
+        "categoryL1": "Login & OTP",
+        "topic": "Can I receive my login code by email instead of SMS?"
+      },
+      "content": {
+        "question": "Can I receive my login code by email instead of SMS?",
+        "shortAnswer": "Yes, if your email is verified you can choose the email option on the code screen.",
+        "answer": "Yes, if your email is verified you can choose the email option on the code screen.\n1. Click 'Use email instead'\n2. Enter the code from your inbox",
+        "steps": [
+          "Click 'Use email instead'",
+          "Enter the code from your inbox"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "email otp",
+          "otp by email"
+        ]
+      },
+      "tags": [
+        "email otp",
+        "otp by email"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-004",
+      "sourceId": "faq-004",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "What are the password rules?",
+      "taxonomy": {
+        "categoryL1": "Login & OTP",
+        "topic": "What are the password rules?"
+      },
+      "content": {
+        "question": "What are the password rules?",
+        "shortAnswer": "Passwords need at least 12 characters, including a number and a symbol.",
+        "answer": "Passwords need at least 12 characters, including a number and a symbol.\n1. Use 12 or more characters\n2. Include a number and a symbol\n3. Avoid reusing old passwords",
+        "steps": [
+          "Use 12 or more characters",
+          "Include a number and a symbol",
+          "Avoid reusing old passwords"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "password policy",
+          "password requirements"
+        ]
+      },
+      "tags": [
+        "password policy",
+        "password requirements"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-005",
+      "sourceId": "faq-005",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "Which file formats are accepted for KYC documents?",
+      "taxonomy": {
+        "categoryL1": "Profile & KYC",
+        "topic": "Which file formats are accepted for KYC documents?"
+      },
+      "content": {
+        "question": "Which file formats are accepted for KYC documents?",
+        "shortAnswer": "Upload PDF, JPG or PNG files up to 5 MB each.",
+        "answer": "Upload PDF, JPG or PNG files up to 5 MB each.\n1. Scan in colour at 300 dpi\n2. Keep each file under 5 MB",
+        "steps": [
+          "Scan in colour at 300 dpi",
+          "Keep each file under 5 MB"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "kyc format",
+          "document size"
+        ]
+      },
+      "tags": [
+        "kyc format",
+        "document size"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-006",
+      "sourceId": "faq-006",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "When are payouts made?",
+      "taxonomy": {
+        "categoryL1": "Bank Account & Payouts",
+        "topic": "When are payouts made?"
+      },
+      "content": {
+        "question": "When are payouts made?",
+        "shortAnswer": "Payouts run every weekday for invoices approved by the previous day.",
+        "answer": "Payouts run every weekday for invoices approved by the previous day.\n1. Invoice approved by buyer\n2. Payout batch runs next weekday\n3. Funds arrive in 1-2 days",
+        "steps": [
+          "Invoice approved by buyer",
+          "Payout batch runs next weekday",
+          "Funds arrive in 1-2 days"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "payout schedule",
+          "settlement timing"
+        ]
+      },
+      "tags": [
+        "payout schedule",
+        "settlement timing"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-007",
+      "sourceId": "faq-007",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "What image size is required for product photos?",
+      "taxonomy": {
+        "categoryL1": "Catalogue & Listings",
+        "topic": "What image size is required for product photos?"
+      },
+      "content": {
+        "question": "What image size is required for product photos?",
+        "shortAnswer": "Use at least 800x800 pixels on a plain white background.",
+        "answer": "Use at least 800x800 pixels on a plain white background.\n1. Minimum 800x800 pixels\n2. Plain white background\n3. No watermarks",
+        "steps": [
+          "Minimum 800x800 pixels",
+          "Plain white background",
+          "No watermarks"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "image guidelines",
+          "photo size"
+        ]
+      },
+      "tags": [
+        "image guidelines",
+        "photo size"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-008",
+      "sourceId": "faq-008",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "How many products can I upload in one bulk file?",
+      "taxonomy": {
+        "categoryL1": "Catalogue & Listings",
+        "topic": "How many products can I upload in one bulk file?"
+      },
+      "content": {
+        "question": "How many products can I upload in one bulk file?",
+        "shortAnswer": "Up to 500 rows per bulk upload file.",
+        "answer": "Up to 500 rows per bulk upload file.\n1. Download the latest template\n2. Keep to 500 rows\n3. Fix rows listed in the error report",
+        "steps": [
+          "Download the latest template",
+          "Keep to 500 rows",
+          "Fix rows listed in the error report"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "bulk limit",
+          "upload rows"
+        ]
+      },
+      "tags": [
+        "bulk limit",
+        "upload rows"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-009",
+      "sourceId": "faq-009",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "How do I prove I own a brand?",
+      "taxonomy": {
+        "categoryL1": "Brand Authorisation",
+        "topic": "How do I prove I own a brand?"
+      },
+      "content": {
+        "question": "How do I prove I own a brand?",
+        "shortAnswer": "Upload a trademark certificate or registration application in your business name.",
+        "answer": "Upload a trademark certificate or registration application in your business name.\n1. Trademark certificate\n2. Or pending trademark application",
+        "steps": [
+          "Trademark certificate",
+          "Or pending trademark application"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "brand proof",
+          "trademark"
+        ]
+      },
+      "tags": [
+        "brand proof",
+        "trademark"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-010",
+      "sourceId": "faq-010",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "What file size limits apply to bid documents?",
+      "taxonomy": {
+        "categoryL1": "Bids & Reverse Auctions",
+        "topic": "What file size limits apply to bid documents?"
+      },
+      "content": {
+        "question": "What file size limits apply to bid documents?",
+        "shortAnswer": "Each bid document must be a PDF under 10 MB.",
+        "answer": "Each bid document must be a PDF under 10 MB.\n1. Convert to PDF\n2. Compress large scans\n3. Upload before the deadline",
+        "steps": [
+          "Convert to PDF",
+          "Compress large scans",
+          "Upload before the deadline"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "bid document size",
+          "bid upload limit"
+        ]
+      },
+      "tags": [
+        "bid document size",
+        "bid upload limit"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-011",
+      "sourceId": "faq-011",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "How does a reverse auction work?",
+      "taxonomy": {
+        "categoryL1": "Bids & Reverse Auctions",
+        "topic": "How does a reverse auction work?"
+      },
+      "content": {
+        "question": "How does a reverse auction work?",
+        "shortAnswer": "Qualified sellers lower their prices in real time; the lowest valid price at close wins.",
+        "answer": "Qualified sellers lower their prices in real time; the lowest valid price at close wins.\n1. Qualify in the technical round\n2. Join at the start time\n3. Submit decrements before close",
+        "steps": [
+          "Qualify in the technical round",
+          "Join at the start time",
+          "Submit decrements before close"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "reverse auction rules",
+          "auction process"
+        ]
+      },
+      "tags": [
+        "reverse auction rules",
+        "auction process"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-012",
+      "sourceId": "faq-012",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "Can I partially deliver an order?",
+      "taxonomy": {
+        "categoryL1": "Orders & Delivery",
+        "topic": "Can I partially deliver an order?"
+      },
+      "content": {
+        "question": "Can I partially deliver an order?",
+        "shortAnswer": "Yes, unless the buyer disabled partial delivery; each delivery is receipted separately.",
+        "answer": "Yes, unless the buyer disabled partial delivery; each delivery is receipted separately.\n1. Check the order's delivery terms\n2. Dispatch available quantity\n3. Record each dispatch",
+        "steps": [
+          "Check the order's delivery terms",
+          "Dispatch available quantity",
+          "Record each dispatch"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "partial dispatch",
+          "split delivery"
+        ]
+      },
+      "tags": [
+        "partial dispatch",
+        "split delivery"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-013",
+      "sourceId": "faq-013",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "When can I raise an invoice?",
+      "taxonomy": {
+        "categoryL1": "Invoices & Payments",
+        "topic": "When can I raise an invoice?"
+      },
+      "content": {
+        "question": "When can I raise an invoice?",
+        "shortAnswer": "After the buyer generates the goods receipt for the delivery.",
+        "answer": "After the buyer generates the goods receipt for the delivery.\n1. Wait for goods receipt\n2. Generate invoice from the order\n3. Attach supporting documents",
+        "steps": [
+          "Wait for goods receipt",
+          "Generate invoice from the order",
+          "Attach supporting documents"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "invoice timing",
+          "raise bill"
+        ]
+      },
+      "tags": [
+        "invoice timing",
+        "raise bill"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-014",
+      "sourceId": "faq-014",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "Who pays for return shipping?",
+      "taxonomy": {
+        "categoryL1": "Shipping & Logistics",
+        "topic": "Who pays for return shipping?"
+      },
+      "content": {
+        "question": "Who pays for return shipping?",
+        "shortAnswer": "The party at fault pays: the seller for wrong or damaged items, the buyer for change-of-mind returns.",
+        "answer": "The party at fault pays: the seller for wrong or damaged items, the buyer for change-of-mind returns.\n1. Check the return reason\n2. Generate the return label\n3. Track the return to delivery",
+        "steps": [
+          "Check the return reason",
+          "Generate the return label",
+          "Track the return to delivery"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "return shipping cost",
+          "return label"
+        ]
+      },
+      "tags": [
+        "return shipping cost",
+        "return label"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-015",
+      "sourceId": "faq-015",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "What roles can I give to sub-users?",
+      "taxonomy": {
+        "categoryL1": "Sub-users & Roles",
+        "topic": "What roles can I give to sub-users?"
+      },
+      "content": {
+        "question": "What roles can I give to sub-users?",
+        "shortAnswer": "Catalogue, Bids, Orders and Finance roles can be combined per user.",
+        "answer": "Catalogue, Bids, Orders and Finance roles can be combined per user.\n1. Catalogue\n2. Bids\n3. Orders\n4. Finance",
+        "steps": [
+          "Catalogue",
+          "Bids",
+          "Orders",
+          "Finance"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "user roles",
+          "permissions"
+        ]
+      },
+      "tags": [
+        "user roles",
+        "permissions"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-016",
+      "sourceId": "faq-016",
+      "userType": "Seller",
+      "audience": {
+        "userType": "Seller"
+      },
+      "topic": "How long do I have to respond to a dispute?",
+      "taxonomy": {
+        "categoryL1": "Disputes & Returns",
+        "topic": "How long do I have to respond to a dispute?"
+      },
+      "content": {
+        "question": "How long do I have to respond to a dispute?",
+        "shortAnswer": "Seven calendar days from when the dispute is raised.",
+        "answer": "Seven calendar days from when the dispute is raised.\n1. Open the dispute\n2. Upload evidence\n3. Propose a resolution",
+        "steps": [
+          "Open the dispute",
+          "Upload evidence",
+          "Propose a resolution"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "dispute timeline",
+          "respond to complaint"
+        ]
+      },
+      "tags": [
+        "dispute timeline",
+        "respond to complaint"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-017",
+      "sourceId": "faq-017",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "Who can register an organisation as a buyer?",
+      "taxonomy": {
+        "categoryL1": "Organisation Onboarding",
+        "topic": "Who can register an organisation as a buyer?"
+      },
+      "content": {
+        "question": "Who can register an organisation as a buyer?",
+        "shortAnswer": "Any authorised officer with an official email address on the organisation's domain.",
+        "answer": "Any authorised officer with an official email address on the organisation's domain.\n1. Use an official email\n2. Nominate an approving officer\n3. Upload the registration certificate",
+        "steps": [
+          "Use an official email",
+          "Nominate an approving officer",
+          "Upload the registration certificate"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "buyer eligibility",
+          "organisation registration"
+        ]
+      },
+      "tags": [
+        "buyer eligibility",
+        "organisation registration"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-018",
+      "sourceId": "faq-018",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "Can two people share one buyer login?",
+      "taxonomy": {
+        "categoryL1": "Login & OTP",
+        "topic": "Can two people share one buyer login?"
+      },
+      "content": {
+        "question": "Can two people share one buyer login?",
+        "shortAnswer": "No. Each person needs their own user so purchases are traceable.",
+        "answer": "No. Each person needs their own user so purchases are traceable.\n1. Ask your admin to add a user\n2. Never share passwords",
+        "steps": [
+          "Ask your admin to add a user",
+          "Never share passwords"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "shared login",
+          "multiple users"
+        ]
+      },
+      "tags": [
+        "shared login",
+        "multiple users"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-019",
+      "sourceId": "faq-019",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "How are purchase limits set?",
+      "taxonomy": {
+        "categoryL1": "Users & Roles",
+        "topic": "How are purchase limits set?"
+      },
+      "content": {
+        "question": "How are purchase limits set?",
+        "shortAnswer": "Admins set a per-order limit for each user, up to the organisation cap.",
+        "answer": "Admins set a per-order limit for each user, up to the organisation cap.\n1. Open Users\n2. Edit purchase limit\n3. Higher limits need approving officer sign-off",
+        "steps": [
+          "Open Users",
+          "Edit purchase limit",
+          "Higher limits need approving officer sign-off"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "purchase limit",
+          "spending limit"
+        ]
+      },
+      "tags": [
+        "purchase limit",
+        "spending limit"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-020",
+      "sourceId": "faq-020",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "What is the direct purchase limit?",
+      "taxonomy": {
+        "categoryL1": "Direct Purchase",
+        "topic": "What is the direct purchase limit?"
+      },
+      "content": {
+        "question": "What is the direct purchase limit?",
+        "shortAnswer": "Orders up to the organisation's direct-buy cap can be placed without a bid.",
+        "answer": "Orders up to the organisation's direct-buy cap can be placed without a bid.\n1. Check your organisation cap\n2. Above it, create an RFQ",
+        "steps": [
+          "Check your organisation cap",
+          "Above it, create an RFQ"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "direct buy cap",
+          "purchase without bid"
+        ]
+      },
+      "tags": [
+        "direct buy cap",
+        "purchase without bid"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-021",
+      "sourceId": "faq-021",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "Do I have to buy the cheapest product?",
+      "taxonomy": {
+        "categoryL1": "Direct Purchase",
+        "topic": "Do I have to buy the cheapest product?"
+      },
+      "content": {
+        "question": "Do I have to buy the cheapest product?",
+        "shortAnswer": "Not always, but you must record a justification when you don't.",
+        "answer": "Not always, but you must record a justification when you don't.\n1. Compare listings\n2. Record justification\n3. Proceed to checkout",
+        "steps": [
+          "Compare listings",
+          "Record justification",
+          "Proceed to checkout"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "lowest price rule",
+          "justification"
+        ]
+      },
+      "tags": [
+        "lowest price rule",
+        "justification"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-022",
+      "sourceId": "faq-022",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "What is the minimum bid duration?",
+      "taxonomy": {
+        "categoryL1": "Bids & RFQs",
+        "topic": "What is the minimum bid duration?"
+      },
+      "content": {
+        "question": "What is the minimum bid duration?",
+        "shortAnswer": "RFQs must stay open for at least seven days.",
+        "answer": "RFQs must stay open for at least seven days.\n1. Set deadline seven or more days ahead\n2. Extend if fewer than three sellers respond",
+        "steps": [
+          "Set deadline seven or more days ahead",
+          "Extend if fewer than three sellers respond"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "bid duration",
+          "rfq timeline"
+        ]
+      },
+      "tags": [
+        "bid duration",
+        "rfq timeline"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-023",
+      "sourceId": "faq-023",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "How do I track a delivery?",
+      "taxonomy": {
+        "categoryL1": "Orders & Delivery",
+        "topic": "How do I track a delivery?"
+      },
+      "content": {
+        "question": "How do I track a delivery?",
+        "shortAnswer": "Open the order to see dispatch events and the courier tracking link.",
+        "answer": "Open the order to see dispatch events and the courier tracking link.\n1. Open the order\n2. View status timeline\n3. Click the tracking link",
+        "steps": [
+          "Open the order",
+          "View status timeline",
+          "Click the tracking link"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "track order",
+          "shipment tracking"
+        ]
+      },
+      "tags": [
+        "track order",
+        "shipment tracking"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-024",
+      "sourceId": "faq-024",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "How long do I have to generate a goods receipt?",
+      "taxonomy": {
+        "categoryL1": "Receiving & Inspection",
+        "topic": "How long do I have to generate a goods receipt?"
+      },
+      "content": {
+        "question": "How long do I have to generate a goods receipt?",
+        "shortAnswer": "Within 10 days of delivery, otherwise the order is auto-escalated.",
+        "answer": "Within 10 days of delivery, otherwise the order is auto-escalated.\n1. Inspect the goods\n2. Generate receipt within 10 days",
+        "steps": [
+          "Inspect the goods",
+          "Generate receipt within 10 days"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "receipt deadline",
+          "grn timeline"
+        ]
+      },
+      "tags": [
+        "receipt deadline",
+        "grn timeline"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-025",
+      "sourceId": "faq-025",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "How long do we have to pay the seller?",
+      "taxonomy": {
+        "categoryL1": "Payments & Invoices",
+        "topic": "How long do we have to pay the seller?"
+      },
+      "content": {
+        "question": "How long do we have to pay the seller?",
+        "shortAnswer": "Payment is due within 10 days of goods receipt.",
+        "answer": "Payment is due within 10 days of goods receipt.\n1. Approve invoice\n2. Release payment batch\n3. Share payment reference",
+        "steps": [
+          "Approve invoice",
+          "Release payment batch",
+          "Share payment reference"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "payment terms",
+          "due date"
+        ]
+      },
+      "tags": [
+        "payment terms",
+        "due date"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-026",
+      "sourceId": "faq-026",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "Can I edit a seller rating?",
+      "taxonomy": {
+        "categoryL1": "Disputes & Feedback",
+        "topic": "Can I edit a seller rating?"
+      },
+      "content": {
+        "question": "Can I edit a seller rating?",
+        "shortAnswer": "Yes, within 30 days of submitting it.",
+        "answer": "Yes, within 30 days of submitting it.\n1. Open the completed order\n2. Edit rating\n3. Save",
+        "steps": [
+          "Open the completed order",
+          "Edit rating",
+          "Save"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "change rating",
+          "edit feedback"
+        ]
+      },
+      "tags": [
+        "change rating",
+        "edit feedback"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    },
+    {
+      "id": "faq-027",
+      "sourceId": "faq-027",
+      "userType": "Buyer",
+      "audience": {
+        "userType": "Buyer"
+      },
+      "topic": "What happens to records after closing an account?",
+      "taxonomy": {
+        "categoryL1": "Account Closure",
+        "topic": "What happens to records after closing an account?"
+      },
+      "content": {
+        "question": "What happens to records after closing an account?",
+        "shortAnswer": "Order and payment records are kept for audit for seven years.",
+        "answer": "Order and payment records are kept for audit for seven years.\n1. Records retained\n2. Read-only access on request",
+        "steps": [
+          "Records retained",
+          "Read-only access on request"
+        ]
+      },
+      "queryUnderstanding": {
+        "searchPhrases": [
+          "data retention",
+          "closed account records"
+        ]
+      },
+      "tags": [
+        "data retention",
+        "closed account records"
+      ],
+      "metadata": {
+        "moduleOwner": "Help Centre Content Team"
+      }
+    }
+  ]
+}

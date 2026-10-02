@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+.venv/
+venv/
+
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/tsconfig.tsbuildinfo
+frontend/.env*
+
+.env
+.env.*
+!.env.example
+*.pem
+.DS_Store
+.runtime/
+
+# Runtime state written by the running app
+backend/knowledge/audit_log.jsonl
+backend/knowledge/pending_queue.json
+backend/knowledge/store_metadata.json
+backend/knowledge/supervisor_assignments.json
+*.tmp
+benchmarks/.tmp_*.json
+
+# Trained models are build artefacts: py -3 scripts/train_all.py
+backend/models/

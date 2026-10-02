@@ -1,0 +1,23 @@
+# Normalise text to LF in the repo; check out with the platform default.
+* text=auto
+
+# cmd.exe and Windows PowerShell expect CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Never diff or convert these.
+*.pkl binary
+*.index binary
+*.db binary
+*.pdf binary
+*.xlsx binary
+*.pptx binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.mp4 binary
+*.webm binary
+
+# Shell scripts run inside Linux containers.
+*.sh text eol=lf

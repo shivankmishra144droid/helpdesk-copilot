@@ -1,0 +1,1055 @@
+{
+  "kb_id": "seller-knowledge-001",
+  "kb_name": "Northwind Marketplace Seller Knowledge Base",
+  "problem_id": "SELLER-001",
+  "problem_name": "Seller Support",
+  "category": "Seller",
+  "caller_type": "Seller",
+  "description": "Synthetic seller support knowledge for the Northwind Marketplace demo.",
+  "ingest_history": [],
+  "synonym_groups": [
+    [
+      "otp",
+      "one time password",
+      "login code",
+      "sms code",
+      "verification code"
+    ],
+    [
+      "listing",
+      "product",
+      "item",
+      "catalogue",
+      "catalog"
+    ],
+    [
+      "visible",
+      "showing",
+      "appear",
+      "listed",
+      "display"
+    ],
+    [
+      "bid",
+      "tender",
+      "rfq",
+      "quotation"
+    ],
+    [
+      "reverse auction",
+      "auction",
+      "ra"
+    ],
+    [
+      "invoice",
+      "bill"
+    ],
+    [
+      "payout",
+      "payment",
+      "settlement",
+      "money"
+    ],
+    [
+      "courier",
+      "shipping",
+      "logistics",
+      "pickup"
+    ],
+    [
+      "rejected",
+      "declined",
+      "not accepted",
+      "failed"
+    ],
+    [
+      "sub user",
+      "team member",
+      "staff login",
+      "user"
+    ],
+    [
+      "dispute",
+      "complaint",
+      "grievance"
+    ],
+    [
+      "bank account",
+      "bank details",
+      "payout account"
+    ]
+  ],
+  "branches": [
+    {
+      "branch_id": "tax_id_does_not_match_business_name",
+      "branch_name": "Tax ID does not match business name during registration",
+      "trigger_keywords": [
+        "tax id mismatch",
+        "business name mismatch",
+        "registration validation failed",
+        "tax number not matching",
+        "name mismatch error"
+      ],
+      "agent_script": "I understand the registration form is rejecting your tax ID. This usually happens when the legal business name differs from the name on the tax certificate. Let's check both together.",
+      "steps": [
+        "Ask the caller to read out the legal business name exactly as printed on the tax certificate.",
+        "Compare it with the name entered on the registration form, including punctuation and suffixes such as 'Pvt' or 'LLC'.",
+        "If they differ, guide the caller to edit the business name field to match the certificate and resubmit.",
+        "If the names already match, ask the caller to clear the browser cache and retry validation once.",
+        "If validation still fails, collect a screenshot of the error and escalate."
+      ],
+      "documents": [
+        "Tax registration certificate",
+        "Screenshot of the validation error"
+      ],
+      "escalation": "Vendor Onboarding Desk",
+      "escalation_person": "Onboarding Specialist (Tier 2)",
+      "tagging": "Seller → Seller Registration → Tax ID does not match business name during registration",
+      "topic_category": "registration",
+      "description": "I understand the registration form is rejecting your tax ID. This usually happens when the legal business name differs from the name on the tax certificate. Let's check both together."
+    },
+    {
+      "branch_id": "verification_email_link_expired",
+      "branch_name": "Verification email link expired",
+      "trigger_keywords": [
+        "verification link expired",
+        "activation email",
+        "email link not working",
+        "resend verification",
+        "account activation"
+      ],
+      "agent_script": "Verification links stay valid for 24 hours. I'll help you request a fresh link so you can finish activating the account.",
+      "steps": [
+        "Confirm the email address the caller registered with.",
+        "Ask the caller to open the sign-in page and choose 'Resend verification email'.",
+        "Advise them to check spam or quarantine folders and to open the newest email only.",
+        "If no email arrives within 15 minutes, verify the address for typos in the admin view and correct it.",
+        "Escalate if the address is correct and emails are still not delivered."
+      ],
+      "documents": [
+        "Registered email address"
+      ],
+      "escalation": "Vendor Onboarding Desk",
+      "escalation_person": "Onboarding Specialist (Tier 2)",
+      "tagging": "Seller → Seller Registration → Verification email link expired",
+      "topic_category": "registration",
+      "description": "Verification links stay valid for 24 hours. I'll help you request a fresh link so you can finish activating the account."
+    },
+    {
+      "branch_id": "registration_pending_review",
+      "branch_name": "Registration stuck in pending review",
+      "trigger_keywords": [
+        "pending review",
+        "registration not approved",
+        "application under review",
+        "waiting for approval",
+        "registration status"
+      ],
+      "agent_script": "New seller applications are reviewed within three business days. Let me check where yours is in the queue.",
+      "steps": [
+        "Note the registration reference number from the caller.",
+        "Check how many business days have passed since submission.",
+        "If under three business days, explain the review timeline and set expectations.",
+        "If the application is flagged for missing documents, tell the caller which documents to upload.",
+        "If it is older than three business days with no flags, escalate for manual review."
+      ],
+      "documents": [
+        "Registration reference number"
+      ],
+      "escalation": "Vendor Onboarding Desk",
+      "escalation_person": "Onboarding Specialist (Tier 2)",
+      "tagging": "Seller → Seller Registration → Registration stuck in pending review",
+      "topic_category": "registration",
+      "description": "New seller applications are reviewed within three business days. Let me check where yours is in the queue."
+    },
+    {
+      "branch_id": "login_code_sms_not_arriving",
+      "branch_name": "Login code SMS not arriving",
+      "trigger_keywords": [
+        "otp not received",
+        "one time password",
+        "sms not coming",
+        "login code missing",
+        "verification code"
+      ],
+      "agent_script": "Sorry you're not receiving the login code. Most delays come from network filters or an outdated mobile number, so let's check both.",
+      "steps": [
+        "Confirm the last four digits of the registered mobile number with the caller.",
+        "Ask the caller to wait 60 seconds and use 'Resend OTP' only once to avoid rate limits.",
+        "Check whether the number has do-not-disturb or promotional SMS blocking enabled.",
+        "Offer the email OTP option if the account has a verified email.",
+        "If the registered number is outdated, start the mobile number update process."
+      ],
+      "documents": [
+        "Registered mobile number"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Identity Support Analyst",
+      "tagging": "Seller → Login & OTP → Login code SMS not arriving",
+      "topic_category": "login_otp",
+      "description": "Sorry you're not receiving the login code. Most delays come from network filters or an outdated mobile number, so let's check both."
+    },
+    {
+      "branch_id": "account_locked_after_failed_attempts",
+      "branch_name": "Account locked after failed login attempts",
+      "trigger_keywords": [
+        "account locked",
+        "too many attempts",
+        "login blocked",
+        "locked out",
+        "temporarily disabled"
+      ],
+      "agent_script": "For security, accounts lock for 30 minutes after five failed attempts. I can help you get back in safely.",
+      "steps": [
+        "Tell the caller how long remains on the 30-minute lock.",
+        "Recommend resetting the password instead of guessing again once the lock lifts.",
+        "Verify identity using the registered email and the business reference number.",
+        "If the caller needs urgent access, raise an unlock request after identity verification."
+      ],
+      "documents": [
+        "Business reference number",
+        "Registered email address"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Identity Support Analyst",
+      "tagging": "Seller → Login & OTP → Account locked after failed login attempts",
+      "topic_category": "login_otp",
+      "description": "For security, accounts lock for 30 minutes after five failed attempts. I can help you get back in safely."
+    },
+    {
+      "branch_id": "password_reset_link_not_working",
+      "branch_name": "Password reset link not working",
+      "trigger_keywords": [
+        "password reset",
+        "forgot password",
+        "reset link invalid",
+        "cannot change password",
+        "reset email"
+      ],
+      "agent_script": "Password reset links expire after one hour and only the newest link works. Let's send a fresh one.",
+      "steps": [
+        "Ask the caller to request a new reset link from the sign-in page.",
+        "Remind them to use only the most recent email, since earlier links are invalidated.",
+        "Ask them to open the link in a private browser window to avoid stale sessions.",
+        "If the new password is rejected, read out the password rules: 12+ characters with a number and a symbol.",
+        "Escalate if the reset page shows an error code."
+      ],
+      "documents": [
+        "Screenshot of the error, if any"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Identity Support Analyst",
+      "tagging": "Seller → Login & OTP → Password reset link not working",
+      "topic_category": "login_otp",
+      "description": "Password reset links expire after one hour and only the newest link works. Let's send a fresh one."
+    },
+    {
+      "branch_id": "update_registered_business_address",
+      "branch_name": "Update registered business address",
+      "trigger_keywords": [
+        "change address",
+        "update address",
+        "business address",
+        "office relocation",
+        "address proof"
+      ],
+      "agent_script": "You can update the registered address from the profile page; the change goes live after a quick document check.",
+      "steps": [
+        "Ask the caller to open Profile > Business details > Address.",
+        "Have them enter the new address and upload a supporting address proof dated within the last three months.",
+        "Explain that open orders keep their original delivery address.",
+        "Tell the caller the compliance review takes up to two business days."
+      ],
+      "documents": [
+        "Address proof dated within three months"
+      ],
+      "escalation": "Vendor Compliance Desk",
+      "escalation_person": "Compliance Reviewer",
+      "tagging": "Seller → Profile & KYC → Update registered business address",
+      "topic_category": "profile_kyc",
+      "description": "You can update the registered address from the profile page; the change goes live after a quick document check."
+    },
+    {
+      "branch_id": "kyc_document_rejected",
+      "branch_name": "KYC document rejected",
+      "trigger_keywords": [
+        "kyc rejected",
+        "document rejected",
+        "verification failed",
+        "identity proof rejected",
+        "upload again"
+      ],
+      "agent_script": "I'm sorry your KYC document was rejected. The rejection note usually tells us exactly what to fix.",
+      "steps": [
+        "Ask the caller to read the rejection reason shown under Profile > Verification.",
+        "If the image was unclear, ask for a colour scan at 300 dpi or higher.",
+        "If the document has expired, ask them to upload a currently valid one.",
+        "If the name differs from the profile, align the profile name or upload a name-change document.",
+        "Escalate if the caller believes the rejection was made in error."
+      ],
+      "documents": [
+        "Valid identity or business document",
+        "Name-change document, if applicable"
+      ],
+      "escalation": "Vendor Compliance Desk",
+      "escalation_person": "Compliance Reviewer",
+      "tagging": "Seller → Profile & KYC → KYC document rejected",
+      "topic_category": "profile_kyc",
+      "description": "I'm sorry your KYC document was rejected. The rejection note usually tells us exactly what to fix."
+    },
+    {
+      "branch_id": "change_authorised_signatory",
+      "branch_name": "Change authorised signatory",
+      "trigger_keywords": [
+        "authorised signatory",
+        "change signatory",
+        "new director",
+        "signing authority",
+        "authorized person"
+      ],
+      "agent_script": "Changing the authorised signatory needs a board or owner authorisation letter so we can protect your account.",
+      "steps": [
+        "Confirm the caller is currently an admin on the seller account.",
+        "Ask them to upload an authorisation letter naming the new signatory.",
+        "Have the new signatory complete identity verification from their own login.",
+        "Explain that pending bids remain signed by the previous signatory."
+      ],
+      "documents": [
+        "Authorisation letter on company letterhead",
+        "Identity proof of the new signatory"
+      ],
+      "escalation": "Vendor Compliance Desk",
+      "escalation_person": "Compliance Reviewer",
+      "tagging": "Seller → Profile & KYC → Change authorised signatory",
+      "topic_category": "profile_kyc",
+      "description": "Changing the authorised signatory needs a board or owner authorisation letter so we can protect your account."
+    },
+    {
+      "branch_id": "payout_bank_account_not_verified",
+      "branch_name": "Payout bank account could not be verified",
+      "trigger_keywords": [
+        "bank verification failed",
+        "penny drop failed",
+        "account validation",
+        "ifsc",
+        "bank details rejected"
+      ],
+      "agent_script": "Bank verification fails when the account holder name or routing code doesn't match bank records. Let's check them.",
+      "steps": [
+        "Ask the caller to confirm the account holder name exactly as on the bank statement.",
+        "Verify the bank routing code and account number digit by digit.",
+        "Ask whether the account is a current account in the business's name; personal accounts are not accepted.",
+        "Have the caller re-run verification after correcting the details.",
+        "If it fails again, collect a cancelled cheque or bank letter and escalate."
+      ],
+      "documents": [
+        "Cancelled cheque or bank confirmation letter"
+      ],
+      "escalation": "Seller Finance Desk",
+      "escalation_person": "Payout Operations Lead",
+      "tagging": "Seller → Bank Account & Payouts → Payout bank account could not be verified",
+      "topic_category": "bank_payouts",
+      "description": "Bank verification fails when the account holder name or routing code doesn't match bank records. Let's check them."
+    },
+    {
+      "branch_id": "change_payout_bank_account",
+      "branch_name": "Change payout bank account",
+      "trigger_keywords": [
+        "change bank account",
+        "update bank",
+        "new bank account",
+        "payout account",
+        "switch bank"
+      ],
+      "agent_script": "You can change the payout account at any time; payouts pause briefly while the new account is verified.",
+      "steps": [
+        "Confirm the caller is the account admin.",
+        "Ask them to add the new account under Finance > Payout accounts.",
+        "Explain that a small test credit will verify the account within one business day.",
+        "Tell them to set the new account as primary once verified."
+      ],
+      "documents": [
+        "Cancelled cheque for the new account"
+      ],
+      "escalation": "Seller Finance Desk",
+      "escalation_person": "Payout Operations Lead",
+      "tagging": "Seller → Bank Account & Payouts → Change payout bank account",
+      "topic_category": "bank_payouts",
+      "description": "You can change the payout account at any time; payouts pause briefly while the new account is verified."
+    },
+    {
+      "branch_id": "payout_on_hold",
+      "branch_name": "Payout on hold",
+      "trigger_keywords": [
+        "payout on hold",
+        "payment held",
+        "funds blocked",
+        "settlement hold",
+        "withheld payment"
+      ],
+      "agent_script": "Payouts are held when there's an open dispute, missing KYC, or an unverified bank account. Let me find which applies.",
+      "steps": [
+        "Check the hold reason shown under Finance > Payouts.",
+        "If KYC is incomplete, guide the caller to finish verification.",
+        "If a dispute is open, explain that the related amount is released once the dispute closes.",
+        "If no reason is shown, escalate with the payout reference."
+      ],
+      "documents": [
+        "Payout reference number"
+      ],
+      "escalation": "Seller Finance Desk",
+      "escalation_person": "Payout Operations Lead",
+      "tagging": "Seller → Bank Account & Payouts → Payout on hold",
+      "topic_category": "bank_payouts",
+      "description": "Payouts are held when there's an open dispute, missing KYC, or an unverified bank account. Let me find which applies."
+    },
+    {
+      "branch_id": "listing_missing_from_buyer_search",
+      "branch_name": "Listing missing from buyer search",
+      "trigger_keywords": [
+        "product not visible",
+        "listing not showing",
+        "catalogue not visible",
+        "item missing",
+        "not appearing in search"
+      ],
+      "agent_script": "New listings appear in search after quality review, usually within 24 hours. Let's confirm the listing status.",
+      "steps": [
+        "Ask the caller to open Catalogue > My listings and read the status of the product.",
+        "If the status is 'In review', explain the 24-hour review window.",
+        "If the status is 'Inactive', ask them to check stock quantity and price validity dates.",
+        "If the status is 'Live' but not in search, ask them to search by the exact listing ID.",
+        "Escalate with the listing ID if it is live but still not searchable after 24 hours."
+      ],
+      "documents": [
+        "Listing ID"
+      ],
+      "escalation": "Catalogue Quality Team",
+      "escalation_person": "Listing Quality Reviewer",
+      "tagging": "Seller → Catalogue & Listings → Listing missing from buyer search",
+      "topic_category": "catalogue",
+      "description": "New listings appear in search after quality review, usually within 24 hours. Let's confirm the listing status."
+    },
+    {
+      "branch_id": "listing_rejected_quality_check",
+      "branch_name": "Listing rejected in quality check",
+      "trigger_keywords": [
+        "listing rejected",
+        "quality check failed",
+        "product rejected",
+        "image rejected",
+        "description issue"
+      ],
+      "agent_script": "Listings are rejected when images, specifications or pricing don't meet catalogue rules. The rejection note lists the reason.",
+      "steps": [
+        "Ask the caller to read the rejection note on the listing.",
+        "For image issues, ask for a plain white background and at least 800x800 pixels.",
+        "For specification issues, ensure mandatory attributes such as model and warranty are filled.",
+        "For pricing issues, confirm the price is within the allowed range for the category.",
+        "Ask the caller to edit and resubmit the listing."
+      ],
+      "documents": [
+        "Corrected product images",
+        "Product specification sheet"
+      ],
+      "escalation": "Catalogue Quality Team",
+      "escalation_person": "Listing Quality Reviewer",
+      "tagging": "Seller → Catalogue & Listings → Listing rejected in quality check",
+      "topic_category": "catalogue",
+      "description": "Listings are rejected when images, specifications or pricing don't meet catalogue rules. The rejection note lists the reason."
+    },
+    {
+      "branch_id": "bulk_upload_template_errors",
+      "branch_name": "Bulk upload template errors",
+      "trigger_keywords": [
+        "bulk upload",
+        "excel template",
+        "csv upload failed",
+        "template error",
+        "mass upload"
+      ],
+      "agent_script": "Bulk upload errors usually come from an outdated template or a few invalid rows. The error report pinpoints them.",
+      "steps": [
+        "Ask the caller to download the latest template from Catalogue > Bulk upload.",
+        "Have them open the error report and fix the rows it lists.",
+        "Remind them not to rename columns or change the sheet order.",
+        "Ask them to upload no more than 500 rows per file."
+      ],
+      "documents": [
+        "Error report file",
+        "Filled bulk upload template"
+      ],
+      "escalation": "Catalogue Quality Team",
+      "escalation_person": "Listing Quality Reviewer",
+      "tagging": "Seller → Catalogue & Listings → Bulk upload template errors",
+      "topic_category": "catalogue",
+      "description": "Bulk upload errors usually come from an outdated template or a few invalid rows. The error report pinpoints them."
+    },
+    {
+      "branch_id": "brand_approval_pending",
+      "branch_name": "Brand approval pending",
+      "trigger_keywords": [
+        "brand approval",
+        "brand pending",
+        "brand not approved",
+        "trademark review",
+        "brand registration"
+      ],
+      "agent_script": "Brand approvals take up to five business days because we verify trademark ownership. Let's check the status.",
+      "steps": [
+        "Note the brand request ID from the caller.",
+        "Check whether the request is waiting on a document from the seller.",
+        "If complete and under five business days, explain the timeline.",
+        "If over five business days, escalate with the brand request ID."
+      ],
+      "documents": [
+        "Brand request ID",
+        "Trademark certificate"
+      ],
+      "escalation": "Brand Programs Team",
+      "escalation_person": "Brand Approval Officer",
+      "tagging": "Seller → Brand Authorisation → Brand approval pending",
+      "topic_category": "brand_authorisation",
+      "description": "Brand approvals take up to five business days because we verify trademark ownership. Let's check the status."
+    },
+    {
+      "branch_id": "reseller_authorisation_letter_rejected",
+      "branch_name": "Reseller authorisation letter rejected",
+      "trigger_keywords": [
+        "authorisation letter",
+        "reseller letter",
+        "dealer certificate",
+        "oem authorization rejected",
+        "distributor letter"
+      ],
+      "agent_script": "To sell another company's brand, we need a valid authorisation letter from the brand owner. Let's see why it was rejected.",
+      "steps": [
+        "Ask the caller to read the rejection reason.",
+        "Confirm the letter is on the brand owner's letterhead and signed.",
+        "Check the letter names the seller's legal business name and has a validity date.",
+        "Ask the caller to upload the corrected letter."
+      ],
+      "documents": [
+        "Signed authorisation letter from the brand owner"
+      ],
+      "escalation": "Brand Programs Team",
+      "escalation_person": "Brand Approval Officer",
+      "tagging": "Seller → Brand Authorisation → Reseller authorisation letter rejected",
+      "topic_category": "brand_authorisation",
+      "description": "To sell another company's brand, we need a valid authorisation letter from the brand owner. Let's see why it was rejected."
+    },
+    {
+      "branch_id": "add_new_brand_to_catalogue",
+      "branch_name": "Add a new brand to the catalogue",
+      "trigger_keywords": [
+        "new brand",
+        "add brand",
+        "brand not in list",
+        "create brand",
+        "brand missing"
+      ],
+      "agent_script": "If your brand isn't in the dropdown, you can request it. Once approved, it becomes available for your listings.",
+      "steps": [
+        "Ask the caller to search the brand list once more with alternate spellings.",
+        "Guide them to Catalogue > Brands > Request new brand.",
+        "Have them attach the trademark certificate or brand ownership proof.",
+        "Explain the five-business-day review timeline."
+      ],
+      "documents": [
+        "Trademark certificate or brand ownership proof"
+      ],
+      "escalation": "Brand Programs Team",
+      "escalation_person": "Brand Approval Officer",
+      "tagging": "Seller → Brand Authorisation → Add a new brand to the catalogue",
+      "topic_category": "brand_authorisation",
+      "description": "If your brand isn't in the dropdown, you can request it. Once approved, it becomes available for your listings."
+    },
+    {
+      "branch_id": "unable_to_submit_bid_before_deadline",
+      "branch_name": "Unable to submit bid before deadline",
+      "trigger_keywords": [
+        "cannot submit bid",
+        "bid submission failed",
+        "bid deadline",
+        "submit button disabled",
+        "upload bid documents"
+      ],
+      "agent_script": "Bid submission blocks when a mandatory document or declaration is missing. Let's find what's pending before the deadline.",
+      "steps": [
+        "Note the bid number and the submission deadline.",
+        "Ask the caller to open the bid checklist and read any items marked incomplete.",
+        "Confirm all mandatory documents are PDF files under 10 MB each.",
+        "Ask them to accept the declarations on the final page.",
+        "If the deadline is within one hour and the button is still disabled, escalate immediately."
+      ],
+      "documents": [
+        "Bid number",
+        "Screenshot of the checklist"
+      ],
+      "escalation": "Sourcing Events Desk",
+      "escalation_person": "Bid Support Specialist",
+      "tagging": "Seller → Bids & Reverse Auctions → Unable to submit bid before deadline",
+      "topic_category": "bids_auctions",
+      "description": "Bid submission blocks when a mandatory document or declaration is missing. Let's find what's pending before the deadline."
+    },
+    {
+      "branch_id": "reverse_auction_not_visible",
+      "branch_name": "Reverse auction not visible to seller",
+      "trigger_keywords": [
+        "reverse auction",
+        "auction not visible",
+        "ra not showing",
+        "not invited to auction",
+        "auction missing"
+      ],
+      "agent_script": "Only sellers who qualified in the technical round are invited to the reverse auction. Let me check your status.",
+      "steps": [
+        "Note the bid number linked to the auction.",
+        "Check whether the seller qualified in the technical evaluation.",
+        "If qualified, ask the caller to check Bids > Auctions and refresh after the start time.",
+        "If not qualified, explain the evaluation result and where to view remarks."
+      ],
+      "documents": [
+        "Bid number"
+      ],
+      "escalation": "Sourcing Events Desk",
+      "escalation_person": "Bid Support Specialist",
+      "tagging": "Seller → Bids & Reverse Auctions → Reverse auction not visible to seller",
+      "topic_category": "bids_auctions",
+      "description": "Only sellers who qualified in the technical round are invited to the reverse auction. Let me check your status."
+    },
+    {
+      "branch_id": "bid_disqualified_technical_evaluation",
+      "branch_name": "Bid disqualified in technical evaluation",
+      "trigger_keywords": [
+        "bid disqualified",
+        "technical evaluation",
+        "rejected bid",
+        "not qualified",
+        "evaluation remarks"
+      ],
+      "agent_script": "I'm sorry your bid was disqualified. The evaluation remarks explain why, and you may be able to raise a representation.",
+      "steps": [
+        "Ask the caller to open the bid and read the evaluation remarks.",
+        "Explain that representations can be raised within 48 hours of the result.",
+        "Guide them to Bids > Representation and attach supporting documents.",
+        "Set expectations that the buyer reviews representations, not the support team."
+      ],
+      "documents": [
+        "Evaluation remarks screenshot",
+        "Supporting documents for representation"
+      ],
+      "escalation": "Sourcing Events Desk",
+      "escalation_person": "Bid Support Specialist",
+      "tagging": "Seller → Bids & Reverse Auctions → Bid disqualified in technical evaluation",
+      "topic_category": "bids_auctions",
+      "description": "I'm sorry your bid was disqualified. The evaluation remarks explain why, and you may be able to raise a representation."
+    },
+    {
+      "branch_id": "order_not_appearing_in_dashboard",
+      "branch_name": "Order not appearing in seller dashboard",
+      "trigger_keywords": [
+        "order not showing",
+        "missing order",
+        "order dashboard",
+        "new order not visible",
+        "purchase order missing"
+      ],
+      "agent_script": "Orders appear in the dashboard within 15 minutes of the buyer confirming. Let's find yours.",
+      "steps": [
+        "Ask for the order number the buyer shared.",
+        "Ask the caller to search by order number under Orders > All orders.",
+        "Check that the date filter includes the order date.",
+        "If a sub-user is logged in, confirm they have order access.",
+        "Escalate with the order number if it still doesn't appear."
+      ],
+      "documents": [
+        "Order number"
+      ],
+      "escalation": "Order Operations Team",
+      "escalation_person": "Fulfilment Coordinator",
+      "tagging": "Seller → Orders & Delivery → Order not appearing in seller dashboard",
+      "topic_category": "orders_delivery",
+      "description": "Orders appear in the dashboard within 15 minutes of the buyer confirming. Let's find yours."
+    },
+    {
+      "branch_id": "request_delivery_extension",
+      "branch_name": "Request delivery date extension",
+      "trigger_keywords": [
+        "delivery extension",
+        "extend delivery",
+        "delay delivery",
+        "more time to deliver",
+        "revised delivery date"
+      ],
+      "agent_script": "You can request a delivery extension from the order page; the buyer approves or rejects it.",
+      "steps": [
+        "Ask the caller to open the order and choose 'Request extension'.",
+        "Have them enter a new date and a clear reason.",
+        "Explain that late delivery penalties may apply if the buyer rejects the request.",
+        "Advise them to request the extension before the original date passes."
+      ],
+      "documents": [
+        "Order number",
+        "Reason for delay"
+      ],
+      "escalation": "Order Operations Team",
+      "escalation_person": "Fulfilment Coordinator",
+      "tagging": "Seller → Orders & Delivery → Request delivery date extension",
+      "topic_category": "orders_delivery",
+      "description": "You can request a delivery extension from the order page; the buyer approves or rejects it."
+    },
+    {
+      "branch_id": "order_cancelled_by_buyer",
+      "branch_name": "Order cancelled by buyer",
+      "trigger_keywords": [
+        "order cancelled",
+        "buyer cancelled",
+        "cancellation",
+        "order withdrawn",
+        "cancelled after dispatch"
+      ],
+      "agent_script": "Buyers can cancel before dispatch. If you had already shipped, we can help you raise a claim.",
+      "steps": [
+        "Check whether the order was cancelled before or after dispatch.",
+        "If before dispatch, explain no further action is needed.",
+        "If after dispatch, ask for the shipment tracking number.",
+        "Guide the caller to raise a cancellation claim with the tracking proof."
+      ],
+      "documents": [
+        "Order number",
+        "Shipment tracking proof"
+      ],
+      "escalation": "Order Operations Team",
+      "escalation_person": "Fulfilment Coordinator",
+      "tagging": "Seller → Orders & Delivery → Order cancelled by buyer",
+      "topic_category": "orders_delivery",
+      "description": "Buyers can cancel before dispatch. If you had already shipped, we can help you raise a claim."
+    },
+    {
+      "branch_id": "invoice_generation_failed",
+      "branch_name": "Invoice generation failed",
+      "trigger_keywords": [
+        "invoice failed",
+        "cannot generate invoice",
+        "invoice error",
+        "bill not generated",
+        "invoice button"
+      ],
+      "agent_script": "Invoices can only be generated after the buyer confirms receipt. Let's check the order status.",
+      "steps": [
+        "Ask for the order number.",
+        "Check whether the buyer has generated the goods receipt.",
+        "If not, explain that the invoice unlocks after receipt confirmation.",
+        "If receipt is confirmed, ask the caller to retry and note any error code.",
+        "Escalate with the error code if generation still fails."
+      ],
+      "documents": [
+        "Order number",
+        "Error code screenshot"
+      ],
+      "escalation": "Seller Finance Desk",
+      "escalation_person": "Accounts Payable Analyst",
+      "tagging": "Seller → Invoices & Payments → Invoice generation failed",
+      "topic_category": "invoices_payments",
+      "description": "Invoices can only be generated after the buyer confirms receipt. Let's check the order status."
+    },
+    {
+      "branch_id": "payment_delayed_after_delivery",
+      "branch_name": "Payment delayed after delivery",
+      "trigger_keywords": [
+        "payment delayed",
+        "payment not received",
+        "pending payment",
+        "late payment",
+        "money not credited"
+      ],
+      "agent_script": "Buyers have 10 days after receipt to pay. Let me check where the payment is in that cycle.",
+      "steps": [
+        "Ask for the order number and invoice date.",
+        "Check whether the buyer has confirmed receipt and approved the invoice.",
+        "If within 10 days of receipt, explain the payment timeline.",
+        "If overdue, raise a payment follow-up to the buyer organisation.",
+        "Escalate if the follow-up is unanswered after three business days."
+      ],
+      "documents": [
+        "Order number",
+        "Invoice copy"
+      ],
+      "escalation": "Seller Finance Desk",
+      "escalation_person": "Accounts Payable Analyst",
+      "tagging": "Seller → Invoices & Payments → Payment delayed after delivery",
+      "topic_category": "invoices_payments",
+      "description": "Buyers have 10 days after receipt to pay. Let me check where the payment is in that cycle."
+    },
+    {
+      "branch_id": "tax_amount_mismatch_on_invoice",
+      "branch_name": "Tax amount mismatch on invoice",
+      "trigger_keywords": [
+        "tax mismatch",
+        "wrong tax",
+        "tax amount",
+        "invoice tax error",
+        "tax calculation"
+      ],
+      "agent_script": "Tax is calculated from the product's tax category at order time. Let's compare that with your invoice.",
+      "steps": [
+        "Ask for the order number and the tax rate the caller expected.",
+        "Check the tax category saved on the listing at order time.",
+        "If the listing category was wrong, guide the caller to issue a credit note and corrected invoice.",
+        "Remind them to fix the listing so future orders are correct."
+      ],
+      "documents": [
+        "Order number",
+        "Invoice copy"
+      ],
+      "escalation": "Seller Finance Desk",
+      "escalation_person": "Accounts Payable Analyst",
+      "tagging": "Seller → Invoices & Payments → Tax amount mismatch on invoice",
+      "topic_category": "invoices_payments",
+      "description": "Tax is calculated from the product's tax category at order time. Let's compare that with your invoice."
+    },
+    {
+      "branch_id": "courier_pickup_missed",
+      "branch_name": "Courier missed the scheduled pickup",
+      "trigger_keywords": [
+        "pickup missed",
+        "courier did not come",
+        "pickup not done",
+        "reschedule pickup",
+        "shipment not collected"
+      ],
+      "agent_script": "Missed pickups happen when the courier slot was full. We can rebook it and protect your dispatch date.",
+      "steps": [
+        "Ask for the order number and the pickup slot that was booked.",
+        "Check the courier's pickup status and any 'attempted' note.",
+        "Rebook the pickup for the next available slot from the shipment page.",
+        "If the dispatch deadline is today, mark the order 'pickup delayed by courier' so no penalty applies.",
+        "Escalate if the courier misses the rebooked slot."
+      ],
+      "documents": [
+        "Order number",
+        "Pickup booking reference"
+      ],
+      "escalation": "Logistics Partner Desk",
+      "escalation_person": "Shipment Exceptions Analyst",
+      "tagging": "Seller → Shipping & Logistics → Courier missed the scheduled pickup",
+      "topic_category": "shipping_logistics",
+      "description": "Missed pickups happen when the courier slot was full. We can rebook it and protect your dispatch date."
+    },
+    {
+      "branch_id": "shipping_label_not_generating",
+      "branch_name": "Shipping label will not generate",
+      "trigger_keywords": [
+        "shipping label",
+        "label error",
+        "cannot print label",
+        "airway bill",
+        "label download failed"
+      ],
+      "agent_script": "Labels fail when the package weight or dimensions are missing. Let's check the shipment form.",
+      "steps": [
+        "Ask the caller to open the shipment form for the order.",
+        "Confirm package weight and all three dimensions are filled in.",
+        "Check that the pickup address has a valid postcode.",
+        "Ask them to regenerate the label and download the PDF."
+      ],
+      "documents": [
+        "Order number",
+        "Package weight and dimensions"
+      ],
+      "escalation": "Logistics Partner Desk",
+      "escalation_person": "Shipment Exceptions Analyst",
+      "tagging": "Seller → Shipping & Logistics → Shipping label will not generate",
+      "topic_category": "shipping_logistics",
+      "description": "Labels fail when the package weight or dimensions are missing. Let's check the shipment form."
+    },
+    {
+      "branch_id": "delivery_address_undeliverable",
+      "branch_name": "Courier says delivery address is undeliverable",
+      "trigger_keywords": [
+        "undeliverable address",
+        "address not found",
+        "delivery failed",
+        "return to origin",
+        "courier cannot locate"
+      ],
+      "agent_script": "When the courier can't find the address, we confirm it with the buyer before the parcel is sent back.",
+      "steps": [
+        "Ask for the order number and the courier's failure reason.",
+        "Contact the buyer's consignee through the order messages to confirm the address and a phone number.",
+        "Share the corrected details with the courier from the shipment page.",
+        "If the buyer doesn't reply in 48 hours, let the shipment return and inform the buyer."
+      ],
+      "documents": [
+        "Order number",
+        "Courier failure note"
+      ],
+      "escalation": "Logistics Partner Desk",
+      "escalation_person": "Shipment Exceptions Analyst",
+      "tagging": "Seller → Shipping & Logistics → Courier says delivery address is undeliverable",
+      "topic_category": "shipping_logistics",
+      "description": "When the courier can't find the address, we confirm it with the buyer before the parcel is sent back."
+    },
+    {
+      "branch_id": "add_sub_user",
+      "branch_name": "Add a sub-user to seller account",
+      "trigger_keywords": [
+        "add user",
+        "sub user",
+        "new employee login",
+        "create user",
+        "team member access"
+      ],
+      "agent_script": "Admins can add sub-users and give them limited roles, so your team can work without sharing passwords.",
+      "steps": [
+        "Confirm the caller is the account admin.",
+        "Guide them to Settings > Users > Add user.",
+        "Have them choose a role such as Catalogue, Bids or Finance.",
+        "Explain that the new user receives an activation email."
+      ],
+      "documents": [
+        "New user's work email"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Account Administration Analyst",
+      "tagging": "Seller → Sub-users & Roles → Add a sub-user to seller account",
+      "topic_category": "sub_users",
+      "description": "Admins can add sub-users and give them limited roles, so your team can work without sharing passwords."
+    },
+    {
+      "branch_id": "sub_user_cannot_access_bids",
+      "branch_name": "Sub-user cannot access bids",
+      "trigger_keywords": [
+        "sub user access",
+        "permission denied",
+        "cannot see bids",
+        "role permissions",
+        "access denied"
+      ],
+      "agent_script": "When a sub-user can't see a section, it's almost always their role. The admin can adjust it.",
+      "steps": [
+        "Ask which section the sub-user cannot open.",
+        "Ask the admin to open Settings > Users and check that user's role.",
+        "Add the Bids permission or change the role.",
+        "Ask the sub-user to sign out and back in."
+      ],
+      "documents": [
+        "Sub-user's login email"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Account Administration Analyst",
+      "tagging": "Seller → Sub-users & Roles → Sub-user cannot access bids",
+      "topic_category": "sub_users",
+      "description": "When a sub-user can't see a section, it's almost always their role. The admin can adjust it."
+    },
+    {
+      "branch_id": "transfer_admin_role",
+      "branch_name": "Transfer admin role to another user",
+      "trigger_keywords": [
+        "transfer admin",
+        "change admin",
+        "admin left company",
+        "primary user",
+        "owner change"
+      ],
+      "agent_script": "Transferring admin rights protects your account when people change roles. It needs confirmation from the business.",
+      "steps": [
+        "If the current admin is available, they can transfer the role from Settings > Users.",
+        "If the admin has left, collect an authorisation letter from the business.",
+        "The new admin must complete identity verification.",
+        "Escalate letter-based transfers for manual approval."
+      ],
+      "documents": [
+        "Authorisation letter",
+        "Identity proof of the new admin"
+      ],
+      "escalation": "Access Support Team",
+      "escalation_person": "Account Administration Analyst",
+      "tagging": "Seller → Sub-users & Roles → Transfer admin role to another user",
+      "topic_category": "sub_users",
+      "description": "Transferring admin rights protects your account when people change roles. It needs confirmation from the business."
+    },
+    {
+      "branch_id": "buyer_raised_quality_dispute",
+      "branch_name": "Buyer raised a quality dispute",
+      "trigger_keywords": [
+        "quality dispute",
+        "buyer complaint",
+        "defective goods",
+        "dispute raised",
+        "product quality"
+      ],
+      "agent_script": "When a buyer raises a quality dispute, you get seven days to respond with evidence.",
+      "steps": [
+        "Ask for the dispute ID.",
+        "Explain the seven-day response window.",
+        "Guide the caller to respond with photos, test reports or replacement offers.",
+        "Explain that the dispute cell decides if both sides cannot agree."
+      ],
+      "documents": [
+        "Dispute ID",
+        "Inspection photos or test reports"
+      ],
+      "escalation": "Dispute Resolution Cell",
+      "escalation_person": "Dispute Case Manager",
+      "tagging": "Seller → Disputes & Returns → Buyer raised a quality dispute",
+      "topic_category": "disputes_returns",
+      "description": "When a buyer raises a quality dispute, you get seven days to respond with evidence."
+    },
+    {
+      "branch_id": "return_pickup_not_scheduled",
+      "branch_name": "Return pickup not scheduled",
+      "trigger_keywords": [
+        "return pickup",
+        "return not collected",
+        "reverse pickup",
+        "return shipment",
+        "pickup pending"
+      ],
+      "agent_script": "Return pickups are scheduled by the seller within three days of the return being approved.",
+      "steps": [
+        "Ask for the return ID.",
+        "Check whether the return was approved.",
+        "Guide the seller to schedule pickup from the return page.",
+        "If the courier missed the pickup, ask them to reschedule and share the courier reference."
+      ],
+      "documents": [
+        "Return ID",
+        "Courier reference"
+      ],
+      "escalation": "Dispute Resolution Cell",
+      "escalation_person": "Dispute Case Manager",
+      "tagging": "Seller → Disputes & Returns → Return pickup not scheduled",
+      "topic_category": "disputes_returns",
+      "description": "Return pickups are scheduled by the seller within three days of the return being approved."
+    },
+    {
+      "branch_id": "penalty_applied_incorrectly",
+      "branch_name": "Penalty applied incorrectly",
+      "trigger_keywords": [
+        "penalty",
+        "late delivery penalty",
+        "deduction",
+        "wrong penalty",
+        "penalty waiver"
+      ],
+      "agent_script": "Penalties are applied automatically for late delivery. If the delay wasn't yours, you can request a waiver.",
+      "steps": [
+        "Ask for the order number and the penalty amount.",
+        "Check whether an extension was approved for the order.",
+        "If an approved extension exists, raise a waiver request with the approval reference.",
+        "If the buyer caused the delay, collect evidence and raise a waiver request."
+      ],
+      "documents": [
+        "Order number",
+        "Extension approval or delay evidence"
+      ],
+      "escalation": "Dispute Resolution Cell",
+      "escalation_person": "Dispute Case Manager",
+      "tagging": "Seller → Disputes & Returns → Penalty applied incorrectly",
+      "topic_category": "disputes_returns",
+      "description": "Penalties are applied automatically for late delivery. If the delay wasn't yours, you can request a waiver."
+    }
+  ]
+}

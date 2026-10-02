@@ -1,0 +1,16 @@
+.git
+**/node_modules
+**/.next
+**/__pycache__
+**/.pytest_cache
+.runtime
+.env
+.env.*
+frontend/tsconfig.tsbuildinfo
+backend/knowledge/pending_queue.json
+backend/knowledge/audit_log.jsonl
+backend/knowledge/store_metadata.json
+backend/knowledge/supervisor_assignments.json
+backend/tests
+benchmarks
+backend/models

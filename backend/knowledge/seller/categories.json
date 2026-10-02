@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "id": "registration",
+      "name": "Seller Registration"
+    },
+    {
+      "id": "login_otp",
+      "name": "Login & OTP"
+    },
+    {
+      "id": "profile_kyc",
+      "name": "Profile & KYC"
+    },
+    {
+      "id": "bank_payouts",
+      "name": "Bank Account & Payouts"
+    },
+    {
+      "id": "catalogue",
+      "name": "Catalogue & Listings"
+    },
+    {
+      "id": "brand_authorisation",
+      "name": "Brand Authorisation"
+    },
+    {
+      "id": "bids_auctions",
+      "name": "Bids & Reverse Auctions"
+    },
+    {
+      "id": "orders_delivery",
+      "name": "Orders & Delivery"
+    },
+    {
+      "id": "invoices_payments",
+      "name": "Invoices & Payments"
+    },
+    {
+      "id": "shipping_logistics",
+      "name": "Shipping & Logistics"
+    },
+    {
+      "id": "sub_users",
+      "name": "Sub-users & Roles"
+    },
+    {
+      "id": "disputes_returns",
+      "name": "Disputes & Returns"
+    }
+  ]
+}

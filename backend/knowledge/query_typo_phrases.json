@@ -1,0 +1,18 @@
+{
+  "version": "1",
+  "description": "Phrase-level typo corrections for demo query correction.",
+  "phrases": {
+    "listng missing": "listing missing",
+    "pasword reset": "password reset",
+    "invoce not generated": "invoice not generated",
+    "shiping label": "shipping label",
+    "reverse aution": "reverse auction",
+    "goods reciept": "goods receipt"
+  },
+  "protected_phrases": [
+    "northwind",
+    "reverse auction",
+    "goods receipt",
+    "request for quotation"
+  ]
+}

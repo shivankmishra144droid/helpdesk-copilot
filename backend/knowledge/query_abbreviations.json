@@ -1,0 +1,12 @@
+{
+  "abbreviations": {
+    "rfq": "request for quotation",
+    "grn": "goods receipt",
+    "po": "purchase order",
+    "pwd": "password",
+    "acct": "account",
+    "inv": "invoice",
+    "awb": "airway bill",
+    "ra": "reverse auction"
+  }
+}

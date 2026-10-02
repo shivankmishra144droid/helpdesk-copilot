@@ -1,0 +1,1789 @@
+{
+  "version": "demo-1",
+  "description": "Hand-written caller phrasings (not branch names) plus one synthetic typo variant per branch.",
+  "case_count": 198,
+  "cases": [
+    {
+      "id": "case-001",
+      "query": "registration says tax number does not match company name",
+      "caller_type": "seller",
+      "expected_branch_id": "tax_id_does_not_match_business_name",
+      "expected_branch_name": "Tax ID does not match business name during registration",
+      "expected_category": "registration",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-002",
+      "query": "tax id name mismatch while signing up as seller",
+      "caller_type": "seller",
+      "expected_branch_id": "tax_id_does_not_match_business_name",
+      "expected_branch_name": "Tax ID does not match business name during registration",
+      "expected_category": "registration",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-003",
+      "query": "reistration says tax number does not match company name",
+      "caller_type": "seller",
+      "expected_branch_id": "tax_id_does_not_match_business_name",
+      "expected_branch_name": "Tax ID does not match business name during registration",
+      "expected_category": "registration",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-004",
+      "query": "activation link in email has expired",
+      "caller_type": "seller",
+      "expected_branch_id": "verification_email_link_expired",
+      "expected_branch_name": "Verification email link expired",
+      "expected_category": "registration",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-005",
+      "query": "my email verification link says invalid",
+      "caller_type": "seller",
+      "expected_branch_id": "verification_email_link_expired",
+      "expected_branch_name": "Verification email link expired",
+      "expected_category": "registration",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-006",
+      "query": "activtion link in email has expired",
+      "caller_type": "seller",
+      "expected_branch_id": "verification_email_link_expired",
+      "expected_branch_name": "Verification email link expired",
+      "expected_category": "registration",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-007",
+      "query": "seller registration is still pending after a week",
+      "caller_type": "seller",
+      "expected_branch_id": "registration_pending_review",
+      "expected_branch_name": "Registration stuck in pending review",
+      "expected_category": "registration",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-008",
+      "query": "application stuck under review status",
+      "caller_type": "seller",
+      "expected_branch_id": "registration_pending_review",
+      "expected_branch_name": "Registration stuck in pending review",
+      "expected_category": "registration",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-009",
+      "query": "seller reigstration is still pending after a week",
+      "caller_type": "seller",
+      "expected_branch_id": "registration_pending_review",
+      "expected_branch_name": "Registration stuck in pending review",
+      "expected_category": "registration",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-010",
+      "query": "not getting the sms code to log in",
+      "caller_type": "seller",
+      "expected_branch_id": "login_code_sms_not_arriving",
+      "expected_branch_name": "Login code SMS not arriving",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-011",
+      "query": "otp never arrives on my phone",
+      "caller_type": "seller",
+      "expected_branch_id": "login_code_sms_not_arriving",
+      "expected_branch_name": "Login code SMS not arriving",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-012",
+      "query": "not gettig the sms code to log in",
+      "caller_type": "seller",
+      "expected_branch_id": "login_code_sms_not_arriving",
+      "expected_branch_name": "Login code SMS not arriving",
+      "expected_category": "login_otp",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-013",
+      "query": "it says my account is locked",
+      "caller_type": "seller",
+      "expected_branch_id": "account_locked_after_failed_attempts",
+      "expected_branch_name": "Account locked after failed login attempts",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-014",
+      "query": "locked out after entering wrong password many times",
+      "caller_type": "seller",
+      "expected_branch_id": "account_locked_after_failed_attempts",
+      "expected_branch_name": "Account locked after failed login attempts",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-015",
+      "query": "it says my accont is locked",
+      "caller_type": "seller",
+      "expected_branch_id": "account_locked_after_failed_attempts",
+      "expected_branch_name": "Account locked after failed login attempts",
+      "expected_category": "login_otp",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-016",
+      "query": "forgot password link is not working",
+      "caller_type": "seller",
+      "expected_branch_id": "password_reset_link_not_working",
+      "expected_branch_name": "Password reset link not working",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-017",
+      "query": "reset password page says token invalid",
+      "caller_type": "seller",
+      "expected_branch_id": "password_reset_link_not_working",
+      "expected_branch_name": "Password reset link not working",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-018",
+      "query": "forgot pssword link is not working",
+      "caller_type": "seller",
+      "expected_branch_id": "password_reset_link_not_working",
+      "expected_branch_name": "Password reset link not working",
+      "expected_category": "login_otp",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-019",
+      "query": "we moved office, how do I change the address",
+      "caller_type": "seller",
+      "expected_branch_id": "update_registered_business_address",
+      "expected_branch_name": "Update registered business address",
+      "expected_category": "profile_kyc",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-020",
+      "query": "need to update company address on profile",
+      "caller_type": "seller",
+      "expected_branch_id": "update_registered_business_address",
+      "expected_branch_name": "Update registered business address",
+      "expected_category": "profile_kyc",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-021",
+      "query": "we moved offiec, how do I change the address",
+      "caller_type": "seller",
+      "expected_branch_id": "update_registered_business_address",
+      "expected_branch_name": "Update registered business address",
+      "expected_category": "profile_kyc",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-022",
+      "query": "kyc got rejected what should i upload",
+      "caller_type": "seller",
+      "expected_branch_id": "kyc_document_rejected",
+      "expected_branch_name": "KYC document rejected",
+      "expected_category": "profile_kyc",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-023",
+      "query": "verification document was not accepted",
+      "caller_type": "seller",
+      "expected_branch_id": "kyc_document_rejected",
+      "expected_branch_name": "KYC document rejected",
+      "expected_category": "profile_kyc",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-024",
+      "query": "kyc got rejeced what should i upload",
+      "caller_type": "seller",
+      "expected_branch_id": "kyc_document_rejected",
+      "expected_branch_name": "KYC document rejected",
+      "expected_category": "profile_kyc",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-025",
+      "query": "our director changed, need new signing person",
+      "caller_type": "seller",
+      "expected_branch_id": "change_authorised_signatory",
+      "expected_branch_name": "Change authorised signatory",
+      "expected_category": "profile_kyc",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-026",
+      "query": "how to replace the authorised signatory",
+      "caller_type": "seller",
+      "expected_branch_id": "change_authorised_signatory",
+      "expected_branch_name": "Change authorised signatory",
+      "expected_category": "profile_kyc",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-027",
+      "query": "our direcotr changed, need new signing person",
+      "caller_type": "seller",
+      "expected_branch_id": "change_authorised_signatory",
+      "expected_branch_name": "Change authorised signatory",
+      "expected_category": "profile_kyc",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-028",
+      "query": "bank account validation keeps failing",
+      "caller_type": "seller",
+      "expected_branch_id": "payout_bank_account_not_verified",
+      "expected_branch_name": "Payout bank account could not be verified",
+      "expected_category": "bank_payouts",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-029",
+      "query": "payout bank details got rejected",
+      "caller_type": "seller",
+      "expected_branch_id": "payout_bank_account_not_verified",
+      "expected_branch_name": "Payout bank account could not be verified",
+      "expected_category": "bank_payouts",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-030",
+      "query": "bank account validaton keeps failing",
+      "caller_type": "seller",
+      "expected_branch_id": "payout_bank_account_not_verified",
+      "expected_branch_name": "Payout bank account could not be verified",
+      "expected_category": "bank_payouts",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-031",
+      "query": "want to change the bank where payments come",
+      "caller_type": "seller",
+      "expected_branch_id": "change_payout_bank_account",
+      "expected_branch_name": "Change payout bank account",
+      "expected_category": "bank_payouts",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-032",
+      "query": "update payout account details",
+      "caller_type": "seller",
+      "expected_branch_id": "change_payout_bank_account",
+      "expected_branch_name": "Change payout bank account",
+      "expected_category": "bank_payouts",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-033",
+      "query": "want to change the bank where paymets come",
+      "caller_type": "seller",
+      "expected_branch_id": "change_payout_bank_account",
+      "expected_branch_name": "Change payout bank account",
+      "expected_category": "bank_payouts",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-034",
+      "query": "my payment is showing on hold",
+      "caller_type": "seller",
+      "expected_branch_id": "payout_on_hold",
+      "expected_branch_name": "Payout on hold",
+      "expected_category": "bank_payouts",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-035",
+      "query": "why are my settlements blocked",
+      "caller_type": "seller",
+      "expected_branch_id": "payout_on_hold",
+      "expected_branch_name": "Payout on hold",
+      "expected_category": "bank_payouts",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-036",
+      "query": "my apyment is showing on hold",
+      "caller_type": "seller",
+      "expected_branch_id": "payout_on_hold",
+      "expected_branch_name": "Payout on hold",
+      "expected_category": "bank_payouts",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-037",
+      "query": "uploaded item is not showing to buyers",
+      "caller_type": "seller",
+      "expected_branch_id": "listing_missing_from_buyer_search",
+      "expected_branch_name": "Listing missing from buyer search",
+      "expected_category": "catalogue",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-038",
+      "query": "my product is missing from search results",
+      "caller_type": "seller",
+      "expected_branch_id": "listing_missing_from_buyer_search",
+      "expected_branch_name": "Listing missing from buyer search",
+      "expected_category": "catalogue",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-039",
+      "query": "ulpoaded item is not showing to buyers",
+      "caller_type": "seller",
+      "expected_branch_id": "listing_missing_from_buyer_search",
+      "expected_branch_name": "Listing missing from buyer search",
+      "expected_category": "catalogue",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-040",
+      "query": "product listing failed quality review",
+      "caller_type": "seller",
+      "expected_branch_id": "listing_rejected_quality_check",
+      "expected_branch_name": "Listing rejected in quality check",
+      "expected_category": "catalogue",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-041",
+      "query": "catalogue item got rejected because of images",
+      "caller_type": "seller",
+      "expected_branch_id": "listing_rejected_quality_check",
+      "expected_branch_name": "Listing rejected in quality check",
+      "expected_category": "catalogue",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-042",
+      "query": "prouct listing failed quality review",
+      "caller_type": "seller",
+      "expected_branch_id": "listing_rejected_quality_check",
+      "expected_branch_name": "Listing rejected in quality check",
+      "expected_category": "catalogue",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-043",
+      "query": "excel bulk upload keeps throwing errors",
+      "caller_type": "seller",
+      "expected_branch_id": "bulk_upload_template_errors",
+      "expected_branch_name": "Bulk upload template errors",
+      "expected_category": "catalogue",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-044",
+      "query": "mass product upload template not accepted",
+      "caller_type": "seller",
+      "expected_branch_id": "bulk_upload_template_errors",
+      "expected_branch_name": "Bulk upload template errors",
+      "expected_category": "catalogue",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-045",
+      "query": "excel bulk upload keeps trhowing errors",
+      "caller_type": "seller",
+      "expected_branch_id": "bulk_upload_template_errors",
+      "expected_branch_name": "Bulk upload template errors",
+      "expected_category": "catalogue",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-046",
+      "query": "brand request still not approved",
+      "caller_type": "seller",
+      "expected_branch_id": "brand_approval_pending",
+      "expected_branch_name": "Brand approval pending",
+      "expected_category": "brand_authorisation",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-047",
+      "query": "how long does brand approval take",
+      "caller_type": "seller",
+      "expected_branch_id": "brand_approval_pending",
+      "expected_branch_name": "Brand approval pending",
+      "expected_category": "brand_authorisation",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-048",
+      "query": "brand request still not appoved",
+      "caller_type": "seller",
+      "expected_branch_id": "brand_approval_pending",
+      "expected_branch_name": "Brand approval pending",
+      "expected_category": "brand_authorisation",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-049",
+      "query": "dealer authorization letter was rejected",
+      "caller_type": "seller",
+      "expected_branch_id": "reseller_authorisation_letter_rejected",
+      "expected_branch_name": "Reseller authorisation letter rejected",
+      "expected_category": "brand_authorisation",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-050",
+      "query": "reseller certificate not accepted",
+      "caller_type": "seller",
+      "expected_branch_id": "reseller_authorisation_letter_rejected",
+      "expected_branch_name": "Reseller authorisation letter rejected",
+      "expected_category": "brand_authorisation",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-051",
+      "query": "dealer authoriation letter was rejected",
+      "caller_type": "seller",
+      "expected_branch_id": "reseller_authorisation_letter_rejected",
+      "expected_branch_name": "Reseller authorisation letter rejected",
+      "expected_category": "brand_authorisation",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-052",
+      "query": "my brand is not in the dropdown list",
+      "caller_type": "seller",
+      "expected_branch_id": "add_new_brand_to_catalogue",
+      "expected_branch_name": "Add a new brand to the catalogue",
+      "expected_category": "brand_authorisation",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-053",
+      "query": "how do I register a new brand name",
+      "caller_type": "seller",
+      "expected_branch_id": "add_new_brand_to_catalogue",
+      "expected_branch_name": "Add a new brand to the catalogue",
+      "expected_category": "brand_authorisation",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-054",
+      "query": "my brand is not in the drpodown list",
+      "caller_type": "seller",
+      "expected_branch_id": "add_new_brand_to_catalogue",
+      "expected_branch_name": "Add a new brand to the catalogue",
+      "expected_category": "brand_authorisation",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-055",
+      "query": "submit button greyed out on bid",
+      "caller_type": "seller",
+      "expected_branch_id": "unable_to_submit_bid_before_deadline",
+      "expected_branch_name": "Unable to submit bid before deadline",
+      "expected_category": "bids_auctions",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-056",
+      "query": "can't submit my bid and deadline is today",
+      "caller_type": "seller",
+      "expected_branch_id": "unable_to_submit_bid_before_deadline",
+      "expected_branch_name": "Unable to submit bid before deadline",
+      "expected_category": "bids_auctions",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-057",
+      "query": "usbmit button greyed out on bid",
+      "caller_type": "seller",
+      "expected_branch_id": "unable_to_submit_bid_before_deadline",
+      "expected_branch_name": "Unable to submit bid before deadline",
+      "expected_category": "bids_auctions",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-058",
+      "query": "reverse auction is not showing in my account",
+      "caller_type": "seller",
+      "expected_branch_id": "reverse_auction_not_visible",
+      "expected_branch_name": "Reverse auction not visible to seller",
+      "expected_category": "bids_auctions",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-059",
+      "query": "why can't I see the auction for my bid",
+      "caller_type": "seller",
+      "expected_branch_id": "reverse_auction_not_visible",
+      "expected_branch_name": "Reverse auction not visible to seller",
+      "expected_category": "bids_auctions",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-060",
+      "query": "revere auction is not showing in my account",
+      "caller_type": "seller",
+      "expected_branch_id": "reverse_auction_not_visible",
+      "expected_branch_name": "Reverse auction not visible to seller",
+      "expected_category": "bids_auctions",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-061",
+      "query": "my bid got rejected in technical round",
+      "caller_type": "seller",
+      "expected_branch_id": "bid_disqualified_technical_evaluation",
+      "expected_branch_name": "Bid disqualified in technical evaluation",
+      "expected_category": "bids_auctions",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-062",
+      "query": "how to contest bid disqualification",
+      "caller_type": "seller",
+      "expected_branch_id": "bid_disqualified_technical_evaluation",
+      "expected_branch_name": "Bid disqualified in technical evaluation",
+      "expected_category": "bids_auctions",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-063",
+      "query": "my bid got rejected in techical round",
+      "caller_type": "seller",
+      "expected_branch_id": "bid_disqualified_technical_evaluation",
+      "expected_branch_name": "Bid disqualified in technical evaluation",
+      "expected_category": "bids_auctions",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-064",
+      "query": "buyer says they placed an order but I don't see it",
+      "caller_type": "seller",
+      "expected_branch_id": "order_not_appearing_in_dashboard",
+      "expected_branch_name": "Order not appearing in seller dashboard",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-065",
+      "query": "purchase order missing from my dashboard",
+      "caller_type": "seller",
+      "expected_branch_id": "order_not_appearing_in_dashboard",
+      "expected_branch_name": "Order not appearing in seller dashboard",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-066",
+      "query": "buyer says they plcaed an order but I don't see it",
+      "caller_type": "seller",
+      "expected_branch_id": "order_not_appearing_in_dashboard",
+      "expected_branch_name": "Order not appearing in seller dashboard",
+      "expected_category": "orders_delivery",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-067",
+      "query": "need more days to deliver the order",
+      "caller_type": "seller",
+      "expected_branch_id": "request_delivery_extension",
+      "expected_branch_name": "Request delivery date extension",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-068",
+      "query": "how to ask buyer for delivery date extension",
+      "caller_type": "seller",
+      "expected_branch_id": "request_delivery_extension",
+      "expected_branch_name": "Request delivery date extension",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-069",
+      "query": "need more days to delievr the order",
+      "caller_type": "seller",
+      "expected_branch_id": "request_delivery_extension",
+      "expected_branch_name": "Request delivery date extension",
+      "expected_category": "orders_delivery",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-070",
+      "query": "buyer cancelled my order after I shipped it",
+      "caller_type": "seller",
+      "expected_branch_id": "order_cancelled_by_buyer",
+      "expected_branch_name": "Order cancelled by buyer",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-071",
+      "query": "order got cancelled what happens now",
+      "caller_type": "seller",
+      "expected_branch_id": "order_cancelled_by_buyer",
+      "expected_branch_name": "Order cancelled by buyer",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-072",
+      "query": "buyer cacnelled my order after I shipped it",
+      "caller_type": "seller",
+      "expected_branch_id": "order_cancelled_by_buyer",
+      "expected_branch_name": "Order cancelled by buyer",
+      "expected_category": "orders_delivery",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-073",
+      "query": "unable to create invoice for my order",
+      "caller_type": "seller",
+      "expected_branch_id": "invoice_generation_failed",
+      "expected_branch_name": "Invoice generation failed",
+      "expected_category": "invoices_payments",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-074",
+      "query": "invoice generation is showing error",
+      "caller_type": "seller",
+      "expected_branch_id": "invoice_generation_failed",
+      "expected_branch_name": "Invoice generation failed",
+      "expected_category": "invoices_payments",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-075",
+      "query": "unable to create ivoice for my order",
+      "caller_type": "seller",
+      "expected_branch_id": "invoice_generation_failed",
+      "expected_branch_name": "Invoice generation failed",
+      "expected_category": "invoices_payments",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-076",
+      "query": "delivered the goods but still not paid",
+      "caller_type": "seller",
+      "expected_branch_id": "payment_delayed_after_delivery",
+      "expected_branch_name": "Payment delayed after delivery",
+      "expected_category": "invoices_payments",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-077",
+      "query": "payment for my order is pending for weeks",
+      "caller_type": "seller",
+      "expected_branch_id": "payment_delayed_after_delivery",
+      "expected_branch_name": "Payment delayed after delivery",
+      "expected_category": "invoices_payments",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-078",
+      "query": "dleivered the goods but still not paid",
+      "caller_type": "seller",
+      "expected_branch_id": "payment_delayed_after_delivery",
+      "expected_branch_name": "Payment delayed after delivery",
+      "expected_category": "invoices_payments",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-079",
+      "query": "tax on invoice is calculated wrong",
+      "caller_type": "seller",
+      "expected_branch_id": "tax_amount_mismatch_on_invoice",
+      "expected_branch_name": "Tax amount mismatch on invoice",
+      "expected_category": "invoices_payments",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-080",
+      "query": "invoice shows different tax amount",
+      "caller_type": "seller",
+      "expected_branch_id": "tax_amount_mismatch_on_invoice",
+      "expected_branch_name": "Tax amount mismatch on invoice",
+      "expected_category": "invoices_payments",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-081",
+      "query": "tax on invoice is claculated wrong",
+      "caller_type": "seller",
+      "expected_branch_id": "tax_amount_mismatch_on_invoice",
+      "expected_branch_name": "Tax amount mismatch on invoice",
+      "expected_category": "invoices_payments",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-082",
+      "query": "the delivery guy never came to collect the parcel",
+      "caller_type": "seller",
+      "expected_branch_id": "courier_pickup_missed",
+      "expected_branch_name": "Courier missed the scheduled pickup",
+      "expected_category": "shipping_logistics",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-083",
+      "query": "pickup was booked for today but nobody showed up",
+      "caller_type": "seller",
+      "expected_branch_id": "courier_pickup_missed",
+      "expected_branch_name": "Courier missed the scheduled pickup",
+      "expected_category": "shipping_logistics",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-084",
+      "query": "the dlivery guy never came to collect the parcel",
+      "caller_type": "seller",
+      "expected_branch_id": "courier_pickup_missed",
+      "expected_branch_name": "Courier missed the scheduled pickup",
+      "expected_category": "shipping_logistics",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-085",
+      "query": "can't print the label for my shipment",
+      "caller_type": "seller",
+      "expected_branch_id": "shipping_label_not_generating",
+      "expected_branch_name": "Shipping label will not generate",
+      "expected_category": "shipping_logistics",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-086",
+      "query": "label button gives an error",
+      "caller_type": "seller",
+      "expected_branch_id": "shipping_label_not_generating",
+      "expected_branch_name": "Shipping label will not generate",
+      "expected_category": "shipping_logistics",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-087",
+      "query": "can't print the label for my shimpent",
+      "caller_type": "seller",
+      "expected_branch_id": "shipping_label_not_generating",
+      "expected_branch_name": "Shipping label will not generate",
+      "expected_category": "shipping_logistics",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-088",
+      "query": "courier says they can't find the buyer's address",
+      "caller_type": "seller",
+      "expected_branch_id": "delivery_address_undeliverable",
+      "expected_branch_name": "Courier says delivery address is undeliverable",
+      "expected_category": "shipping_logistics",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-089",
+      "query": "delivery failed because address is wrong",
+      "caller_type": "seller",
+      "expected_branch_id": "delivery_address_undeliverable",
+      "expected_branch_name": "Courier says delivery address is undeliverable",
+      "expected_category": "shipping_logistics",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-090",
+      "query": "couier says they can't find the buyer's address",
+      "caller_type": "seller",
+      "expected_branch_id": "delivery_address_undeliverable",
+      "expected_branch_name": "Courier says delivery address is undeliverable",
+      "expected_category": "shipping_logistics",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-091",
+      "query": "how can my staff get their own login",
+      "caller_type": "seller",
+      "expected_branch_id": "add_sub_user",
+      "expected_branch_name": "Add a sub-user to seller account",
+      "expected_category": "sub_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-092",
+      "query": "add another user to our seller account",
+      "caller_type": "seller",
+      "expected_branch_id": "add_sub_user",
+      "expected_branch_name": "Add a sub-user to seller account",
+      "expected_category": "sub_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-093",
+      "query": "how can my stff get their own login",
+      "caller_type": "seller",
+      "expected_branch_id": "add_sub_user",
+      "expected_branch_name": "Add a sub-user to seller account",
+      "expected_category": "sub_users",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-094",
+      "query": "my colleague cannot open the bids page",
+      "caller_type": "seller",
+      "expected_branch_id": "sub_user_cannot_access_bids",
+      "expected_branch_name": "Sub-user cannot access bids",
+      "expected_category": "sub_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-095",
+      "query": "sub user gets access denied",
+      "caller_type": "seller",
+      "expected_branch_id": "sub_user_cannot_access_bids",
+      "expected_branch_name": "Sub-user cannot access bids",
+      "expected_category": "sub_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-096",
+      "query": "my colleague cannot open the bids page",
+      "caller_type": "seller",
+      "expected_branch_id": "sub_user_cannot_access_bids",
+      "expected_branch_name": "Sub-user cannot access bids",
+      "expected_category": "sub_users",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-097",
+      "query": "our admin left the company, need to change admin",
+      "caller_type": "seller",
+      "expected_branch_id": "transfer_admin_role",
+      "expected_branch_name": "Transfer admin role to another user",
+      "expected_category": "sub_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-098",
+      "query": "how to make someone else the main user",
+      "caller_type": "seller",
+      "expected_branch_id": "transfer_admin_role",
+      "expected_branch_name": "Transfer admin role to another user",
+      "expected_category": "sub_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-099",
+      "query": "our admin left the compayn, need to change admin",
+      "caller_type": "seller",
+      "expected_branch_id": "transfer_admin_role",
+      "expected_branch_name": "Transfer admin role to another user",
+      "expected_category": "sub_users",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-100",
+      "query": "buyer complained about product quality",
+      "caller_type": "seller",
+      "expected_branch_id": "buyer_raised_quality_dispute",
+      "expected_branch_name": "Buyer raised a quality dispute",
+      "expected_category": "disputes_returns",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-101",
+      "query": "how do I respond to a quality dispute",
+      "caller_type": "seller",
+      "expected_branch_id": "buyer_raised_quality_dispute",
+      "expected_branch_name": "Buyer raised a quality dispute",
+      "expected_category": "disputes_returns",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-102",
+      "query": "buyer copmlained about product quality",
+      "caller_type": "seller",
+      "expected_branch_id": "buyer_raised_quality_dispute",
+      "expected_branch_name": "Buyer raised a quality dispute",
+      "expected_category": "disputes_returns",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-103",
+      "query": "return items have not been picked up",
+      "caller_type": "seller",
+      "expected_branch_id": "return_pickup_not_scheduled",
+      "expected_branch_name": "Return pickup not scheduled",
+      "expected_category": "disputes_returns",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-104",
+      "query": "reverse pickup is still pending",
+      "caller_type": "seller",
+      "expected_branch_id": "return_pickup_not_scheduled",
+      "expected_branch_name": "Return pickup not scheduled",
+      "expected_category": "disputes_returns",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-105",
+      "query": "reurn items have not been picked up",
+      "caller_type": "seller",
+      "expected_branch_id": "return_pickup_not_scheduled",
+      "expected_branch_name": "Return pickup not scheduled",
+      "expected_category": "disputes_returns",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-106",
+      "query": "penalty deducted even though delivery was on time",
+      "caller_type": "seller",
+      "expected_branch_id": "penalty_applied_incorrectly",
+      "expected_branch_name": "Penalty applied incorrectly",
+      "expected_category": "disputes_returns",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-107",
+      "query": "how to get a late delivery penalty removed",
+      "caller_type": "seller",
+      "expected_branch_id": "penalty_applied_incorrectly",
+      "expected_branch_name": "Penalty applied incorrectly",
+      "expected_category": "disputes_returns",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-108",
+      "query": "penalty deduted even though delivery was on time",
+      "caller_type": "seller",
+      "expected_branch_id": "penalty_applied_incorrectly",
+      "expected_branch_name": "Penalty applied incorrectly",
+      "expected_category": "disputes_returns",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-109",
+      "query": "how does our department register as a buyer",
+      "caller_type": "buyer",
+      "expected_branch_id": "register_new_buyer_organisation",
+      "expected_branch_name": "Register a new buyer organisation",
+      "expected_category": "org_onboarding",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-110",
+      "query": "new organisation buyer registration steps",
+      "caller_type": "buyer",
+      "expected_branch_id": "register_new_buyer_organisation",
+      "expected_branch_name": "Register a new buyer organisation",
+      "expected_category": "org_onboarding",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-111",
+      "query": "how does our depratment register as a buyer",
+      "caller_type": "buyer",
+      "expected_branch_id": "register_new_buyer_organisation",
+      "expected_branch_name": "Register a new buyer organisation",
+      "expected_category": "org_onboarding",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-112",
+      "query": "it says no approving officer for our account",
+      "caller_type": "buyer",
+      "expected_branch_id": "approving_officer_not_assigned",
+      "expected_branch_name": "Approving officer not assigned",
+      "expected_category": "org_onboarding",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-113",
+      "query": "how to set who approves purchases",
+      "caller_type": "buyer",
+      "expected_branch_id": "approving_officer_not_assigned",
+      "expected_branch_name": "Approving officer not assigned",
+      "expected_category": "org_onboarding",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-114",
+      "query": "it says no approvnig officer for our account",
+      "caller_type": "buyer",
+      "expected_branch_id": "approving_officer_not_assigned",
+      "expected_branch_name": "Approving officer not assigned",
+      "expected_category": "org_onboarding",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-115",
+      "query": "our department name is spelled wrong",
+      "caller_type": "buyer",
+      "expected_branch_id": "organisation_details_incorrect",
+      "expected_branch_name": "Organisation details are incorrect",
+      "expected_category": "org_onboarding",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-116",
+      "query": "need to correct organisation details",
+      "caller_type": "buyer",
+      "expected_branch_id": "organisation_details_incorrect",
+      "expected_branch_name": "Organisation details are incorrect",
+      "expected_category": "org_onboarding",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-117",
+      "query": "our dpartment name is spelled wrong",
+      "caller_type": "buyer",
+      "expected_branch_id": "organisation_details_incorrect",
+      "expected_branch_name": "Organisation details are incorrect",
+      "expected_category": "org_onboarding",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-118",
+      "query": "buyer login code is not coming",
+      "caller_type": "buyer",
+      "expected_branch_id": "buyer_otp_not_received",
+      "expected_branch_name": "Buyer OTP not received",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-119",
+      "query": "not receiving otp for buyer account",
+      "caller_type": "buyer",
+      "expected_branch_id": "buyer_otp_not_received",
+      "expected_branch_name": "Buyer OTP not received",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-120",
+      "query": "buyer login code is not ocming",
+      "caller_type": "buyer",
+      "expected_branch_id": "buyer_otp_not_received",
+      "expected_branch_name": "Buyer OTP not received",
+      "expected_category": "login_otp",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-121",
+      "query": "buyer account says locked",
+      "caller_type": "buyer",
+      "expected_branch_id": "buyer_account_locked",
+      "expected_branch_name": "Buyer account locked",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-122",
+      "query": "locked out of purchasing account",
+      "caller_type": "buyer",
+      "expected_branch_id": "buyer_account_locked",
+      "expected_branch_name": "Buyer account locked",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-123",
+      "query": "buyer accont says locked",
+      "caller_type": "buyer",
+      "expected_branch_id": "buyer_account_locked",
+      "expected_branch_name": "Buyer account locked",
+      "expected_category": "login_otp",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-124",
+      "query": "my phone number changed, how to update",
+      "caller_type": "buyer",
+      "expected_branch_id": "update_registered_mobile_number",
+      "expected_branch_name": "Update registered mobile number",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-125",
+      "query": "need to change the mobile linked to my login",
+      "caller_type": "buyer",
+      "expected_branch_id": "update_registered_mobile_number",
+      "expected_branch_name": "Update registered mobile number",
+      "expected_category": "login_otp",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-126",
+      "query": "my phone number cahnged, how to update",
+      "caller_type": "buyer",
+      "expected_branch_id": "update_registered_mobile_number",
+      "expected_branch_name": "Update registered mobile number",
+      "expected_category": "login_otp",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-127",
+      "query": "how to add another purchaser in our organisation",
+      "caller_type": "buyer",
+      "expected_branch_id": "create_buyer_user",
+      "expected_branch_name": "Create a new buyer user",
+      "expected_category": "buyer_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-128",
+      "query": "create login for new buyer staff",
+      "caller_type": "buyer",
+      "expected_branch_id": "create_buyer_user",
+      "expected_branch_name": "Create a new buyer user",
+      "expected_category": "buyer_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-129",
+      "query": "how to add another purchaser in our organisatoin",
+      "caller_type": "buyer",
+      "expected_branch_id": "create_buyer_user",
+      "expected_branch_name": "Create a new buyer user",
+      "expected_category": "buyer_users",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-130",
+      "query": "officer transferred, remove his login",
+      "caller_type": "buyer",
+      "expected_branch_id": "deactivate_departed_user",
+      "expected_branch_name": "Deactivate a user who left",
+      "expected_category": "buyer_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-131",
+      "query": "how to disable an old buyer user",
+      "caller_type": "buyer",
+      "expected_branch_id": "deactivate_departed_user",
+      "expected_branch_name": "Deactivate a user who left",
+      "expected_category": "buyer_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-132",
+      "query": "officer transfrred, remove his login",
+      "caller_type": "buyer",
+      "expected_branch_id": "deactivate_departed_user",
+      "expected_branch_name": "Deactivate a user who left",
+      "expected_category": "buyer_users",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-133",
+      "query": "need higher purchase limit for my user",
+      "caller_type": "buyer",
+      "expected_branch_id": "change_buyer_role_permissions",
+      "expected_branch_name": "Change buyer role or permissions",
+      "expected_category": "buyer_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-134",
+      "query": "how to change a buyer's permissions",
+      "caller_type": "buyer",
+      "expected_branch_id": "change_buyer_role_permissions",
+      "expected_branch_name": "Change buyer role or permissions",
+      "expected_category": "buyer_users",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-135",
+      "query": "need higher purcase limit for my user",
+      "caller_type": "buyer",
+      "expected_branch_id": "change_buyer_role_permissions",
+      "expected_branch_name": "Change buyer role or permissions",
+      "expected_category": "buyer_users",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-136",
+      "query": "the price went up after I added it to cart",
+      "caller_type": "buyer",
+      "expected_branch_id": "price_changed_in_cart",
+      "expected_branch_name": "Price changed after adding to cart",
+      "expected_category": "direct_purchase",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-137",
+      "query": "cart is showing a different price now",
+      "caller_type": "buyer",
+      "expected_branch_id": "price_changed_in_cart",
+      "expected_branch_name": "Price changed after adding to cart",
+      "expected_category": "direct_purchase",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-138",
+      "query": "the prie went up after I added it to cart",
+      "caller_type": "buyer",
+      "expected_branch_id": "price_changed_in_cart",
+      "expected_branch_name": "Price changed after adding to cart",
+      "expected_category": "direct_purchase",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-139",
+      "query": "it says I exceeded the direct purchase limit",
+      "caller_type": "buyer",
+      "expected_branch_id": "direct_purchase_limit_exceeded",
+      "expected_branch_name": "Direct purchase limit exceeded",
+      "expected_category": "direct_purchase",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-140",
+      "query": "cannot place order above my limit",
+      "caller_type": "buyer",
+      "expected_branch_id": "direct_purchase_limit_exceeded",
+      "expected_branch_name": "Direct purchase limit exceeded",
+      "expected_category": "direct_purchase",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-141",
+      "query": "it says I exceded the direct purchase limit",
+      "caller_type": "buyer",
+      "expected_branch_id": "direct_purchase_limit_exceeded",
+      "expected_branch_name": "Direct purchase limit exceeded",
+      "expected_category": "direct_purchase",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-142",
+      "query": "how do I compare two products",
+      "caller_type": "buyer",
+      "expected_branch_id": "compare_products_before_purchase",
+      "expected_branch_name": "Compare products before purchase",
+      "expected_category": "direct_purchase",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-143",
+      "query": "want to see sellers side by side before buying",
+      "caller_type": "buyer",
+      "expected_branch_id": "compare_products_before_purchase",
+      "expected_branch_name": "Compare products before purchase",
+      "expected_category": "direct_purchase",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-144",
+      "query": "how do I compare two produtcs",
+      "caller_type": "buyer",
+      "expected_branch_id": "compare_products_before_purchase",
+      "expected_branch_name": "Compare products before purchase",
+      "expected_category": "direct_purchase",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-145",
+      "query": "how to float an rfq",
+      "caller_type": "buyer",
+      "expected_branch_id": "create_rfq",
+      "expected_branch_name": "Create a request for quotation",
+      "expected_category": "bids_rfq",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-146",
+      "query": "steps to create a new quotation request",
+      "caller_type": "buyer",
+      "expected_branch_id": "create_rfq",
+      "expected_branch_name": "Create a request for quotation",
+      "expected_category": "bids_rfq",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-147",
+      "query": "how to folat an rfq",
+      "caller_type": "buyer",
+      "expected_branch_id": "create_rfq",
+      "expected_branch_name": "Create a request for quotation",
+      "expected_category": "bids_rfq",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-148",
+      "query": "need to give sellers more time on my bid",
+      "caller_type": "buyer",
+      "expected_branch_id": "extend_bid_deadline",
+      "expected_branch_name": "Extend bid deadline",
+      "expected_category": "bids_rfq",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-149",
+      "query": "how to extend rfq closing date",
+      "caller_type": "buyer",
+      "expected_branch_id": "extend_bid_deadline",
+      "expected_branch_name": "Extend bid deadline",
+      "expected_category": "bids_rfq",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-150",
+      "query": "need to give selelrs more time on my bid",
+      "caller_type": "buyer",
+      "expected_branch_id": "extend_bid_deadline",
+      "expected_branch_name": "Extend bid deadline",
+      "expected_category": "bids_rfq",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-151",
+      "query": "evaluation result is not uploading",
+      "caller_type": "buyer",
+      "expected_branch_id": "technical_evaluation_upload_failed",
+      "expected_branch_name": "Technical evaluation upload failed",
+      "expected_category": "bids_rfq",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-152",
+      "query": "technical evaluation file shows error",
+      "caller_type": "buyer",
+      "expected_branch_id": "technical_evaluation_upload_failed",
+      "expected_branch_name": "Technical evaluation upload failed",
+      "expected_category": "bids_rfq",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-153",
+      "query": "evaluaton result is not uploading",
+      "caller_type": "buyer",
+      "expected_branch_id": "technical_evaluation_upload_failed",
+      "expected_branch_name": "Technical evaluation upload failed",
+      "expected_category": "bids_rfq",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-154",
+      "query": "order still shows placed after a week",
+      "caller_type": "buyer",
+      "expected_branch_id": "order_status_not_updated",
+      "expected_branch_name": "Order status not updated",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-155",
+      "query": "status of my order is not changing",
+      "caller_type": "buyer",
+      "expected_branch_id": "order_status_not_updated",
+      "expected_branch_name": "Order status not updated",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-156",
+      "query": "order still shows palced after a week",
+      "caller_type": "buyer",
+      "expected_branch_id": "order_status_not_updated",
+      "expected_branch_name": "Order status not updated",
+      "expected_category": "orders_delivery",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-157",
+      "query": "need to change who receives the delivery",
+      "caller_type": "buyer",
+      "expected_branch_id": "change_consignee_after_order",
+      "expected_branch_name": "Change consignee after ordering",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-158",
+      "query": "update delivery location after placing order",
+      "caller_type": "buyer",
+      "expected_branch_id": "change_consignee_after_order",
+      "expected_branch_name": "Change consignee after ordering",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-159",
+      "query": "need to change who erceives the delivery",
+      "caller_type": "buyer",
+      "expected_branch_id": "change_consignee_after_order",
+      "expected_branch_name": "Change consignee after ordering",
+      "expected_category": "orders_delivery",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-160",
+      "query": "my delivery is late",
+      "caller_type": "buyer",
+      "expected_branch_id": "delivery_overdue",
+      "expected_branch_name": "Delivery overdue",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-161",
+      "query": "seller has not delivered past the due date",
+      "caller_type": "buyer",
+      "expected_branch_id": "delivery_overdue",
+      "expected_branch_name": "Delivery overdue",
+      "expected_category": "orders_delivery",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-162",
+      "query": "my dlivery is late",
+      "caller_type": "buyer",
+      "expected_branch_id": "delivery_overdue",
+      "expected_branch_name": "Delivery overdue",
+      "expected_category": "orders_delivery",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-163",
+      "query": "how do I confirm I received the goods",
+      "caller_type": "buyer",
+      "expected_branch_id": "generate_goods_receipt",
+      "expected_branch_name": "Generate goods receipt",
+      "expected_category": "receiving_inspection",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-164",
+      "query": "steps to create the receipt note",
+      "caller_type": "buyer",
+      "expected_branch_id": "generate_goods_receipt",
+      "expected_branch_name": "Generate goods receipt",
+      "expected_category": "receiving_inspection",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-165",
+      "query": "how do I confirm I rceeived the goods",
+      "caller_type": "buyer",
+      "expected_branch_id": "generate_goods_receipt",
+      "expected_branch_name": "Generate goods receipt",
+      "expected_category": "receiving_inspection",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-166",
+      "query": "items arrived broken, how to reject",
+      "caller_type": "buyer",
+      "expected_branch_id": "reject_damaged_goods",
+      "expected_branch_name": "Reject damaged goods",
+      "expected_category": "receiving_inspection",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-167",
+      "query": "received damaged products",
+      "caller_type": "buyer",
+      "expected_branch_id": "reject_damaged_goods",
+      "expected_branch_name": "Reject damaged goods",
+      "expected_category": "receiving_inspection",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-168",
+      "query": "items arrvied broken, how to reject",
+      "caller_type": "buyer",
+      "expected_branch_id": "reject_damaged_goods",
+      "expected_branch_name": "Reject damaged goods",
+      "expected_category": "receiving_inspection",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-169",
+      "query": "seller delivered only half the quantity",
+      "caller_type": "buyer",
+      "expected_branch_id": "partial_delivery_receipt",
+      "expected_branch_name": "Partial delivery receipt",
+      "expected_category": "receiving_inspection",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-170",
+      "query": "how to receipt a partial delivery",
+      "caller_type": "buyer",
+      "expected_branch_id": "partial_delivery_receipt",
+      "expected_branch_name": "Partial delivery receipt",
+      "expected_category": "receiving_inspection",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-171",
+      "query": "seller deliered only half the quantity",
+      "caller_type": "buyer",
+      "expected_branch_id": "partial_delivery_receipt",
+      "expected_branch_name": "Partial delivery receipt",
+      "expected_category": "receiving_inspection",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-172",
+      "query": "seller says payment not received though we approved",
+      "caller_type": "buyer",
+      "expected_branch_id": "payment_not_processed_after_receipt",
+      "expected_branch_name": "Payment not processed after receipt",
+      "expected_category": "payments_invoices",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-173",
+      "query": "payment stuck after goods receipt",
+      "caller_type": "buyer",
+      "expected_branch_id": "payment_not_processed_after_receipt",
+      "expected_branch_name": "Payment not processed after receipt",
+      "expected_category": "payments_invoices",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-174",
+      "query": "seller says payment not recieved though we approved",
+      "caller_type": "buyer",
+      "expected_branch_id": "payment_not_processed_after_receipt",
+      "expected_branch_name": "Payment not processed after receipt",
+      "expected_category": "payments_invoices",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-175",
+      "query": "there is no invoice on my order",
+      "caller_type": "buyer",
+      "expected_branch_id": "invoice_missing_for_order",
+      "expected_branch_name": "Invoice missing for order",
+      "expected_category": "payments_invoices",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-176",
+      "query": "seller hasn't uploaded the bill",
+      "caller_type": "buyer",
+      "expected_branch_id": "invoice_missing_for_order",
+      "expected_branch_name": "Invoice missing for order",
+      "expected_category": "payments_invoices",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-177",
+      "query": "there is no invocie on my order",
+      "caller_type": "buyer",
+      "expected_branch_id": "invoice_missing_for_order",
+      "expected_branch_name": "Invoice missing for order",
+      "expected_category": "payments_invoices",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-178",
+      "query": "my company card keeps getting declined",
+      "caller_type": "buyer",
+      "expected_branch_id": "corporate_card_declined_at_checkout",
+      "expected_branch_name": "Corporate card declined at checkout",
+      "expected_category": "payments_invoices",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-179",
+      "query": "checkout fails when paying by card",
+      "caller_type": "buyer",
+      "expected_branch_id": "corporate_card_declined_at_checkout",
+      "expected_branch_name": "Corporate card declined at checkout",
+      "expected_category": "payments_invoices",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-180",
+      "query": "my company card keeps getting edclined",
+      "caller_type": "buyer",
+      "expected_branch_id": "corporate_card_declined_at_checkout",
+      "expected_branch_name": "Corporate card declined at checkout",
+      "expected_category": "payments_invoices",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-181",
+      "query": "how to complain about a seller",
+      "caller_type": "buyer",
+      "expected_branch_id": "raise_dispute_against_seller",
+      "expected_branch_name": "Raise a dispute against a seller",
+      "expected_category": "disputes_feedback",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-182",
+      "query": "want to raise a dispute for my order",
+      "caller_type": "buyer",
+      "expected_branch_id": "raise_dispute_against_seller",
+      "expected_branch_name": "Raise a dispute against a seller",
+      "expected_category": "disputes_feedback",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-183",
+      "query": "how to ocmplain about a seller",
+      "caller_type": "buyer",
+      "expected_branch_id": "raise_dispute_against_seller",
+      "expected_branch_name": "Raise a dispute against a seller",
+      "expected_category": "disputes_feedback",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-184",
+      "query": "where can I give rating to the seller",
+      "caller_type": "buyer",
+      "expected_branch_id": "rate_seller_after_delivery",
+      "expected_branch_name": "Rate a seller after delivery",
+      "expected_category": "disputes_feedback",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-185",
+      "query": "how to leave seller feedback",
+      "caller_type": "buyer",
+      "expected_branch_id": "rate_seller_after_delivery",
+      "expected_branch_name": "Rate a seller after delivery",
+      "expected_category": "disputes_feedback",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-186",
+      "query": "where can I give raitng to the seller",
+      "caller_type": "buyer",
+      "expected_branch_id": "rate_seller_after_delivery",
+      "expected_branch_name": "Rate a seller after delivery",
+      "expected_category": "disputes_feedback",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-187",
+      "query": "my complaint is pending for weeks",
+      "caller_type": "buyer",
+      "expected_branch_id": "escalate_unresolved_complaint",
+      "expected_branch_name": "Escalate an unresolved complaint",
+      "expected_category": "disputes_feedback",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-188",
+      "query": "nobody is resolving my dispute",
+      "caller_type": "buyer",
+      "expected_branch_id": "escalate_unresolved_complaint",
+      "expected_branch_name": "Escalate an unresolved complaint",
+      "expected_category": "disputes_feedback",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-189",
+      "query": "my comlaint is pending for weeks",
+      "caller_type": "buyer",
+      "expected_branch_id": "escalate_unresolved_complaint",
+      "expected_branch_name": "Escalate an unresolved complaint",
+      "expected_category": "disputes_feedback",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-190",
+      "query": "we want to close our buyer account",
+      "caller_type": "buyer",
+      "expected_branch_id": "close_buyer_account",
+      "expected_branch_name": "Close a buyer account",
+      "expected_category": "account_closure",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-191",
+      "query": "how to delete organisation account",
+      "caller_type": "buyer",
+      "expected_branch_id": "close_buyer_account",
+      "expected_branch_name": "Close a buyer account",
+      "expected_category": "account_closure",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-192",
+      "query": "we want to close our buyer accont",
+      "caller_type": "buyer",
+      "expected_branch_id": "close_buyer_account",
+      "expected_branch_name": "Close a buyer account",
+      "expected_category": "account_closure",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-193",
+      "query": "how to move open orders before closing account",
+      "caller_type": "buyer",
+      "expected_branch_id": "transfer_pending_orders_before_closure",
+      "expected_branch_name": "Transfer pending orders before closure",
+      "expected_category": "account_closure",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-194",
+      "query": "reassign orders to another officer",
+      "caller_type": "buyer",
+      "expected_branch_id": "transfer_pending_orders_before_closure",
+      "expected_branch_name": "Transfer pending orders before closure",
+      "expected_category": "account_closure",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-195",
+      "query": "how to move open orders before lcosing account",
+      "caller_type": "buyer",
+      "expected_branch_id": "transfer_pending_orders_before_closure",
+      "expected_branch_name": "Transfer pending orders before closure",
+      "expected_category": "account_closure",
+      "query_style": "typo"
+    },
+    {
+      "id": "case-196",
+      "query": "our account was closed by mistake",
+      "caller_type": "buyer",
+      "expected_branch_id": "reactivate_closed_account",
+      "expected_branch_name": "Reactivate a closed account",
+      "expected_category": "account_closure",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-197",
+      "query": "can we reopen the old buyer account",
+      "caller_type": "buyer",
+      "expected_branch_id": "reactivate_closed_account",
+      "expected_branch_name": "Reactivate a closed account",
+      "expected_category": "account_closure",
+      "query_style": "paraphrase"
+    },
+    {
+      "id": "case-198",
+      "query": "our acocunt was closed by mistake",
+      "caller_type": "buyer",
+      "expected_branch_id": "reactivate_closed_account",
+      "expected_branch_name": "Reactivate a closed account",
+      "expected_category": "account_closure",
+      "query_style": "typo"
+    }
+  ]
+}

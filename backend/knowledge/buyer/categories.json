@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "id": "org_onboarding",
+      "name": "Organisation Onboarding"
+    },
+    {
+      "id": "login_otp",
+      "name": "Login & OTP"
+    },
+    {
+      "id": "buyer_users",
+      "name": "Users & Roles"
+    },
+    {
+      "id": "direct_purchase",
+      "name": "Direct Purchase"
+    },
+    {
+      "id": "bids_rfq",
+      "name": "Bids & RFQs"
+    },
+    {
+      "id": "orders_delivery",
+      "name": "Orders & Delivery"
+    },
+    {
+      "id": "receiving_inspection",
+      "name": "Receiving & Inspection"
+    },
+    {
+      "id": "payments_invoices",
+      "name": "Payments & Invoices"
+    },
+    {
+      "id": "disputes_feedback",
+      "name": "Disputes & Feedback"
+    },
+    {
+      "id": "account_closure",
+      "name": "Account Closure"
+    }
+  ]
+}

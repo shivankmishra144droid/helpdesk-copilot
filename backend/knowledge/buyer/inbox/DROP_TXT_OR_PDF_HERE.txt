@@ -1,0 +1,1 @@
+Drop .txt or .pdf support notes here; they are parsed into this knowledge base automatically.
