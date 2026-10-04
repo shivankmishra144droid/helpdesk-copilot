@@ -10,7 +10,7 @@ from typing import Any
 
 import faiss
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from embedding_model import SentenceTransformer
 
 from category_utils import CATEGORY_ALIASES, assign_topic_category, infer_topic_category
 from concurrency import STORE_LOCK

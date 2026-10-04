@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from embedding_model import SentenceTransformer
 from sklearn.ensemble import IsolationForest
 
 from kb_manager import get_kb, normalize_caller_type

@@ -9,6 +9,7 @@ instead of search quietly falling back to the hybrid formula.
 from __future__ import annotations
 
 import logging
+import os
 import pickle
 import warnings
 from importlib import metadata
@@ -51,6 +52,7 @@ def _version_mismatches(bundle: Any) -> list[str]:
         f"{name}: trained with {recorded[name]}, installed {current.get(name)}"
         for name in TRACKED_LIBRARIES
         if recorded.get(name) and recorded[name] != current.get(name)
+        and not (name == "sentence-transformers" and os.getenv("EMBEDDING_BACKEND") == "onnx" and current.get(name) is None)
     ]
 
 

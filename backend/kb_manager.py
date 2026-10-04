@@ -9,7 +9,7 @@ from pathlib import Path
 
 import faiss
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from embedding_model import SentenceTransformer
 
 from concurrency import STORE_LOCK, guard_model_method
 from ingest import load_kb, save_kb

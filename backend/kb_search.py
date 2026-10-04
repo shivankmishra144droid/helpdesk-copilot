@@ -7,7 +7,7 @@ import re
 
 from category_utils import category_name_by_id
 from kb_manager import get_kb, get_registry
-from sentence_transformers import SentenceTransformer
+from embedding_model import SentenceTransformer
 
 logger = logging.getLogger(__name__)
 

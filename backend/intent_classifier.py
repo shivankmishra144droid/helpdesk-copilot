@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from embedding_model import SentenceTransformer
 from sklearn.linear_model import LogisticRegression
 
 from category_utils import (

@@ -6,9 +6,10 @@ from pydantic import BaseModel
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from sentence_transformers import SentenceTransformer
+from embedding_model import SentenceTransformer
 
 import logging
+import os
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -549,6 +550,7 @@ def health():
         },
         "ml": {
             "embedding_model": EMBED_MODEL_NAME,
+            "embedding_backend": os.getenv("EMBEDDING_BACKEND", "torch"),
             "faiss_seller_loaded": seller_faiss,
             "faiss_buyer_loaded": buyer_faiss,
             "xgboost": ranker,

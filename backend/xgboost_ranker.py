@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 import random
 import re
 from datetime import datetime, timezone
@@ -10,7 +11,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from embedding_model import SentenceTransformer
 
 from kb_manager import build_branch_embed_text, get_kb
 from model_io import load_bundle, save_bundle
@@ -494,6 +495,8 @@ def save_ranker_bundle(bundle: dict[str, Any]) -> Path:
 def load_xgboost_ranker(*, force: bool = False) -> dict[str, Any] | None:
     """Load ranker models from disk; returns None if missing or corrupt."""
     global _ranker_bundle
+    if os.getenv("DISABLE_XGBOOST", "false").lower() == "true":
+        return None
     if _ranker_bundle is not None and not force:
         return _ranker_bundle
     if not MODEL_PATH.exists():

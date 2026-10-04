@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: helpdesk-copilot
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile.render
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: DEMO_MODE
+        value: "true"
+      - key: LLM_PROVIDER
+        value: none

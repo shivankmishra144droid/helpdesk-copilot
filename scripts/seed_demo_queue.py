@@ -23,7 +23,7 @@ from json_store import (  # noqa: E402
     log_issue_audit,
 )
 from kb_manager import KnowledgeRegistry, bind_registry  # noqa: E402
-from sentence_transformers import SentenceTransformer  # noqa: E402
+from embedding_model import SentenceTransformer  # noqa: E402
 
 
 def main() -> None:

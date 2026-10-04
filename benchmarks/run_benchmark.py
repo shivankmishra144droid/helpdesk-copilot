@@ -37,7 +37,7 @@ def _run_mode(out_path: Path) -> None:
     os.environ.setdefault("SEARCH_TELEMETRY_ENABLED", "false")
     from kb_manager import KnowledgeRegistry, bind_registry
     from kb_search import search_kb_with_outlier_gate
-    from sentence_transformers import SentenceTransformer
+    from embedding_model import SentenceTransformer
 
     registry = KnowledgeRegistry(SentenceTransformer("all-MiniLM-L6-v2"))
     bind_registry(registry)

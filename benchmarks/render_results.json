@@ -1,0 +1,60 @@
+{
+  "torch": {
+    "cases": 198,
+    "top1": 86.4,
+    "top3": 100.0,
+    "top5": 100.0,
+    "mrr": 0.9251,
+    "median_ms": 61.5,
+    "p95_ms": 95.1,
+    "by_style": {
+      "paraphrase": {
+        "cases": 132,
+        "top1": 87.1,
+        "top3": 100.0
+      },
+      "typo": {
+        "cases": 66,
+        "top1": 84.8,
+        "top3": 100.0
+      }
+    },
+    "rss_mb": 1022.0,
+    "torch_imported": true
+  },
+  "onnx": {
+    "cases": 198,
+    "top1": 86.4,
+    "top3": 100.0,
+    "top5": 100.0,
+    "mrr": 0.9251,
+    "median_ms": 38.5,
+    "p95_ms": 65.2,
+    "by_style": {
+      "paraphrase": {
+        "cases": 132,
+        "top1": 87.1,
+        "top3": 100.0
+      },
+      "typo": {
+        "cases": 66,
+        "top1": 84.8,
+        "top3": 100.0
+      }
+    },
+    "rss_mb": 292.0,
+    "torch_imported": false
+  },
+  "top1_agreement": 198,
+  "rank_agreement": 198,
+  "note": "Windows backend RSS after 198 searches; excludes Node and is not a Linux container memory guarantee.",
+  "production_smoke": {
+    "health_status": "ok",
+    "proxy_status": 200,
+    "frontend_rss_mb": 110.6,
+    "combined_rss_mb": 438.8,
+    "platform": "Windows",
+    "docker_build_verified": false,
+    "render_deployed": false
+  }
+}

@@ -1,0 +1,35 @@
+FROM node:22-bookworm-slim AS web
+WORKDIR /app/frontend
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci --no-audit --no-fund
+COPY frontend/ ./
+ENV NEXT_PUBLIC_API_BASE=/api
+RUN npm run build
+
+FROM python:3.12-slim AS models
+ENV PIP_NO_CACHE_DIR=1 HF_HOME=/opt/hf-cache
+WORKDIR /app
+RUN pip install torch --index-url https://download.pytorch.org/whl/cpu
+COPY backend/requirements.txt backend/requirements.txt
+RUN pip install -r backend/requirements.txt
+COPY backend/ backend/
+COPY scripts/ scripts/
+RUN python scripts/train_all.py
+
+FROM python:3.12-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 NODE_ENV=production DEMO_MODE=true SEARCH_TELEMETRY_ENABLED=false EMBEDDING_BACKEND=onnx ONNX_MODEL_DIR=/opt/embedding ONNX_THREADS=1 DISABLE_XGBOOST=true RERANKING_MODE=hybrid CROSS_ENCODER_ENABLED=false OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 TOKENIZERS_PARALLELISM=false PORT=10000 NODE_OPTIONS=--max-old-space-size=128
+WORKDIR /app
+COPY backend/requirements-render.txt backend/requirements-render.txt
+RUN pip install -r backend/requirements-render.txt
+COPY backend/ backend/
+COPY scripts/ scripts/
+RUN python -c "import sys; sys.path.insert(0, 'backend'); from embedding_model import MODEL_ID, MODEL_REVISION; from huggingface_hub import hf_hub_download; import shutil, pathlib; [(pathlib.Path('/opt/embedding', n).parent.mkdir(parents=True, exist_ok=True), shutil.copyfile(hf_hub_download(MODEL_ID,n,revision=MODEL_REVISION), '/opt/embedding/'+n)) for n in ['tokenizer.json', 'onnx/model.onnx']]"
+COPY --from=models /app/backend/models backend/models
+RUN rm -f backend/models/xgboost_ranker.pkl
+COPY --from=web /usr/local/bin/node /usr/local/bin/node
+COPY --from=web /app/frontend frontend/
+COPY deploy/start.sh start.sh
+RUN useradd --create-home --uid 1000 user && mkdir -p /app/.runtime && chown -R user:user /app /opt/embedding
+USER user
+EXPOSE 10000
+CMD ["bash", "/app/start.sh"]
